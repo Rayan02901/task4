@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Auction.DataAccess.Data;
+using Auction.DataAccess.Repository;
+using Auction.DataAccess.Repository.IRepository;
 
 
 
@@ -11,7 +13,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-//builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 var app = builder.Build();
 

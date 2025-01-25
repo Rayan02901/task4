@@ -1,19 +1,21 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Auction.DataAccess.Repository.IRepository;
 using Auction.DataAccess.Data;
 using Auction.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace PropertyAuction.Controllers
 {
+
     public class PropertyCategoryController : Controller
     {
-        private readonly ApplicationDbContext _db;
-        public PropertyCategoryController(ApplicationDbContext db)
+        private readonly IUnitOfWork _unitOfWork;
+        public PropertyCategoryController(IUnitOfWork unitOfWork)
         {
-            _db = db;
+            _unitOfWork = unitOfWork;
         }
         public IActionResult Index()
         {
-            List<PropertyCategory> objCategoryList = _db.PropertyCategories.ToList();
+            List<PropertyCategory> objCategoryList = _unitOfWork.PropertyCategory.GetAll().ToList();
             return View(objCategoryList);
         }
 
@@ -31,8 +33,9 @@ namespace PropertyAuction.Controllers
 
             if (ModelState.IsValid)
             {
-                _db.PropertyCategories.Add(obj);
-                _db.SaveChanges();
+                _unitOfWork.PropertyCategory.Add(obj);
+                _unitOfWork.Save();
+                TempData["success"] = "PropertyCategory created successfully";
                 return RedirectToAction("Index");
             }
             return View();
@@ -45,53 +48,55 @@ namespace PropertyAuction.Controllers
             {
                 return NotFound();
             }
-            PropertyCategory? propertycategoryFromDb = _db.PropertyCategories.Find(id);
-            //Category? categoryFromDb1 = _db.Categories.FirstOrDefault(u=>u.Id==id);
-            //Category? categoryFromDb2 = _db.Categories.Where(u=>u.Id==id).FirstOrDefault();
+            PropertyCategory? categoryFromDb = _unitOfWork.PropertyCategory.Get(u => u.Id == id);
+            //PropertyCategory? categoryFromDb1 = _db.Categories.FirstOrDefault(u=>u.Id==id);
+            //PropertyCategory? categoryFromDb2 = _db.Categories.Where(u=>u.Id==id).FirstOrDefault();
 
-            if (propertycategoryFromDb == null)
+            if (categoryFromDb == null)
             {
                 return NotFound();
             }
-            return View(propertycategoryFromDb);
+            return View(categoryFromDb);
         }
         [HttpPost]
         public IActionResult Edit(PropertyCategory obj)
         {
             if (ModelState.IsValid)
             {
-                _db.PropertyCategories.Update(obj);
-                _db.SaveChanges();
+                _unitOfWork.PropertyCategory.Update(obj);
+                _unitOfWork.Save();
+                TempData["success"] = "PropertyCategory updated successfully";
                 return RedirectToAction("Index");
             }
             return View();
 
         }
+
         public IActionResult Delete(int? id)
         {
             if (id == null || id == 0)
             {
                 return NotFound();
             }
-            PropertyCategory? propertycategoryFromDb = _db.PropertyCategories.Find(id);
-            //Category? categoryFromDb1 = _db.Categories.FirstOrDefault(u=>u.Id==id);
-            //Category? categoryFromDb2 = _db.Categories.Where(u=>u.Id==id).FirstOrDefault();
-            if (propertycategoryFromDb == null)
+            PropertyCategory? categoryFromDb = _unitOfWork.PropertyCategory.Get(u => u.Id == id);
+
+            if (categoryFromDb == null)
             {
                 return NotFound();
             }
-            return View(propertycategoryFromDb);
+            return View(categoryFromDb);
         }
         [HttpPost, ActionName("Delete")]
         public IActionResult DeletePOST(int? id)
         {
-            PropertyCategory? obj = _db.PropertyCategories.Find(id);
+            PropertyCategory? obj = _unitOfWork.PropertyCategory.Get(u => u.Id == id);
             if (obj == null)
             {
                 return NotFound();
             }
-            _db.PropertyCategories.Remove(obj);
-            _db.SaveChanges();
+            _unitOfWork.PropertyCategory.Remove(obj);
+            _unitOfWork.Save();
+            TempData["success"] = "PropertyCategory deleted successfully";
             return RedirectToAction("Index");
         }
     }
