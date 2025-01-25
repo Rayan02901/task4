@@ -17,59 +17,83 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PropertyAuction
 build_property.RootNamespace = PropertyAuction
-build_property.ProjectDir = F:\New folder\Sujan\PropertyAuction\
+build_property.ProjectDir = F:\New folder\Sujan\task4\PropertyAuction\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = F:\New folder\Sujan\PropertyAuction
+build_property.MSBuildProjectDirectory = F:\New folder\Sujan\task4\PropertyAuction
 build_property._RazorSourceGeneratorDebug = 
 
-[F:/New folder/Sujan/PropertyAuction/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[F:/New folder/Sujan/task4/PropertyAuction/Areas/Admin/Views/PropertyCategory/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvcGVydHlDYXRlZ29yeVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/New folder/Sujan/PropertyAuction/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[F:/New folder/Sujan/task4/PropertyAuction/Areas/Admin/Views/PropertyCategory/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvcGVydHlDYXRlZ29yeVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/New folder/Sujan/PropertyAuction/Views/PropertyCategory/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlDYXRlZ29yeVxDcmVhdGUuY3NodG1s
+[F:/New folder/Sujan/task4/PropertyAuction/Areas/Admin/Views/PropertyCategory/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvcGVydHlDYXRlZ29yeVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/New folder/Sujan/PropertyAuction/Views/PropertyCategory/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlDYXRlZ29yeVxEZWxldGUuY3NodG1s
+[F:/New folder/Sujan/task4/PropertyAuction/Areas/Admin/Views/PropertyCategory/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvcGVydHlDYXRlZ29yeVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/New folder/Sujan/PropertyAuction/Views/PropertyCategory/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlDYXRlZ29yeVxFZGl0LmNzaHRtbA==
+[F:/New folder/Sujan/task4/PropertyAuction/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/New folder/Sujan/PropertyAuction/Views/PropertyCategory/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlDYXRlZ29yeVxJbmRleC5jc2h0bWw=
+[F:/New folder/Sujan/task4/PropertyAuction/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/New folder/Sujan/PropertyAuction/Views/Shared/Error.cshtml]
+[F:/New folder/Sujan/task4/PropertyAuction/Areas/Buyer/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQnV5ZXJcVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder/Sujan/task4/PropertyAuction/Areas/Buyer/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQnV5ZXJcVmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder/Sujan/task4/PropertyAuction/Areas/Buyer/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQnV5ZXJcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder/Sujan/task4/PropertyAuction/Areas/Buyer/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQnV5ZXJcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder/Sujan/task4/PropertyAuction/Areas/Seller/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2VsbGVyXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder/Sujan/task4/PropertyAuction/Areas/Seller/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2VsbGVyXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder/Sujan/task4/PropertyAuction/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/New folder/Sujan/PropertyAuction/Views/Shared/_Notification.cshtml]
+[F:/New folder/Sujan/task4/PropertyAuction/Views/Shared/_Notification.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/New folder/Sujan/PropertyAuction/Views/Shared/_ValidationScriptsPartial.cshtml]
+[F:/New folder/Sujan/task4/PropertyAuction/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/New folder/Sujan/PropertyAuction/Views/_ViewImports.cshtml]
+[F:/New folder/Sujan/task4/PropertyAuction/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/New folder/Sujan/PropertyAuction/Views/_ViewStart.cshtml]
+[F:/New folder/Sujan/task4/PropertyAuction/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/New folder/Sujan/PropertyAuction/Views/Shared/_Layout.cshtml]
+[F:/New folder/Sujan/task4/PropertyAuction/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-swrfqhgjhl

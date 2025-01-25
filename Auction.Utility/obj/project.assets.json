@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\New folder\\Sujan\\Auction.Utility\\Auction.Utility.csproj",
+      "projectUniqueName": "F:\\New folder\\Sujan\\task4\\Auction.Utility\\Auction.Utility.csproj",
       "projectName": "Auction.Utility",
-      "projectPath": "F:\\New folder\\Sujan\\Auction.Utility\\Auction.Utility.csproj",
+      "projectPath": "F:\\New folder\\Sujan\\task4\\Auction.Utility\\Auction.Utility.csproj",
       "packagesPath": "C:\\Users\\rayan\\.nuget\\packages\\",
-      "outputPath": "F:\\New folder\\Sujan\\Auction.Utility\\obj\\",
+      "outputPath": "F:\\New folder\\Sujan\\task4\\Auction.Utility\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

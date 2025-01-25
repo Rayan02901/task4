@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\New folder\\Sujan\\Auction.Models\\Auction.Models.csproj": {}
+    "F:\\New folder\\Sujan\\task4\\Auction.Models\\Auction.Models.csproj": {}
   },
   "projects": {
-    "F:\\New folder\\Sujan\\Auction.Models\\Auction.Models.csproj": {
+    "F:\\New folder\\Sujan\\task4\\Auction.Models\\Auction.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\New folder\\Sujan\\Auction.Models\\Auction.Models.csproj",
+        "projectUniqueName": "F:\\New folder\\Sujan\\task4\\Auction.Models\\Auction.Models.csproj",
         "projectName": "Auction.Models",
-        "projectPath": "F:\\New folder\\Sujan\\Auction.Models\\Auction.Models.csproj",
+        "projectPath": "F:\\New folder\\Sujan\\task4\\Auction.Models\\Auction.Models.csproj",
         "packagesPath": "C:\\Users\\rayan\\.nuget\\packages\\",
-        "outputPath": "F:\\New folder\\Sujan\\Auction.Models\\obj\\",
+        "outputPath": "F:\\New folder\\Sujan\\task4\\Auction.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
