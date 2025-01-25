@@ -22,3 +22,4 @@ F:\New folder\Sujan\task4\Auction.Models\obj\Debug\net8.0\Auction.Models.dll
 F:\New folder\Sujan\task4\Auction.Models\obj\Debug\net8.0\refint\Auction.Models.dll
 F:\New folder\Sujan\task4\Auction.Models\obj\Debug\net8.0\Auction.Models.pdb
 F:\New folder\Sujan\task4\Auction.Models\obj\Debug\net8.0\ref\Auction.Models.dll
+F:\New folder\Sujan\task4\Auction.Models\obj\Debug\net8.0\Auction.Models.csproj.AssemblyReference.cache
