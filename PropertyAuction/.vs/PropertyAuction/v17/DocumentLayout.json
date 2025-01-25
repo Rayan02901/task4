@@ -1,7 +1,56 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "F:\\New folder\\Sujan\\PropertyAuction\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\sujan\\propertyauction\\views\\shared\\_notification.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:views\\shared\\_notification.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\sujan\\propertyauction\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\sujan\\propertyauction\\controllers\\propertycategorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:controllers\\propertycategorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\sujan\\propertyauction\\views\\propertycategory\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:views\\propertycategory\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\sujan\\propertyauction\\views\\propertycategory\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:views\\propertycategory\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\sujan\\propertyauction\\views\\propertycategory\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:views\\propertycategory\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\sujan\\propertyauction\\views\\propertycategory\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:views\\propertycategory\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\sujan\\propertyauction\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\sujan\\propertyauction\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\sujan\\propertyauction\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\sujan\\propertyauction\\models\\propertycategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:models\\propertycategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\sujan\\propertyauction\\migrations\\20250125150400_dbinitializationaddtablepropertycategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:migrations\\20250125150400_dbinitializationaddtablepropertycategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +58,158 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Notification.cshtml",
+              "DocumentMoniker": "F:\\New folder\\Sujan\\PropertyAuction\\Views\\Shared\\_Notification.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Notification.cshtml",
+              "ToolTip": "F:\\New folder\\Sujan\\PropertyAuction\\Views\\Shared\\_Notification.cshtml*",
+              "RelativeToolTip": "Views\\Shared\\_Notification.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-25T15:24:41.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "F:\\New folder\\Sujan\\PropertyAuction\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "F:\\New folder\\Sujan\\PropertyAuction\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-25T15:13:37.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "F:\\New folder\\Sujan\\PropertyAuction\\Views\\PropertyCategory\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\PropertyCategory\\Create.cshtml",
+              "ToolTip": "F:\\New folder\\Sujan\\PropertyAuction\\Views\\PropertyCategory\\Create.cshtml",
+              "RelativeToolTip": "Views\\PropertyCategory\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-25T15:13:27.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "F:\\New folder\\Sujan\\PropertyAuction\\Views\\PropertyCategory\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\PropertyCategory\\Delete.cshtml",
+              "ToolTip": "F:\\New folder\\Sujan\\PropertyAuction\\Views\\PropertyCategory\\Delete.cshtml",
+              "RelativeToolTip": "Views\\PropertyCategory\\Delete.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAswCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-25T15:12:54.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "F:\\New folder\\Sujan\\PropertyAuction\\Views\\PropertyCategory\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\PropertyCategory\\Edit.cshtml",
+              "ToolTip": "F:\\New folder\\Sujan\\PropertyAuction\\Views\\PropertyCategory\\Edit.cshtml",
+              "RelativeToolTip": "Views\\PropertyCategory\\Edit.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAswCgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-25T15:12:25.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\New folder\\Sujan\\PropertyAuction\\Views\\PropertyCategory\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\PropertyCategory\\Index.cshtml",
+              "ToolTip": "F:\\New folder\\Sujan\\PropertyAuction\\Views\\PropertyCategory\\Index.cshtml",
+              "RelativeToolTip": "Views\\PropertyCategory\\Index.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAswDEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-25T15:11:45.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PropertyCategoryController.cs",
+              "DocumentMoniker": "F:\\New folder\\Sujan\\PropertyAuction\\Controllers\\PropertyCategoryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PropertyCategoryController.cs",
+              "ToolTip": "F:\\New folder\\Sujan\\PropertyAuction\\Controllers\\PropertyCategoryController.cs",
+              "RelativeToolTip": "Controllers\\PropertyCategoryController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T15:05:04.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20250125150400_DbInitializationaddtablePRopertyCategory.cs",
+              "DocumentMoniker": "F:\\New folder\\Sujan\\PropertyAuction\\Migrations\\20250125150400_DbInitializationaddtablePRopertyCategory.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250125150400_DbInitializationaddtablePRopertyCategory.cs",
+              "ToolTip": "F:\\New folder\\Sujan\\PropertyAuction\\Migrations\\20250125150400_DbInitializationaddtablePRopertyCategory.cs",
+              "RelativeToolTip": "Migrations\\20250125150400_DbInitializationaddtablePRopertyCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T15:04:01.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\New folder\\Sujan\\PropertyAuction\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "F:\\New folder\\Sujan\\PropertyAuction\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-25T14:59:07.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "F:\\New folder\\Sujan\\PropertyAuction\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "F:\\New folder\\Sujan\\PropertyAuction\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T14:54:44.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\New folder\\Sujan\\PropertyAuction\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "F:\\New folder\\Sujan\\PropertyAuction\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T14:59:23.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PropertyCategory.cs",
+              "DocumentMoniker": "F:\\New folder\\Sujan\\PropertyAuction\\Models\\PropertyCategory.cs",
+              "RelativeDocumentMoniker": "Models\\PropertyCategory.cs",
+              "ToolTip": "F:\\New folder\\Sujan\\PropertyAuction\\Models\\PropertyCategory.cs",
+              "RelativeToolTip": "Models\\PropertyCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T14:55:57.153Z"
             },
             {
               "$type": "Bookmark",
