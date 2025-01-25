@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using PropertyAuction.Models;
+using Auction.Models;
 using System.Diagnostics;
 
 namespace PropertyAuction.Controllers

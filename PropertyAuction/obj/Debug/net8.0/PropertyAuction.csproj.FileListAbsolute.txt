@@ -167,3 +167,7 @@ F:\New folder\Sujan\PropertyAuction\obj\Debug\net8.0\refint\PropertyAuction.dll
 F:\New folder\Sujan\PropertyAuction\obj\Debug\net8.0\PropertyAuction.pdb
 F:\New folder\Sujan\PropertyAuction\obj\Debug\net8.0\PropertyAuction.genruntimeconfig.cache
 F:\New folder\Sujan\PropertyAuction\obj\Debug\net8.0\ref\PropertyAuction.dll
+F:\New folder\Sujan\PropertyAuction\bin\Debug\net8.0\Auction.DataAccess.dll
+F:\New folder\Sujan\PropertyAuction\bin\Debug\net8.0\Auction.Models.dll
+F:\New folder\Sujan\PropertyAuction\bin\Debug\net8.0\Auction.DataAccess.pdb
+F:\New folder\Sujan\PropertyAuction\bin\Debug\net8.0\Auction.Models.pdb

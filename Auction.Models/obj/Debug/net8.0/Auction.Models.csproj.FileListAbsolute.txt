@@ -1,0 +1,12 @@
+F:\New folder\Sujan\Auction.Models\bin\Debug\net8.0\Auction.Models.deps.json
+F:\New folder\Sujan\Auction.Models\bin\Debug\net8.0\Auction.Models.dll
+F:\New folder\Sujan\Auction.Models\bin\Debug\net8.0\Auction.Models.pdb
+F:\New folder\Sujan\Auction.Models\obj\Debug\net8.0\Auction.Models.GeneratedMSBuildEditorConfig.editorconfig
+F:\New folder\Sujan\Auction.Models\obj\Debug\net8.0\Auction.Models.AssemblyInfoInputs.cache
+F:\New folder\Sujan\Auction.Models\obj\Debug\net8.0\Auction.Models.AssemblyInfo.cs
+F:\New folder\Sujan\Auction.Models\obj\Debug\net8.0\Auction.Models.csproj.CoreCompileInputs.cache
+F:\New folder\Sujan\Auction.Models\obj\Debug\net8.0\Auction.Models.sourcelink.json
+F:\New folder\Sujan\Auction.Models\obj\Debug\net8.0\Auction.Models.dll
+F:\New folder\Sujan\Auction.Models\obj\Debug\net8.0\refint\Auction.Models.dll
+F:\New folder\Sujan\Auction.Models\obj\Debug\net8.0\Auction.Models.pdb
+F:\New folder\Sujan\Auction.Models\obj\Debug\net8.0\ref\Auction.Models.dll

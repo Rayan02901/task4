@@ -1608,6 +1608,32 @@
             "rid": "win"
           }
         }
+      },
+      "Auction.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Auction.Models": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.1",
+          "Microsoft.EntityFrameworkCore.Relational": "9.0.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Auction.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Auction.DataAccess.dll": {}
+        }
+      },
+      "Auction.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Auction.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Auction.Models.dll": {}
+        }
       }
     }
   },
@@ -4724,10 +4750,21 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Auction.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../Auction.DataAccess/Auction.DataAccess.csproj",
+      "msbuildProject": "../Auction.DataAccess/Auction.DataAccess.csproj"
+    },
+    "Auction.Models/1.0.0": {
+      "type": "project",
+      "path": "../Auction.Models/Auction.Models.csproj",
+      "msbuildProject": "../Auction.Models/Auction.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Auction.DataAccess >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 9.0.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.1"
@@ -4765,7 +4802,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "F:\\New folder\\Sujan\\Auction.DataAccess\\Auction.DataAccess.csproj": {
+              "projectPath": "F:\\New folder\\Sujan\\Auction.DataAccess\\Auction.DataAccess.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

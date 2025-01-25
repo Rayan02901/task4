@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PropertyAuction.Data;
-using PropertyAuction.Models;
+using Auction.DataAccess.Data;
+using Auction.Models;
 
 namespace PropertyAuction.Controllers
 {
