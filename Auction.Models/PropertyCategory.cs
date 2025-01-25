@@ -14,6 +14,6 @@ namespace Auction.Models
         [DisplayName("Display Order")]
         [Range(1, 100, ErrorMessage = "It must be between 1 to 100")]
         public int DisplayOrder { get; set; }
-        //public virtual ICollection<Property> Properties { get; set; }
+        public virtual ICollection<Property> Properties { get; set; }
     }
 }
