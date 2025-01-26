@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "v/8EsYtj8h8XXfEy3NvUvSgQrNPVn68vbxrxnhvlTAs=",
+  "Hash": "kC69s4POfLmCiJ1TjmEYBopQuguO5t+4YAhlskCLRg4=",
   "Source": "PropertyAuction",
   "BasePath": "_content/PropertyAuction",
   "Mode": "Default",
@@ -110,25 +110,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\property\\189a23d8-2d23-4756-b9df-f96c89ab7207.jpg"
-    },
-    {
-      "Identity": "F:\\New folder\\Sujan\\task4\\PropertyAuction\\wwwroot\\images\\property\\7d0826bd-3ec7-4abd-abd3-37c381f830e9.png",
-      "SourceId": "PropertyAuction",
-      "SourceType": "Discovered",
-      "ContentRoot": "F:\\New folder\\Sujan\\task4\\PropertyAuction\\wwwroot\\",
-      "BasePath": "_content/PropertyAuction",
-      "RelativePath": "images/property/7d0826bd-3ec7-4abd-abd3-37c381f830e9.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\property\\7d0826bd-3ec7-4abd-abd3-37c381f830e9.png"
     },
     {
       "Identity": "F:\\New folder\\Sujan\\task4\\PropertyAuction\\wwwroot\\js\\site.js",

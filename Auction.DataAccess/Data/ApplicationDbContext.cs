@@ -105,9 +105,26 @@ namespace Auction.DataAccess.Data
                     PropertyCategoryId = 3
                 }
             );
+            modelBuilder.Entity<AuctionListing>()
+            .Property(a => a.ReservationPrice)
+            .HasColumnType("decimal(18,2)");
+
+            modelBuilder.Entity<AuctionListing>()
+                .Property(a => a.MinimumBidIncrement)
+                .HasColumnType("decimal(18,2)");
+
+            modelBuilder.Entity<AuctionListing>()
+                .Property(a => a.CurrentHighestBid)
+                .HasColumnType("decimal(18,2)");
+
+            modelBuilder.Entity<AuctionListing>()
+                .Property(a => a.StartingBid)
+                .HasColumnType("decimal(18,2)");
 
         }
         public DbSet<PropertyCategory> PropertyCategories { get; set; }
         public DbSet<Property> Properties { get; set; }
+        public DbSet<AuctionListing> AuctionListings { get; set; }
+
     }
 }
