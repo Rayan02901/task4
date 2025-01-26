@@ -21,8 +21,4 @@
     <ProjectReference Include="..\Auction.Models\Auction.Models.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Repository\" />
-  </ItemGroup>
-
 </Project>

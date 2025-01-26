@@ -9,7 +9,7 @@ namespace Auction.DataAccess.Repository.IRepository
     public interface IUnitOfWork
     {
         IPropertyCategoryRepository PropertyCategory { get; }
-        //IPropertyRepository Property { get; }
+        IPropertyRepository Property { get; }
 
         void Save();
     }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WDmZL1XOq83LTybND2Cgb4Pu+KR35ggB7LQY+daXpGk=",
+  "Hash": "v/8EsYtj8h8XXfEy3NvUvSgQrNPVn68vbxrxnhvlTAs=",
   "Source": "PropertyAuction",
   "BasePath": "_content/PropertyAuction",
   "Mode": "Default",
@@ -91,6 +91,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "F:\\New folder\\Sujan\\task4\\PropertyAuction\\wwwroot\\images\\property\\189a23d8-2d23-4756-b9df-f96c89ab7207.jpg",
+      "SourceId": "PropertyAuction",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\New folder\\Sujan\\task4\\PropertyAuction\\wwwroot\\",
+      "BasePath": "_content/PropertyAuction",
+      "RelativePath": "images/property/189a23d8-2d23-4756-b9df-f96c89ab7207.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\property\\189a23d8-2d23-4756-b9df-f96c89ab7207.jpg"
+    },
+    {
+      "Identity": "F:\\New folder\\Sujan\\task4\\PropertyAuction\\wwwroot\\images\\property\\7d0826bd-3ec7-4abd-abd3-37c381f830e9.png",
+      "SourceId": "PropertyAuction",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\New folder\\Sujan\\task4\\PropertyAuction\\wwwroot\\",
+      "BasePath": "_content/PropertyAuction",
+      "RelativePath": "images/property/7d0826bd-3ec7-4abd-abd3-37c381f830e9.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\property\\7d0826bd-3ec7-4abd-abd3-37c381f830e9.png"
     },
     {
       "Identity": "F:\\New folder\\Sujan\\task4\\PropertyAuction\\wwwroot\\js\\site.js",
@@ -1193,6 +1231,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "F:\\New folder\\Sujan\\task4\\PropertyAuction\\wwwroot\\videos\\property\\4993009e-8b85-48f1-b1dc-29bf2c99916b.mp4",
+      "SourceId": "PropertyAuction",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\New folder\\Sujan\\task4\\PropertyAuction\\wwwroot\\",
+      "BasePath": "_content/PropertyAuction",
+      "RelativePath": "videos/property/4993009e-8b85-48f1-b1dc-29bf2c99916b.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\videos\\property\\4993009e-8b85-48f1-b1dc-29bf2c99916b.mp4"
     }
   ]
 }

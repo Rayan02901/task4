@@ -12,12 +12,12 @@ namespace Auction.DataAccess.Repository
     {
         private ApplicationDbContext _db;
         public IPropertyCategoryRepository PropertyCategory { get; private set; }
-        //public IPropertyRepository Property { get; private set; }
+        public IPropertyRepository Property { get; private set; }
         public UnitOfWork(ApplicationDbContext db)
         {
             _db = db;
             PropertyCategory = new PropertyCategoryRepository(_db);
-            //Property = new PropertyRepository(_db);
+            Property = new PropertyRepository(_db);
         }
 
         public void Save()
