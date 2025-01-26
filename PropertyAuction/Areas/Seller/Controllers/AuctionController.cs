@@ -1,25 +1,24 @@
-﻿using Auction.DataAccess.Data;
+﻿using Auction.DataAccess.Repository.IRepository;
 using Auction.Models;
 using Auction.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-
 namespace PropertyAuction.Areas.Seller.Controllers
 {
-    
     public class AuctionController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public AuctionController(ApplicationDbContext context)
+        public AuctionController(IUnitOfWork unitOfWork)
         {
-            _context = context;
+            _unitOfWork = unitOfWork;
         }
-        public async Task<IActionResult> Index()
+
+        public IActionResult Index()
         {
-            var auctions = await _context.AuctionListings
-                .Include(a => a.Property)
+            var auctions = _unitOfWork.AuctionListing
+                .GetAll(includeProperties: "Property")
                 .Select(a => new AuctionListVM
                 {
                     AuctionId = a.AuctionId,
@@ -30,15 +29,15 @@ namespace PropertyAuction.Areas.Seller.Controllers
                     CurrentHighestBid = a.CurrentHighestBid ?? a.StartingBid,
                     Status = a.Status
                 })
-                .ToListAsync();
+                .ToList();
 
             return View(auctions);
         }
 
-        public async Task<IActionResult> Create(int id)
+        public IActionResult Create(int id)
         {
-            var property = await _context.Properties
-                .FirstOrDefaultAsync(p => p.PropertyId == id);
+            var property = _unitOfWork.Property
+                .Get(p => p.PropertyId == id);
 
             if (property == null)
             {
@@ -58,7 +57,7 @@ namespace PropertyAuction.Areas.Seller.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(AuctionCreateVM model)
+        public IActionResult Create(AuctionCreateVM model)
         {
             if (ModelState.IsValid)
             {
@@ -76,22 +75,22 @@ namespace PropertyAuction.Areas.Seller.Controllers
                     IsBidStarted = false
                 };
 
-                _context.AuctionListings.Add(auctionListing);
-                await _context.SaveChangesAsync();
+                _unitOfWork.AuctionListing.Add(auctionListing);
+                _unitOfWork.Save();
                 return RedirectToAction(nameof(Index));
             }
 
             // Reload property if model is invalid
-            model.SelectedProperty = await _context.Properties
-                .FirstOrDefaultAsync(p => p.PropertyId == model.PropertyId);
+            model.SelectedProperty = _unitOfWork.Property
+                .Get(p => p.PropertyId == model.PropertyId);
 
             return View(model);
         }
-        public async Task<IActionResult> Details(int id)
+
+        public IActionResult Details(int id)
         {
-            var auction = await _context.AuctionListings
-                .Include(a => a.Property)
-                .FirstOrDefaultAsync(a => a.AuctionId == id);
+            var auction = _unitOfWork.AuctionListing
+                .Get(a => a.AuctionId == id, includeProperties: "Property");
 
             if (auction == null)
             {

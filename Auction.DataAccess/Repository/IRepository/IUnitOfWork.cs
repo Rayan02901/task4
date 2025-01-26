@@ -10,6 +10,8 @@ namespace Auction.DataAccess.Repository.IRepository
     {
         IPropertyCategoryRepository PropertyCategory { get; }
         IPropertyRepository Property { get; }
+        IAuctionListingRepository AuctionListing { get; }
+        IBidsRepository Bids { get; }
 
         void Save();
     }

@@ -13,11 +13,19 @@ namespace Auction.DataAccess.Repository
         private ApplicationDbContext _db;
         public IPropertyCategoryRepository PropertyCategory { get; private set; }
         public IPropertyRepository Property { get; private set; }
+        public IAuctionListingRepository AuctionListing { get; private set; }
+        public IBidsRepository Bids { get; private set; }
+
+
         public UnitOfWork(ApplicationDbContext db)
         {
             _db = db;
             PropertyCategory = new PropertyCategoryRepository(_db);
             Property = new PropertyRepository(_db);
+            AuctionListing = new AuctionListingRepository(_db);
+            Bids = new BidsRepository(_db);
+
+
         }
 
         public void Save()

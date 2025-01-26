@@ -1,30 +1,27 @@
 using Microsoft.AspNetCore.Mvc;
 using Auction.Models;
 using System.Diagnostics;
-using Microsoft.EntityFrameworkCore;
-using Auction.DataAccess.Data;
+using Auction.DataAccess.Repository.IRepository;
 
 namespace PropertyAuction.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IUnitOfWork _unitOfWork;
         private readonly ILogger<HomeController> _logger;
-        private readonly ApplicationDbContext _context;
 
-        
-        public HomeController(ApplicationDbContext context)
+        public HomeController(IUnitOfWork unitOfWork, ILogger<HomeController> logger)
         {
-            _context = context;
+            _unitOfWork = unitOfWork;
+            _logger = logger;
         }
 
-
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            var activeAuctions = await _context.AuctionListings
-                .Include(a => a.Property)
+            var activeAuctions = _unitOfWork.AuctionListing
+                .GetAll(includeProperties: "Property")
                 .Where(a => a.EndDate > DateTime.Now && a.Status == AuctionStatus.Active)
-                .ToListAsync();
-
+                .ToList();
             return View(activeAuctions);
         }
 

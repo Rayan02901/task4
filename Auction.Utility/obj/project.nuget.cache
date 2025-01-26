@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Eol6gc/THxQ=",
+  "dgSpecHash": "a88JFoiHHg4=",
   "success": true,
-  "projectFilePath": "F:\\New folder\\Sujan\\task4\\Auction.Utility\\Auction.Utility.csproj",
+  "projectFilePath": "F:\\New folder\\task4\\Auction.Utility\\Auction.Utility.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rayan\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.3.0\\microsoft.aspnetcore.antiforgery.2.3.0.nupkg.sha512",
     "C:\\Users\\rayan\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.3.0\\microsoft.aspnetcore.authentication.abstractions.2.3.0.nupkg.sha512",

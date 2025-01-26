@@ -1,27 +1,28 @@
-﻿using Auction.DataAccess.Data;
+﻿using Auction.DataAccess.Repository.IRepository;
 using Auction.Models;
 using Auction.Models.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace PropertyAuction.Areas.Buyer.Controllers
 {
-    
     public class BuyerAuctionController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public BuyerAuctionController(ApplicationDbContext context)
+        public BuyerAuctionController(IUnitOfWork unitOfWork)
         {
-            _context = context;
+            _unitOfWork = unitOfWork;
         }
 
         public async Task<IActionResult> Index()
         {
-            var auctions = await _context.AuctionListings
-                .Include(a => a.Property)
+            var auctions = await Task.FromResult(_unitOfWork.AuctionListing
+                .GetAll(includeProperties: "Property")
                 .Select(a => new AuctionListVM
                 {
                     AuctionId = a.AuctionId,
@@ -32,16 +33,15 @@ namespace PropertyAuction.Areas.Buyer.Controllers
                     CurrentHighestBid = a.CurrentHighestBid ?? a.StartingBid,
                     Status = a.Status
                 })
-                .ToListAsync();
+                .ToList());
 
             return View(auctions);
         }
 
         public async Task<IActionResult> Details(int id)
         {
-            var auction = await _context.AuctionListings
-                .Include(a => a.Property)
-                .FirstOrDefaultAsync(a => a.AuctionId == id);
+            var auction = await Task.FromResult(_unitOfWork.AuctionListing
+                .Get(a => a.AuctionId == id, includeProperties: "Property,Bids"));
 
             if (auction == null)
             {
@@ -59,22 +59,17 @@ namespace PropertyAuction.Areas.Buyer.Controllers
                 ReservationPrice = auction.ReservationPrice,
                 MinimumBidIncrement = auction.MinimumBidIncrement,
                 Status = auction.Status,
-
-                // Ensure RecentBids is assigned an empty List<Bid> if auction.Bids is null
                 RecentBids = auction.Bids?.ToList() ?? new List<Bid>()
             };
+
             return View(viewModel);
-
-
-            
         }
-        [HttpPost]
 
-        public async Task<IActionResult> PlaceBid(int auctionId, decimal bidAmount)
+        [HttpPost]
+        public IActionResult PlaceBid(int auctionId, decimal bidAmount)
         {
-            var auction = await _context.AuctionListings
-                .Include(a => a.Bids) // Ensure we load the Bids collection
-                .FirstOrDefaultAsync(a => a.AuctionId == auctionId);
+            var auction = _unitOfWork.AuctionListing
+                .Get(a => a.AuctionId == auctionId, includeProperties: "Bids");
 
             if (auction == null || auction.Status != AuctionStatus.Active)
             {
@@ -98,7 +93,7 @@ namespace PropertyAuction.Areas.Buyer.Controllers
             };
 
             // Add the bid to the Bids collection
-            _context.Bids.Add(bid);
+            _unitOfWork.Bids.Add(bid);
 
             // Update the auction's current highest bid and highest bidder
             auction.CurrentHighestBid = bidAmount;
@@ -107,10 +102,13 @@ namespace PropertyAuction.Areas.Buyer.Controllers
             // Check if the reservation price is met
             auction.IsReservationPriceMet = auction.CurrentHighestBid >= auction.ReservationPrice;
 
-            await _context.SaveChangesAsync();
+            // Update the auction listing
+            _unitOfWork.AuctionListing.Update(auction);
+
+            // Save changes
+            _unitOfWork.Save();
 
             return RedirectToAction(nameof(Details), new { id = auctionId });
         }
-
     }
 }
