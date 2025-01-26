@@ -120,9 +120,16 @@ namespace Auction.DataAccess.Data
             modelBuilder.Entity<AuctionListing>()
                 .Property(a => a.StartingBid)
                 .HasColumnType("decimal(18,2)");
+            
+            modelBuilder.Entity<Bid>()
+                .HasOne(b => b.Auction)
+                .WithMany(a => a.Bids)
+                .HasForeignKey(b => b.AuctionId);
+        
 
-        }
+    }
         public DbSet<PropertyCategory> PropertyCategories { get; set; }
+        public DbSet<Bid> Bids { get; set; }
         public DbSet<Property> Properties { get; set; }
         public DbSet<AuctionListing> AuctionListings { get; set; }
 

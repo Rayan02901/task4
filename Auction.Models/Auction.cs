@@ -61,12 +61,14 @@ namespace Auction.Models
         [Display(Name = "Starting Bid")]
         [Range(0, double.MaxValue, ErrorMessage = "Starting bid must be a positive value")]
         public decimal StartingBid { get; set; }
+        public virtual ICollection<Bid> ?Bids { get; set; }
+
     }
     public enum AuctionStatus
     {
-
+        
         Active,
         Completed
-
+        
     }
 }

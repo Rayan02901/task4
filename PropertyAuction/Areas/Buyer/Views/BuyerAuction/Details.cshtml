@@ -1,0 +1,98 @@
+﻿@model AuctionDetailsForBuyerVM
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h2>@Model.Property.Title Auction Details</h2>
+
+            <div class="card mb-4">
+                <div class="card-header">Auction Information</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong>Start Date:</strong> @Model.StartDate.ToString("g")</p>
+                            <p><strong>End Date:</strong> @Model.EndDate.ToString("g")</p>
+                            <p>
+                                <strong>Remaining Time:</strong>
+                                @(Model.RemainingTime.Days > 0 ? $"{Model.RemainingTime.Days} days " : "")
+                                @(Model.RemainingTime.Hours > 0 ? $"{Model.RemainingTime.Hours} hours " : "")
+                                @(Model.RemainingTime.Minutes > 0 ? $"{Model.RemainingTime.Minutes} minutes" : "")
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><strong>Starting Bid:</strong> @Model.StartingBid.ToString("C")</p>
+                            <p><strong>Current Highest Bid:</strong> @Model.CurrentHighestBid.ToString("C")</p>
+                            <p><strong>Reservation Price:</strong> @Model.ReservationPrice.ToString("C")</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-header">Recent Bids</div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Bidder</th>
+                                <th>Bid Amount</th>
+                                <th>Bid Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model.RecentBids != null && Model.RecentBids.Any())
+                            {
+                                @foreach (var bid in Model.RecentBids)
+                                {
+                                    <tr>
+                                        <td>@(string.IsNullOrEmpty(bid.UserId) ? "Anonymous" : bid.UserId)</td>
+                                        <td>@bid.BidAmount.ToString("C")</td>
+                                        <td>@bid.BidTime.ToString("g")</td>
+                                    </tr>
+                                }
+                            }
+                            else
+                            {
+                                <tr>
+                                    <td colspan="3">No recent bids available.</td>
+                                </tr>
+                            }
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Place a Bid</div>
+                <div class="card-body">
+                    <form asp-action="PlaceBid" method="post">
+                        <input type="hidden" name="auctionId" value="@Model.AuctionId" />
+                        <div class="form-group">
+                            <label for="bidAmount">Bid Amount</label>
+                            <input type="number" name="bidAmount" class="form-control"
+                                   min="@(Model.CurrentHighestBid + Model.MinimumBidIncrement)"
+                                   step="@Model.MinimumBidIncrement"
+                                   required />
+                        </div>
+                        <button type="submit" class="btn btn-primary">Place Bid</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">Property Details</div>
+                <div class="card-body">
+                    <img src="@Model.Property.ImageUrl" class="img-fluid mb-3" alt="Property Image" />
+                    <p><strong>Location:</strong> @Model.Property.Location</p>
+                    <p><strong>Size:</strong> @Model.Property.Size sq ft</p>
+                    <p><strong>Rooms:</strong> @Model.Property.NumberOfRooms</p>
+                    <p><strong>Bathrooms:</strong> @Model.Property.NumberOfBathrooms</p>
+                    <p><strong>Year Built:</strong> @Model.Property.YearBuilt</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

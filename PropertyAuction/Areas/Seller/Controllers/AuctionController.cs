@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace PropertyAuction.Areas.Seller.Controllers
 {
+    
     public class AuctionController : Controller
     {
         private readonly ApplicationDbContext _context;

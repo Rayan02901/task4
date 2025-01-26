@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Auction.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250126044234_DBInitialization")]
-    partial class DBInitialization
+    [Migration("20250126070035_DbInitialization")]
+    partial class DbInitialization
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -71,6 +71,33 @@ namespace Auction.DataAccess.Migrations
                     b.HasIndex("PropertyId");
 
                     b.ToTable("AuctionListings");
+                });
+
+            modelBuilder.Entity("Auction.Models.Bid", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("AuctionId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("BidAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("BidTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AuctionId");
+
+                    b.ToTable("Bids");
                 });
 
             modelBuilder.Entity("Auction.Models.Property", b =>
@@ -261,6 +288,17 @@ namespace Auction.DataAccess.Migrations
                     b.Navigation("Property");
                 });
 
+            modelBuilder.Entity("Auction.Models.Bid", b =>
+                {
+                    b.HasOne("Auction.Models.AuctionListing", "Auction")
+                        .WithMany("Bids")
+                        .HasForeignKey("AuctionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Auction");
+                });
+
             modelBuilder.Entity("Auction.Models.Property", b =>
                 {
                     b.HasOne("Auction.Models.PropertyCategory", "PropertyCategory")
@@ -270,6 +308,11 @@ namespace Auction.DataAccess.Migrations
                         .IsRequired();
 
                     b.Navigation("PropertyCategory");
+                });
+
+            modelBuilder.Entity("Auction.Models.AuctionListing", b =>
+                {
+                    b.Navigation("Bids");
                 });
 
             modelBuilder.Entity("Auction.Models.PropertyCategory", b =>
