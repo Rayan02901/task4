@@ -17,6 +17,7 @@ namespace Auction.DataAccess.Data
         public DbSet<Bid> Bids { get; set; }
         public DbSet<Property> Properties { get; set; }
         public DbSet<AuctionListing> AuctionListings { get; set; }
+        public DbSet<ApplicationUser> ApplicationUsers { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

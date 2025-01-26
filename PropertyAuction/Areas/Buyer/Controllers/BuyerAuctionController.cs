@@ -1,7 +1,9 @@
 ﻿using Auction.DataAccess.Repository.IRepository;
 using Auction.Models;
 using Auction.Models.ViewModels;
+using Auction.Utility;
 using Microsoft.AspNetCore.Authorization;
+using System.Data;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using System.Collections.Generic;
@@ -10,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace PropertyAuction.Areas.Buyer.Controllers
 {
+    
     public class BuyerAuctionController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;

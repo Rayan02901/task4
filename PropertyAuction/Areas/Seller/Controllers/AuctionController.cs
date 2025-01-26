@@ -1,11 +1,16 @@
 ﻿using Auction.DataAccess.Repository.IRepository;
 using Auction.Models;
+using Auction.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Auction.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Data;
 
 namespace PropertyAuction.Areas.Seller.Controllers
 {
+    
+    
     public class AuctionController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;

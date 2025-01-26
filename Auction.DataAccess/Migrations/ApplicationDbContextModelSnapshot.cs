@@ -74,13 +74,13 @@ namespace Auction.DataAccess.Migrations
                         {
                             AuctionId = 1,
                             CurrentHighestBid = 500000m,
-                            EndDate = new DateTime(2025, 2, 2, 16, 56, 52, 742, DateTimeKind.Local).AddTicks(3637),
+                            EndDate = new DateTime(2025, 2, 2, 18, 6, 55, 949, DateTimeKind.Local).AddTicks(7428),
                             IsBidStarted = false,
                             IsReservationPriceMet = false,
                             MinimumBidIncrement = 5000m,
                             PropertyId = 1,
                             ReservationPrice = 600000m,
-                            StartDate = new DateTime(2025, 1, 27, 16, 56, 52, 742, DateTimeKind.Local).AddTicks(3618),
+                            StartDate = new DateTime(2025, 1, 27, 18, 6, 55, 949, DateTimeKind.Local).AddTicks(7409),
                             StartingBid = 500000m,
                             Status = 0
                         },
@@ -88,13 +88,13 @@ namespace Auction.DataAccess.Migrations
                         {
                             AuctionId = 2,
                             CurrentHighestBid = 1000000m,
-                            EndDate = new DateTime(2025, 2, 5, 16, 56, 52, 742, DateTimeKind.Local).AddTicks(3643),
+                            EndDate = new DateTime(2025, 2, 5, 18, 6, 55, 949, DateTimeKind.Local).AddTicks(7431),
                             IsBidStarted = false,
                             IsReservationPriceMet = false,
                             MinimumBidIncrement = 10000m,
                             PropertyId = 2,
                             ReservationPrice = 1200000m,
-                            StartDate = new DateTime(2025, 1, 28, 16, 56, 52, 742, DateTimeKind.Local).AddTicks(3641),
+                            StartDate = new DateTime(2025, 1, 28, 18, 6, 55, 949, DateTimeKind.Local).AddTicks(7431),
                             StartingBid = 1000000m,
                             Status = 0
                         },
@@ -102,13 +102,13 @@ namespace Auction.DataAccess.Migrations
                         {
                             AuctionId = 3,
                             CurrentHighestBid = 300000m,
-                            EndDate = new DateTime(2025, 2, 10, 16, 56, 52, 742, DateTimeKind.Local).AddTicks(3648),
+                            EndDate = new DateTime(2025, 2, 10, 18, 6, 55, 949, DateTimeKind.Local).AddTicks(7434),
                             IsBidStarted = false,
                             IsReservationPriceMet = false,
                             MinimumBidIncrement = 3000m,
                             PropertyId = 3,
                             ReservationPrice = 350000m,
-                            StartDate = new DateTime(2025, 1, 31, 16, 56, 52, 742, DateTimeKind.Local).AddTicks(3647),
+                            StartDate = new DateTime(2025, 1, 31, 18, 6, 55, 949, DateTimeKind.Local).AddTicks(7434),
                             StartingBid = 300000m,
                             Status = 0
                         });

@@ -1,5 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Auction.Models;
+using Auction.Utility;
+using Microsoft.AspNetCore.Authorization;
+using System.Data;
 using System.Diagnostics;
 using Auction.DataAccess.Repository.IRepository;
 

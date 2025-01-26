@@ -1,11 +1,14 @@
 ﻿using Auction.DataAccess.Repository.IRepository;
 using Auction.DataAccess.Data;
 using Auction.Models;
+using Auction.Utility;
+using Microsoft.AspNetCore.Authorization;
+using System.Data;
 using Microsoft.AspNetCore.Mvc;
 
 namespace PropertyAuction.Controllers
 {
-
+   
     public class PropertyCategoryController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
