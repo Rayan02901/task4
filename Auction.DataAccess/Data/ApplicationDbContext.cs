@@ -13,15 +13,22 @@ namespace Auction.DataAccess.Data
         : base(options)
         {
         }
-
+        public DbSet<PropertyCategory> PropertyCategories { get; set; }
+        public DbSet<Bid> Bids { get; set; }
+        public DbSet<Property> Properties { get; set; }
+        public DbSet<AuctionListing> AuctionListings { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            // Seeding PropertyCategory
             modelBuilder.Entity<PropertyCategory>().HasData(
                 new PropertyCategory { Id = 1, Name = "Residential", DisplayOrder = 1 },
                 new PropertyCategory { Id = 2, Name = "Commercial", DisplayOrder = 2 },
                 new PropertyCategory { Id = 3, Name = "Land", DisplayOrder = 3 }
-                );
+            );
+
+            // Seeding Properties
             modelBuilder.Entity<Property>().HasData(
                 new Property
                 {
@@ -64,53 +71,53 @@ namespace Auction.DataAccess.Data
                     NumberOfBathrooms = 2,
                     YearBuilt = 1990,
                     PropertyCategoryId = 3
-                },
-                new Property
-                {
-                    PropertyId = 4,
-                    Title = "Downtown Apartment",
-                    Description = "A compact and stylish apartment in the city center.",
-                    Location = "New York, NY",
-                    Size = 850.0,
-                    ImageUrl = "",
-                    VideoUrl = "",
-                    NumberOfRooms = 2,
-                    NumberOfBathrooms = 1,
-                    YearBuilt = 2005,
-                    PropertyCategoryId = 1
-                },
-                new Property
-                {
-                    PropertyId = 5,
-                    Title = "Suburban Dream Home",
-                    Description = "A spacious home with a large yard in a quiet neighborhood.",
-                    Location = "Austin, TX",
-                    Size = 3200.0,
-                    ImageUrl = "",
-                    VideoUrl = "",
-                    NumberOfRooms = 5,
-                    NumberOfBathrooms = 4,
-                    YearBuilt = 2010,
-                    PropertyCategoryId = 2
-                },
-                new Property
-                {
-                    PropertyId = 6,
-                    Title = "Rustic Mountain Cabin",
-                    Description = "A rustic cabin with breathtaking mountain views.",
-                    Location = "Denver, CO",
-                    Size = 1500.0,
-                    ImageUrl = "",
-                    VideoUrl = "",
-                    NumberOfRooms = 3,
-                    NumberOfBathrooms = 2,
-                    YearBuilt = 1985,
-                    PropertyCategoryId = 3
                 }
             );
+
+            // Seeding AuctionListings
+            modelBuilder.Entity<AuctionListing>().HasData(
+                new AuctionListing
+                {
+                    AuctionId = 1,
+                    PropertyId = 1,  // Linking to Property with PropertyId 1 (Modern Family House)
+                    StartingBid = 500000,
+                    CurrentHighestBid = 500000,
+                    ReservationPrice = 600000,
+                    MinimumBidIncrement = 5000,
+                    StartDate = DateTime.Now.AddDays(1),  // Auction starts tomorrow
+                    EndDate = DateTime.Now.AddDays(7),    // Auction ends in 7 days
+                    Status = AuctionStatus.Active
+                },
+                new AuctionListing
+                {
+                    AuctionId = 2,
+                    PropertyId = 2,  // Linking to Property with PropertyId 2 (Luxury Beachfront Villa)
+                    StartingBid = 1000000,
+                    CurrentHighestBid = 1000000,
+                    ReservationPrice = 1200000,
+                    MinimumBidIncrement = 10000,
+                    StartDate = DateTime.Now.AddDays(2),  // Auction starts in 2 days
+                    EndDate = DateTime.Now.AddDays(10),   // Auction ends in 10 days
+                    Status = AuctionStatus.Active
+                },
+                new AuctionListing
+                {
+                    AuctionId = 3,
+                    PropertyId = 3,  // Linking to Property with PropertyId 3 (Cozy Cottage)
+                    StartingBid = 300000,
+                    CurrentHighestBid = 300000,
+                    ReservationPrice = 350000,
+                    MinimumBidIncrement = 3000,
+                    StartDate = DateTime.Now.AddDays(5),  // Auction starts in 5 days
+                    EndDate = DateTime.Now.AddDays(15),   // Auction ends in 15 days
+                    Status = AuctionStatus.Active
+                }
+            );
+
+            // Configuring decimal type columns for AuctionListing
             modelBuilder.Entity<AuctionListing>()
-            .Property(a => a.ReservationPrice)
-            .HasColumnType("decimal(18,2)");
+                .Property(a => a.ReservationPrice)
+                .HasColumnType("decimal(18,2)");
 
             modelBuilder.Entity<AuctionListing>()
                 .Property(a => a.MinimumBidIncrement)
@@ -123,18 +130,20 @@ namespace Auction.DataAccess.Data
             modelBuilder.Entity<AuctionListing>()
                 .Property(a => a.StartingBid)
                 .HasColumnType("decimal(18,2)");
-            
+
+            // Specify decimal type for BidAmount in Bid entity
+            modelBuilder.Entity<Bid>()
+                .Property(b => b.BidAmount)
+                .HasColumnType("decimal(18,2)"); // You can adjust the precision and scale as necessary
+
+            // Configure relationships for other entities if necessary (e.g., Bid)
             modelBuilder.Entity<Bid>()
                 .HasOne(b => b.Auction)
                 .WithMany(a => a.Bids)
                 .HasForeignKey(b => b.AuctionId);
-        
+        }
 
-    }
-        public DbSet<PropertyCategory> PropertyCategories { get; set; }
-        public DbSet<Bid> Bids { get; set; }
-        public DbSet<Property> Properties { get; set; }
-        public DbSet<AuctionListing> AuctionListings { get; set; }
+        
 
     }
 }

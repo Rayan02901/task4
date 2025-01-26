@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "F:\\New folder\\Sujan\\task4\\PropertyAuction\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9F073CBA-2B0C-482C-8EAE-DC6E7273BB82}|..\\Auction.DataAccess\\Auction.DataAccess.csproj|f:\\new folder\\sujan\\task4\\auction.dataaccess\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\sujan\\task4\\propertyauction\\areas\\seller\\views\\property\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:areas\\seller\\views\\property\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\sujan\\task4\\propertyauction\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F073CBA-2B0C-482C-8EAE-DC6E7273BB82}|..\\Auction.DataAccess\\Auction.DataAccess.csproj|f:\\new folder\\sujan\\task4\\auction.dataaccess\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F073CBA-2B0C-482C-8EAE-DC6E7273BB82}|..\\Auction.DataAccess\\Auction.DataAccess.csproj|f:\\new folder\\sujan\\task4\\auction.dataaccess\\auction.dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
@@ -213,41 +213,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Auction.DataAccess",
+              "Title": "Auction.DataAccess.csproj",
               "DocumentMoniker": "F:\\New folder\\Sujan\\task4\\Auction.DataAccess\\Auction.DataAccess.csproj",
               "RelativeDocumentMoniker": "..\\Auction.DataAccess\\Auction.DataAccess.csproj",
               "ToolTip": "F:\\New folder\\Sujan\\task4\\Auction.DataAccess\\Auction.DataAccess.csproj",
               "RelativeToolTip": "..\\Auction.DataAccess\\Auction.DataAccess.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-26T09:29:05.915Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T09:29:05.915Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "F:\\New folder\\Sujan\\task4\\Auction.DataAccess\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "..\\Auction.DataAccess\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "F:\\New folder\\Sujan\\task4\\Auction.DataAccess\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "..\\Auction.DataAccess\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
+              "ToolTip": "F:\\New folder\\Sujan\\task4\\Auction.DataAccess\\Data\\ApplicationDbContext.cs*",
+              "RelativeToolTip": "..\\Auction.DataAccess\\Data\\ApplicationDbContext.cs*",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAQwH0AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-25T16:42:17.073Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\New folder\\Sujan\\task4\\PropertyAuction\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -255,12 +258,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T16:28:05.205Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-25T16:28:05.205Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "F:\\New folder\\Sujan\\task4\\PropertyAuction\\Areas\\Seller\\Views\\Property\\Index.cshtml",
               "RelativeDocumentMoniker": "Areas\\Seller\\Views\\Property\\Index.cshtml",
@@ -268,8 +270,7 @@
               "RelativeToolTip": "Areas\\Seller\\Views\\Property\\Index.cshtml",
               "ViewState": "AgIAACIAAAAAAAAAAAAUwD0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-26T02:03:24.233Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T02:03:24.233Z"
             },
             {
               "$type": "Document",
@@ -281,8 +282,7 @@
               "RelativeToolTip": "..\\Auction.Models\\Auction.Models.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-25T16:35:55.783Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-25T16:35:55.783Z"
             },
             {
               "$type": "Document",
@@ -294,8 +294,7 @@
               "RelativeToolTip": "PropertyAuction.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-25T16:24:18.024Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-25T16:24:18.024Z"
             },
             {
               "$type": "Document",
@@ -307,8 +306,7 @@
               "RelativeToolTip": "Areas\\Buyer\\Views\\BuyerAuction\\Details.cshtml",
               "ViewState": "AgIAACQAAAAAAAAAAAAQwCwAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-26T05:31:22.319Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T05:31:22.319Z"
             },
             {
               "$type": "Document",
@@ -320,12 +318,7 @@
               "RelativeToolTip": "Areas\\Buyer\\Controllers\\BuyerAuctionController.cs",
               "ViewState": "AgIAAFwAAAAAAAAAAAAQwHEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T05:29:36.592Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+              "WhenOpened": "2025-01-26T05:29:36.592Z"
             },
             {
               "$type": "Document",
@@ -337,8 +330,7 @@
               "RelativeToolTip": "Areas\\Buyer\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAIBJwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T05:25:54.003Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T05:25:54.003Z"
             },
             {
               "$type": "Document",
@@ -350,8 +342,7 @@
               "RelativeToolTip": "Areas\\Buyer\\Views\\BuyerAuction\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-26T06:06:24.93Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T06:06:24.93Z"
             },
             {
               "$type": "Document",
@@ -363,8 +354,7 @@
               "RelativeToolTip": "Areas\\Buyer\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-26T05:25:36.367Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T05:25:36.367Z"
             },
             {
               "$type": "Document",
@@ -376,8 +366,7 @@
               "RelativeToolTip": "..\\Auction.Models\\Auction.cs",
               "ViewState": "AgIAADMAAAAAAAAAAAAiwEkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T04:00:46.295Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T04:00:46.295Z"
             },
             {
               "$type": "Document",
@@ -389,8 +378,7 @@
               "RelativeToolTip": "..\\Auction.DataAccess\\Migrations\\20250126070035_DbInitialization.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T07:00:36.195Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T07:00:36.195Z"
             },
             {
               "$type": "Document",
@@ -402,8 +390,7 @@
               "RelativeToolTip": "Areas\\Seller\\Controllers\\AuctionController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T04:05:45.646Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T04:05:45.646Z"
             },
             {
               "$type": "Document",
@@ -415,8 +402,7 @@
               "RelativeToolTip": "..\\Auction.Models\\ViewModels\\AuctionDetailsForBuyerVM.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAxwBEAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T05:30:24.089Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T05:30:24.089Z"
             },
             {
               "$type": "Document",
@@ -428,8 +414,7 @@
               "RelativeToolTip": "..\\Auction.Models\\ViewModels\\BuyerAuctionListVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T06:02:05.338Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T06:02:05.338Z"
             },
             {
               "$type": "Document",
@@ -441,8 +426,7 @@
               "RelativeToolTip": "Areas\\Seller\\Views\\Auction\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-26T04:24:06.244Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T04:24:06.244Z"
             },
             {
               "$type": "Document",
@@ -454,8 +438,7 @@
               "RelativeToolTip": "..\\Auction.Models\\ViewModels\\AuctionListVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAIBJwAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T04:23:30.352Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T04:23:30.352Z"
             },
             {
               "$type": "Document",
@@ -467,8 +450,7 @@
               "RelativeToolTip": "..\\Auction.Models\\Bid.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T05:41:39.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T05:41:39.408Z"
             },
             {
               "$type": "Document",
@@ -480,8 +462,7 @@
               "RelativeToolTip": "..\\Auction.Models\\ViewModels\\SellerAuctionDetailsVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T05:14:30.533Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T05:14:30.533Z"
             },
             {
               "$type": "Document",
@@ -493,8 +474,7 @@
               "RelativeToolTip": "Areas\\Buyer\\Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-26T05:33:15.523Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T05:33:15.523Z"
             },
             {
               "$type": "Document",
@@ -506,8 +486,7 @@
               "RelativeToolTip": "Areas\\Seller\\Views\\Auction\\Details.cshtml",
               "ViewState": "AgIAAAkAAAAAAAAAAIBZwBQAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-26T05:17:05.528Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T05:17:05.528Z"
             },
             {
               "$type": "Document",
@@ -519,8 +498,7 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAABMAAAAAAAAAAAAUwCQAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-25T16:27:38.116Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-25T16:27:38.116Z"
             },
             {
               "$type": "Document",
@@ -532,8 +510,7 @@
               "RelativeToolTip": "..\\Auction.Models\\ViewModels\\AuctionCreateVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T04:04:42.404Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T04:04:42.404Z"
             },
             {
               "$type": "Document",
@@ -545,8 +522,7 @@
               "RelativeToolTip": "Areas\\Seller\\Views\\Auction\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-26T04:04:06.794Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T04:04:06.794Z"
             },
             {
               "$type": "Document",
@@ -558,8 +534,7 @@
               "RelativeToolTip": "Areas\\Seller\\Controllers\\PropertyController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAO0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T16:45:05.93Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-25T16:45:05.93Z"
             },
             {
               "$type": "Document",
@@ -571,8 +546,7 @@
               "RelativeToolTip": "Areas\\Seller\\Views\\Property\\Edit.cshtml",
               "ViewState": "AgIAAEAAAAAAAAAAAAAUwFsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-26T02:53:44.038Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T02:53:44.038Z"
             },
             {
               "$type": "Document",
@@ -584,8 +558,7 @@
               "RelativeToolTip": "Areas\\Seller\\Views\\Property\\Delete.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-26T02:08:57.536Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T02:08:57.536Z"
             },
             {
               "$type": "Document",
@@ -597,8 +570,7 @@
               "RelativeToolTip": "..\\Auction.Models\\ViewModels\\PropertyVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T16:50:10.716Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-25T16:50:10.716Z"
             },
             {
               "$type": "Document",
@@ -610,8 +582,7 @@
               "RelativeToolTip": "..\\Auction.Models\\Property.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAQwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T16:36:05.832Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-25T16:36:05.832Z"
             },
             {
               "$type": "Document",
@@ -635,8 +606,7 @@
               "RelativeToolTip": "..\\Auction.DataAccess\\Repository\\PropertyRepository.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwDEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T16:51:04.968Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-25T16:51:04.968Z"
             },
             {
               "$type": "Document",
@@ -648,8 +618,7 @@
               "RelativeToolTip": "Areas\\Admin\\Controllers\\PropertyCategoryController.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAgwGYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T02:00:56.462Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T02:00:56.462Z"
             },
             {
               "$type": "Document",
@@ -661,8 +630,7 @@
               "RelativeToolTip": "Areas\\Seller\\Views\\Property\\Create.cshtml",
               "ViewState": "AgIAACcAAAAAAAAAAIBZwAcAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-25T16:56:58.388Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-25T16:56:58.388Z"
             },
             {
               "$type": "Document",
@@ -674,8 +642,7 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\PropertyCategory\\Edit.cshtml",
               "ViewState": "AgIAAA8AAAAAAAAAAAAswCgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-26T02:53:04.378Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T02:53:04.378Z"
             },
             {
               "$type": "Document",
@@ -687,8 +654,7 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\PropertyCategory\\Create.cshtml",
               "ViewState": "AgIAAA4AAAAAAAAAAAAswCcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-26T02:37:23.739Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T02:37:23.739Z"
             },
             {
               "$type": "Document",
@@ -698,8 +664,7 @@
               "ToolTip": "D:\\Downloads\\VS Code\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ViewState": "AgIAAJ8FAAAAAAAAAAAjwMgUAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-01-26T02:38:08.426Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T02:38:08.426Z"
             },
             {
               "$type": "Document",
@@ -711,8 +676,7 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\PropertyCategory\\Index.cshtml",
               "ViewState": "AgIAABgAAAAAAAAAAAAswDEAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-26T02:20:18.798Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T02:20:18.798Z"
             },
             {
               "$type": "Document",
@@ -724,8 +688,7 @@
               "RelativeToolTip": "..\\Auction.DataAccess\\Repository\\UnitOfWork.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAIBJwA4AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T16:20:47.966Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-25T16:20:47.966Z"
             },
             {
               "$type": "Document",
@@ -737,8 +700,7 @@
               "RelativeToolTip": "Areas\\Seller\\Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-25T16:53:40.262Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-25T16:53:40.262Z"
             },
             {
               "$type": "Document",
@@ -750,8 +712,7 @@
               "RelativeToolTip": "..\\Auction.DataAccess\\Repository\\IRepository\\IUnitOfWork.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T16:47:25.813Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-25T16:47:25.813Z"
             },
             {
               "$type": "Document",
@@ -763,8 +724,7 @@
               "RelativeToolTip": "..\\Auction.DataAccess\\Repository\\IRepository\\IPropertyRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T16:51:20.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-25T16:51:20.944Z"
             },
             {
               "$type": "Document",
@@ -776,8 +736,7 @@
               "RelativeToolTip": "Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-25T17:24:17.842Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-25T17:24:17.842Z"
             },
             {
               "$type": "Document",
@@ -789,8 +748,7 @@
               "RelativeToolTip": "..\\Auction.DataAccess\\Repository\\PropertyCategoryRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T16:51:39.626Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-25T16:51:39.626Z"
             },
             {
               "$type": "Document",
@@ -802,8 +760,7 @@
               "RelativeToolTip": "..\\Auction.DataAccess\\Repository\\Repository.cs",
               "ViewState": "AgIAAC4AAAAAAAAAAAAkwEUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T16:47:41.932Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-25T16:47:41.932Z"
             },
             {
               "$type": "Document",
@@ -815,8 +772,7 @@
               "RelativeToolTip": "..\\Auction.DataAccess\\Repository\\IRepository\\IRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T16:47:27.539Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-25T16:47:27.539Z"
             },
             {
               "$type": "Document",
@@ -828,8 +784,7 @@
               "RelativeToolTip": "..\\Auction.Models\\PropertyCategory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T16:46:11.156Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-25T16:46:11.156Z"
             },
             {
               "$type": "Document",
@@ -841,8 +796,7 @@
               "RelativeToolTip": "ScaffoldingReadMe.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-01-25T16:28:10.356Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-25T16:28:10.356Z"
             },
             {
               "$type": "Document",
