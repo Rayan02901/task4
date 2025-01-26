@@ -39,6 +39,12 @@ namespace Auction.DataAccess.Migrations
                     b.Property<string>("HighestBidderId")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsBidStarted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsReservationPriceMet")
+                        .HasColumnType("bit");
+
                     b.Property<decimal>("MinimumBidIncrement")
                         .HasColumnType("decimal(18,2)");
 

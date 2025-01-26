@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
@@ -7,11 +8,25 @@
 namespace Auction.DataAccess.Migrations
 {
     /// <inheritdoc />
-    public partial class AddPropertyTableandSeedData : Migration
+    public partial class DBInitialization : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "PropertyCategories",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    DisplayOrder = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_PropertyCategories", x => x.Id);
+                });
+
             migrationBuilder.CreateTable(
                 name: "Properties",
                 columns: table => new
@@ -40,6 +55,45 @@ namespace Auction.DataAccess.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "AuctionListings",
+                columns: table => new
+                {
+                    AuctionId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    PropertyId = table.Column<int>(type: "int", nullable: false),
+                    StartDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    EndDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    ReservationPrice = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    IsReservationPriceMet = table.Column<bool>(type: "bit", nullable: false),
+                    IsBidStarted = table.Column<bool>(type: "bit", nullable: false),
+                    MinimumBidIncrement = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    CurrentHighestBid = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    HighestBidderId = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Status = table.Column<int>(type: "int", nullable: false),
+                    StartingBid = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AuctionListings", x => x.AuctionId);
+                    table.ForeignKey(
+                        name: "FK_AuctionListings_Properties_PropertyId",
+                        column: x => x.PropertyId,
+                        principalTable: "Properties",
+                        principalColumn: "PropertyId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.InsertData(
+                table: "PropertyCategories",
+                columns: new[] { "Id", "DisplayOrder", "Name" },
+                values: new object[,]
+                {
+                    { 1, 1, "Residential" },
+                    { 2, 2, "Commercial" },
+                    { 3, 3, "Land" }
+                });
+
             migrationBuilder.InsertData(
                 table: "Properties",
                 columns: new[] { "PropertyId", "Description", "ImageUrl", "Location", "NumberOfBathrooms", "NumberOfRooms", "PropertyCategoryId", "Size", "Title", "VideoUrl", "YearBuilt" },
@@ -54,6 +108,11 @@ namespace Auction.DataAccess.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_AuctionListings_PropertyId",
+                table: "AuctionListings",
+                column: "PropertyId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Properties_PropertyCategoryId",
                 table: "Properties",
                 column: "PropertyCategoryId");
@@ -63,7 +122,13 @@ namespace Auction.DataAccess.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
+                name: "AuctionListings");
+
+            migrationBuilder.DropTable(
                 name: "Properties");
+
+            migrationBuilder.DropTable(
+                name: "PropertyCategories");
         }
     }
 }

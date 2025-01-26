@@ -30,7 +30,20 @@
                             <a class="nav-link text-dark" asp-area="Admin" asp-controller="PropertyCategory" asp-action="Index">PropertyCategory</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="Seller" asp-controller="Property" asp-action="Index">Property</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Sales Management
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                <a class="dropdown-item" asp-area="Seller" asp-controller="Property" asp-action="Index">Property</a>
+                        </li>
+                                <li class="nav-item">
+                                    <a class="dropdown-item" asp-area="Seller" asp-controller="Auction" asp-action="Index">Auction</a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                               
+                            </ul>
                         </li>
                     </ul>
                 </div>

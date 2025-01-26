@@ -29,15 +29,24 @@ namespace Auction.Models
         public TimeSpan AuctionDuration => EndDate - StartDate;
 
         [Required]
+        [Column(TypeName = "decimal(18,2)")]
         [Display(Name = "Reservation Price")]
         [Range(0, double.MaxValue, ErrorMessage = "Reservation price must be a positive value")]
         public decimal ReservationPrice { get; set; }
 
+        [Display(Name = "Reservation Price Met")]
+        public bool IsReservationPriceMet { get; set; }
+
+        [Display(Name = "Bid Started")]
+        public bool IsBidStarted { get; set; }
+
         [Required]
+        [Column(TypeName = "decimal(18,2)")]
         [Display(Name = "Minimum Bid Increment")]
         [Range(0, double.MaxValue, ErrorMessage = "Minimum bid increment must be a positive value")]
         public decimal MinimumBidIncrement { get; set; }
 
+        [Column(TypeName = "decimal(18,2)")]
         [Display(Name = "Current Highest Bid")]
         public decimal? CurrentHighestBid { get; set; }
 
@@ -47,16 +56,17 @@ namespace Auction.Models
         [Display(Name = "Auction Status")]
         public AuctionStatus Status { get; set; }
 
+        [Required]
+        [Column(TypeName = "decimal(18,2)")]
         [Display(Name = "Starting Bid")]
         [Range(0, double.MaxValue, ErrorMessage = "Starting bid must be a positive value")]
         public decimal StartingBid { get; set; }
     }
-
     public enum AuctionStatus
     {
-        
+
         Active,
         Completed
-        
+
     }
 }
