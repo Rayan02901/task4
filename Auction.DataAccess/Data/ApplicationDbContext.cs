@@ -1,11 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Auction.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Reflection.Emit;
 
 namespace Auction.DataAccess.Data
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<IdentityUser>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options)
@@ -14,6 +16,7 @@ namespace Auction.DataAccess.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<PropertyCategory>().HasData(
                 new PropertyCategory { Id = 1, Name = "Residential", DisplayOrder = 1 },
                 new PropertyCategory { Id = 2, Name = "Commercial", DisplayOrder = 2 },

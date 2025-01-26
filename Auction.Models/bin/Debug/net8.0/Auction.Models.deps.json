@@ -9,7 +9,8 @@
       "Auction.Models/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Mvc": "2.3.0",
-          "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.3.0"
+          "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.3.0",
+          "Microsoft.EntityFrameworkCore": "8.0.11"
         },
         "runtime": {
           "Auction.Models.dll": {}
@@ -621,6 +622,29 @@
           }
         }
       },
+      "Microsoft.EntityFrameworkCore/8.0.11": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Abstractions": "8.0.11",
+          "Microsoft.EntityFrameworkCore.Analyzers": "8.0.11",
+          "Microsoft.Extensions.Caching.Memory": "8.0.1",
+          "Microsoft.Extensions.Logging": "8.0.1"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.dll": {
+            "assemblyVersion": "8.0.11.0",
+            "fileVersion": "8.0.1124.52104"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Abstractions/8.0.11": {
+        "runtime": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
+            "assemblyVersion": "8.0.11.0",
+            "fileVersion": "8.0.1124.52104"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Analyzers/8.0.11": {},
       "Microsoft.Extensions.Caching.Abstractions/8.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "8.0.0"
@@ -769,6 +793,19 @@
           "lib/net8.0/Microsoft.Extensions.Localization.Abstractions.dll": {
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.0.1124.52116"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging/8.0.1": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "8.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.Extensions.Options": "8.0.2"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Logging.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1024.46610"
           }
         }
       },
@@ -1888,6 +1925,27 @@
       "path": "microsoft.dotnet.platformabstractions/2.1.0",
       "hashPath": "microsoft.dotnet.platformabstractions.2.1.0.nupkg.sha512"
     },
+    "Microsoft.EntityFrameworkCore/8.0.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-stbjWBTtpQ1HtqXMFyKnXFTr76PvaOHI2b2h85JqBi3eZr00nspvR/a90Zwh8CQ4rVawqLiTG0+0yZQWaav+sQ==",
+      "path": "microsoft.entityframeworkcore/8.0.11",
+      "hashPath": "microsoft.entityframeworkcore.8.0.11.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Abstractions/8.0.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-++zY0Ea724ku1jptWJmF7jm3I4IXTexfT4qi1ETcSFFF7qj+qm6rRgN7mTuKkwIETuXk0ikfzudryRjUGrrNKQ==",
+      "path": "microsoft.entityframeworkcore.abstractions/8.0.11",
+      "hashPath": "microsoft.entityframeworkcore.abstractions.8.0.11.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Analyzers/8.0.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NI/AJQjtC7qgWM8Nr85sRkwlog2AnFer5RKP8xTUH0RuPF3nN0tGXBEeYJOLZWp+/+M/C6O7MMDRhKRE8bZwIA==",
+      "path": "microsoft.entityframeworkcore.analyzers/8.0.11",
+      "hashPath": "microsoft.entityframeworkcore.analyzers.8.0.11.nupkg.sha512"
+    },
     "Microsoft.Extensions.Caching.Abstractions/8.0.0": {
       "type": "package",
       "serviceable": true,
@@ -1978,6 +2036,13 @@
       "sha512": "sha512-qyfVEOJ8PsYrwC6kTQFSTm4+FrpOAz3OfPXvRPfs7j34V+yHMuVUgIiP5yjrYHcpNbXTtCzoQc/ZdcbpdeX/Xg==",
       "path": "microsoft.extensions.localization.abstractions/8.0.11",
       "hashPath": "microsoft.extensions.localization.abstractions.8.0.11.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging/8.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4x+pzsQEbqxhNf1QYRr5TDkLP9UsLT3A6MdRKDDEgrW7h1ljiEPgTNhKYUhNCCAaVpQECVQ+onA91PTPnIp6Lw==",
+      "path": "microsoft.extensions.logging/8.0.1",
+      "hashPath": "microsoft.extensions.logging.8.0.1.nupkg.sha512"
     },
     "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
       "type": "package",

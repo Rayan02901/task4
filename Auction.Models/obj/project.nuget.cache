@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4vSF1Ua5BsI=",
+  "dgSpecHash": "iaHgGIOO8uY=",
   "success": true,
   "projectFilePath": "F:\\New folder\\Sujan\\task4\\Auction.Models\\Auction.Models.csproj",
   "expectedPackageFiles": [
@@ -50,6 +50,9 @@
     "C:\\Users\\rayan\\.nuget\\packages\\microsoft.codeanalysis.razor\\2.3.0\\microsoft.codeanalysis.razor.2.3.0.nupkg.sha512",
     "C:\\Users\\rayan\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\rayan\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\2.1.0\\microsoft.dotnet.platformabstractions.2.1.0.nupkg.sha512",
+    "C:\\Users\\rayan\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.11\\microsoft.entityframeworkcore.8.0.11.nupkg.sha512",
+    "C:\\Users\\rayan\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.11\\microsoft.entityframeworkcore.abstractions.8.0.11.nupkg.sha512",
+    "C:\\Users\\rayan\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.11\\microsoft.entityframeworkcore.analyzers.8.0.11.nupkg.sha512",
     "C:\\Users\\rayan\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\rayan\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.1\\microsoft.extensions.caching.memory.8.0.1.nupkg.sha512",
     "C:\\Users\\rayan\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
@@ -63,6 +66,7 @@
     "C:\\Users\\rayan\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\8.0.1\\microsoft.extensions.hosting.abstractions.8.0.1.nupkg.sha512",
     "C:\\Users\\rayan\\.nuget\\packages\\microsoft.extensions.localization\\8.0.11\\microsoft.extensions.localization.8.0.11.nupkg.sha512",
     "C:\\Users\\rayan\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\8.0.11\\microsoft.extensions.localization.abstractions.8.0.11.nupkg.sha512",
+    "C:\\Users\\rayan\\.nuget\\packages\\microsoft.extensions.logging\\8.0.1\\microsoft.extensions.logging.8.0.1.nupkg.sha512",
     "C:\\Users\\rayan\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
     "C:\\Users\\rayan\\.nuget\\packages\\microsoft.extensions.objectpool\\8.0.11\\microsoft.extensions.objectpool.8.0.11.nupkg.sha512",
     "C:\\Users\\rayan\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
