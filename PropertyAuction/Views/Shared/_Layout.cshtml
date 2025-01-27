@@ -40,10 +40,28 @@
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="Admin" asp-controller="PropertyCategory" asp-action="Index">PropertyCategory</a>
                             </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Sales Management
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="Admin" asp-controller="Property" asp-action="Index">Property</a>
+
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="Admin" asp-controller="Auction" asp-action="Index">Auction</a>
+                                    </li>
+                                    <li><hr class="dropdown-divider"></li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" asp-area="Seller" asp-controller="Auction" asp-action="Report">Report</a>
+                            </li>
                         }
 
 
-                        @if (User.IsInRole(SD.Role_Seller) || User.IsInRole(SD.Role_Admin))
+                        @if (User.IsInRole(SD.Role_Seller) )
                         {
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

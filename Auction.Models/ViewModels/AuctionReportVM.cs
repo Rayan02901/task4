@@ -12,5 +12,6 @@ namespace Auction.Models.ViewModels
         public string PropertyTitle { get; set; }
         public decimal WinningBid { get; set; }
         public string HighestBidderName { get; set; }
+
     }
 }

@@ -14,5 +14,6 @@ public class SellerAuctionDetailsVM
     public bool IsBidStarted { get; set; }
     public AuctionStatus Status { get; set; }
     public string? HighestBidderId { get; set; }
+    public List<Bid> Bids { get; set; }
     public TimeSpan RemainingTime => EndDate - DateTime.Now;
 }

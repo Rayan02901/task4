@@ -26,6 +26,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = F:\New folder\Sujan\task4\PropertyAuction
 build_property._RazorSourceGeneratorDebug = 
 
+[F:/New folder/Sujan/task4/PropertyAuction/Areas/Admin/Views/Auction/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXVjdGlvblxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder/Sujan/task4/PropertyAuction/Areas/Admin/Views/Auction/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXVjdGlvblxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder/Sujan/task4/PropertyAuction/Areas/Admin/Views/Auction/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXVjdGlvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder/Sujan/task4/PropertyAuction/Areas/Admin/Views/Auction/Report.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXVjdGlvblxSZXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/New folder/Sujan/task4/PropertyAuction/Areas/Admin/Views/PropertyCategory/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvcGVydHlDYXRlZ29yeVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -40,6 +56,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [F:/New folder/Sujan/task4/PropertyAuction/Areas/Admin/Views/PropertyCategory/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvcGVydHlDYXRlZ29yeVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder/Sujan/task4/PropertyAuction/Areas/Admin/Views/Property/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvcGVydHlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder/Sujan/task4/PropertyAuction/Areas/Admin/Views/Property/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvcGVydHlcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder/Sujan/task4/PropertyAuction/Areas/Admin/Views/Property/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvcGVydHlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder/Sujan/task4/PropertyAuction/Areas/Admin/Views/Property/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvcGVydHlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/New folder/Sujan/task4/PropertyAuction/Areas/Admin/Views/_ViewImports.cshtml]
