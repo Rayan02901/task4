@@ -1,21 +1,23 @@
-﻿@model List<Property>
-
-<h1 class="text-center text-primary">Property List</h1>
+﻿// Index.cshtml
+@model List<Property>
+@{
+    var propertyAuctionStatus = ViewBag.PropertyAuctionStatus as Dictionary<int, AuctionStatus>;
+}
 
 <div class="container">
-    <div class="row pt-4 pb-3">
+    <div class="row pb-3">
         <div class="col-6">
-            <h2>Properties</h2>
+            <h2>Properties List</h2>
         </div>
         <div class="col-6 text-end">
-            <a asp-controller="Property" asp-action="Create" class="btn btn-primary">
+            <a asp-action="Create" class="btn btn-primary">
                 <i class="bi bi-plus-circle"></i> Add New Property
             </a>
         </div>
     </div>
 
     <table class="table table-bordered table-striped">
-        <thead class="table-primary">
+        <thead>
             <tr>
                 <th>Title</th>
                 <th>Description</th>
@@ -40,19 +42,38 @@
                     <td>@property.NumberOfBathrooms</td>
                     <td>@property.YearBuilt</td>
                     <td>@property.PropertyCategory?.Name</td>
-                    <td class="text-center">
-                        <div class="btn-group" role="group">
-                            <a asp-controller="Property" asp-action="Edit" asp-route-id="@property.PropertyId" class="btn btn-primary mx-1">
-                                <i class="bi bi-pencil-square"></i> Edit
+                    <td>
+                        @{
+                            bool hasCompletedAuction = propertyAuctionStatus != null &&
+                            propertyAuctionStatus.TryGetValue(property.PropertyId, out var status) &&
+                            status == AuctionStatus.Completed;
+                        }
+
+                        @if (hasCompletedAuction)
+                        {
+                            <a asp-area="Admin"
+                               asp-controller="Auction"
+                               asp-action="Details"
+                               asp-route-id="@property.PropertyId"
+                               class="btn btn-primary">
+                                <i class="bi bi-eye"></i> Details
                             </a>
-                            <a asp-controller="Property" asp-action="Delete" asp-route-id="@property.PropertyId" class="btn btn-danger mx-1">
-                                <i class="bi bi-trash-fill"></i> Delete
-                            </a>
-                            <a asp-controller="Auction" asp-action="Create" asp-route-id="@property.PropertyId" class="btn btn-danger mx-1">
-                                <i class="bi bi-trash-fill"></i> List in Auctions
-                            </a>
-                            
-                        </div>
+                        }
+                        else
+                        {
+                            <div class="btn-group" role="group">
+                                <a asp-action="Edit" asp-route-id="@property.PropertyId" class="btn btn-primary">
+                                    <i class="bi bi-pencil"></i> Edit
+                                </a>
+                                <a asp-action="Delete" asp-route-id="@property.PropertyId" class="btn btn-danger">
+                                    <i class="bi bi-trash"></i> Delete
+                                </a>
+                                <a asp-area="Admin" asp-controller="Auction" asp-action="Create"
+                                   asp-route-propertyId="@property.PropertyId" class="btn btn-success">
+                                    <i class="bi bi-gavel"></i> List in Auctions
+                                </a>
+                            </div>
+                        }
                     </td>
                 </tr>
             }

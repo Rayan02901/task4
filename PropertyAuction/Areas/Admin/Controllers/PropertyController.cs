@@ -22,10 +22,23 @@ namespace PropertyAuction.Areas.Admin.Controllers
             _unitOfWork = unitOfWork;
             _webHostEnvironment = webHostEnvironment;
         }
+        // PropertyController.cs
         public IActionResult Index()
         {
-            List<Property> objCategoryList = _unitOfWork.Property.GetAll().ToList();
-            return View(objCategoryList);
+            // Get properties with their associated auction listings
+            var properties = _unitOfWork.Property.GetAll(includeProperties: "PropertyCategory");
+            var auctionListings = _unitOfWork.AuctionListing.GetAll();
+
+            // Create a dictionary to quickly look up auction status by property ID
+            var propertyAuctionStatus = auctionListings.ToDictionary(
+                a => a.PropertyId,
+                a => a.Status
+            );
+
+            // Add auction status information to ViewBag
+            ViewBag.PropertyAuctionStatus = propertyAuctionStatus;
+
+            return View(properties);
         }
 
         public IActionResult Create()

@@ -29,20 +29,33 @@ namespace PropertyAuction.Areas.Seller.Controllers
 
         public IActionResult Index()
         {
+            // Get properties with their associated auction listings
+            var properties = _unitOfWork.Property.GetAll(includeProperties: "PropertyCategory");
+            var auctionListings = _unitOfWork.AuctionListing.GetAll();
+
+            // Create a dictionary to quickly look up auction status by property ID
+            var propertyAuctionStatus = auctionListings.ToDictionary(
+                a => a.PropertyId,
+                a => a.Status
+            );
+
+            // Add auction status information to ViewBag
+            ViewBag.PropertyAuctionStatus = propertyAuctionStatus;
+
             string currentUserId = GetCurrentUserId();
             var isAdmin = User.IsInRole(SD.Role_Admin);
 
-            List<Property> objPropertyList;
+            // Filter properties based on user role
+            IEnumerable<Property> objPropertyList;
             if (isAdmin)
             {
-                objPropertyList = _unitOfWork.Property.GetAll().ToList();
+                objPropertyList = properties;
             }
             else
             {
-                objPropertyList = _unitOfWork.Property
-                    .GetAll(p => p.SellerId == currentUserId)
-                    .ToList();
+                objPropertyList = properties.Where(p => p.SellerId == currentUserId);
             }
+
             return View(objPropertyList);
         }
 
@@ -66,7 +79,7 @@ namespace PropertyAuction.Areas.Seller.Controllers
             if (ModelState.IsValid)
             {
                 propertyVM.Property.SellerId = GetCurrentUserId();
-
+                
                 string wwwRootPath = _webHostEnvironment.WebRootPath;
                 if (imagefile != null)
                 {
@@ -108,7 +121,7 @@ namespace PropertyAuction.Areas.Seller.Controllers
         {
             string currentUserId = GetCurrentUserId();
             var property = _unitOfWork.Property.Get(u => u.PropertyId == id);
-
+            
             if (property == null || (!User.IsInRole(SD.Role_Admin) && property.SellerId != currentUserId))
             {
                 return NotFound();
@@ -202,7 +215,7 @@ namespace PropertyAuction.Areas.Seller.Controllers
         public IActionResult Delete(int? id)
         {
             string currentUserId = GetCurrentUserId();
-
+            
             if (id == null || id == 0)
             {
                 return NotFound();
@@ -231,7 +244,7 @@ namespace PropertyAuction.Areas.Seller.Controllers
         public IActionResult DeletePOST(int? id)
         {
             string currentUserId = GetCurrentUserId();
-
+            
             if (id == null || id == 0)
             {
                 return NotFound();
