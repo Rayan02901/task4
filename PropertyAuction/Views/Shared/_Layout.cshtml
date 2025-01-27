@@ -31,6 +31,9 @@
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="Buyer" asp-controller="BuyerAuction" asp-action="Index">Auction Status</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="Buyer" asp-controller="BuyerAuction" asp-action="BidHistory">Bid History</a>
+                            </li>
                         }
                         @if (User.IsInRole(SD.Role_Admin))
                         {

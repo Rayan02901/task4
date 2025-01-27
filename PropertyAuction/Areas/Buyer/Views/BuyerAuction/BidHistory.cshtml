@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Auction.Models.ViewModels.BidHistoryVM>
+
+<h2>Your Bid History</h2>
+
+@if (!Model.Any())
+{
+    <p>You haven't placed any bids yet.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Bid Amount</th>
+                <th>Bid Time</th>
+                <th>Auction Status</th>
+                <th>Auction End Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var bid in Model)
+            {
+                <tr>
+                    <td>@bid.PropertyTitle</td>
+                    <td>@bid.BidAmount</td>
+                    <td>@bid.BidTime.ToString("g")</td>
+                    <td>@bid.AuctionStatus</td>
+                    <td>@bid.AuctionEndDate.ToString("g")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

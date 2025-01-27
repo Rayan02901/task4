@@ -117,5 +117,37 @@ namespace PropertyAuction.Areas.Buyer.Controllers
 
             return RedirectToAction(nameof(Details), new { id = auctionId });
         }
+        public async Task<IActionResult> BidHistory()
+        {
+            // Get the currently logged-in user's ID
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            if (userId == null)
+            {
+                return Unauthorized();
+            }
+
+            // Retrieve bids made by this user
+            var userBids = await Task.FromResult(_unitOfWork.Bids
+                .GetAll(
+                    b => b.UserId == userId,
+                    includeProperties: "Auction.Property" // Ensure includeProperties is specified only once
+                )
+                .Select(b => new BidHistoryVM
+                {
+                    BidId = b.Id,
+                    AuctionId = b.AuctionId,
+                    PropertyTitle = b.Auction.Property.Title,
+                    BidAmount = b.BidAmount,
+                    BidTime = b.BidTime,
+                    AuctionStatus = b.Auction.Status,
+                    AuctionEndDate = b.Auction.EndDate
+                })
+                .OrderByDescending(b => b.BidTime)
+                .ToList());
+
+            return View(userBids);
+        }
+
     }
 }
