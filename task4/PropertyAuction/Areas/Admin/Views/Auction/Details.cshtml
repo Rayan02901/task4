@@ -1,0 +1,93 @@
+﻿@model SellerAuctionDetailsVM
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h2>Auction Details for @Model.Property.Title</h2>
+
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h3>Auction Information</h3>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-4">Start Date:</dt>
+                        <dd class="col-sm-8">@Model.StartDate.ToString("g")</dd>
+
+                        <dt class="col-sm-4">End Date:</dt>
+                        <dd class="col-sm-8">@Model.EndDate.ToString("g")</dd>
+
+                        <dt class="col-sm-4">Remaining Time:</dt>
+                        <dd class="col-sm-8">
+                            @(Model.RemainingTime.Days > 0 ? $"{Model.RemainingTime.Days} days " : "")
+                            @(Model.RemainingTime.Hours > 0 ? $"{Model.RemainingTime.Hours} hours " : "")
+                            @(Model.RemainingTime.Minutes > 0 ? $"{Model.RemainingTime.Minutes} minutes" : "")
+                        </dd>
+
+                        <dt class="col-sm-4">Starting Bid:</dt>
+                        <dd class="col-sm-8">@Model.StartingBid.ToString("C")</dd>
+
+                        <dt class="col-sm-4">Current Highest Bid:</dt>
+                        <dd class="col-sm-8">@Model.CurrentHighestBid.ToString("C")</dd>
+
+                        <dt class="col-sm-4">Reservation Price:</dt>
+                        <dd class="col-sm-8">@Model.ReservationPrice.ToString("C")</dd>
+
+                        <dt class="col-sm-4">Minimum Bid Increment:</dt>
+                        <dd class="col-sm-8">@Model.MinimumBidIncrement.ToString("C")</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h3>Auction Status</h3>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-4">Status:</dt>
+                        <dd class="col-sm-8">@Model.Status</dd>
+
+                        <dt class="col-sm-4">Reservation Price Met:</dt>
+                        <dd class="col-sm-8">@(Model.IsReservationPriceMet ? "Yes" : "No")</dd>
+
+                        <dt class="col-sm-4">Bidding Started:</dt>
+                        <dd class="col-sm-8">@(Model.IsBidStarted ? "Yes" : "No")</dd>
+
+                        <dt class="col-sm-4">Highest Bidder:</dt>
+                        <dd class="col-sm-8">@(Model.HighestBidderId ?? "No bids yet")</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Property Details</h3>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-5">Title:</dt>
+                        <dd class="col-sm-7">@Model.Property.Title</dd>
+
+                        <dt class="col-sm-5">Location:</dt>
+                        <dd class="col-sm-7">@Model.Property.Location</dd>
+
+                        <dt class="col-sm-5">Size:</dt>
+                        <dd class="col-sm-7">@Model.Property.Size sq ft</dd>
+
+                        <dt class="col-sm-5">Rooms:</dt>
+                        <dd class="col-sm-7">@Model.Property.NumberOfRooms</dd>
+
+                        <dt class="col-sm-5">Bathrooms:</dt>
+                        <dd class="col-sm-7">@Model.Property.NumberOfBathrooms</dd>
+
+                        <dt class="col-sm-5">Year Built:</dt>
+                        <dd class="col-sm-7">@Model.Property.YearBuilt</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

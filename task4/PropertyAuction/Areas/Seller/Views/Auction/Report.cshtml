@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Auction.Models.ViewModels.AuctionReportVM>
+
+<h2>Completed Auctions Report</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Auction ID</th>
+            <th>Property Title</th>
+            <th>Winning Bid</th>
+            <th>Highest Bidder</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var auction in Model)
+        {
+            <tr>
+                <td>@auction.AuctionId</td>
+                <td>@auction.PropertyTitle</td>
+                <td>@auction.WinningBid.ToString("C")</td>
+                <td>@auction.HighestBidderName</td>
+            </tr>
+        }
+    </tbody>
+</table>
