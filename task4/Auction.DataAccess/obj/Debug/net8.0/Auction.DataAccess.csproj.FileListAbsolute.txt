@@ -69,3 +69,4 @@ F:\New folder\test\task4\Auction.DataAccess\obj\Debug\net8.0\refint\Auction.Data
 F:\New folder\test\task4\Auction.DataAccess\obj\Debug\net8.0\Auction.DataAccess.pdb
 F:\New folder\test\task4\Auction.DataAccess\obj\Debug\net8.0\Auction.DataAccess.genruntimeconfig.cache
 F:\New folder\test\task4\Auction.DataAccess\obj\Debug\net8.0\ref\Auction.DataAccess.dll
+F:\New folder\Sujan\task4\Auction.DataAccess\obj\Debug\net8.0\Auction.DataAccess.sourcelink.json
