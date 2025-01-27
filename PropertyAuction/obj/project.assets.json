@@ -10283,11 +10283,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\New folder\\Sujan\\task4\\PropertyAuction\\PropertyAuction.csproj",
+      "projectUniqueName": "F:\\New folder\\test\\task4\\PropertyAuction\\PropertyAuction.csproj",
       "projectName": "PropertyAuction",
-      "projectPath": "F:\\New folder\\Sujan\\task4\\PropertyAuction\\PropertyAuction.csproj",
+      "projectPath": "F:\\New folder\\test\\task4\\PropertyAuction\\PropertyAuction.csproj",
       "packagesPath": "C:\\Users\\rayan\\.nuget\\packages\\",
-      "outputPath": "F:\\New folder\\Sujan\\task4\\PropertyAuction\\obj\\",
+      "outputPath": "F:\\New folder\\test\\task4\\PropertyAuction\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -10309,11 +10309,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "F:\\New folder\\Sujan\\task4\\Auction.DataAccess\\Auction.DataAccess.csproj": {
-              "projectPath": "F:\\New folder\\Sujan\\task4\\Auction.DataAccess\\Auction.DataAccess.csproj"
+            "F:\\New folder\\test\\task4\\Auction.DataAccess\\Auction.DataAccess.csproj": {
+              "projectPath": "F:\\New folder\\test\\task4\\Auction.DataAccess\\Auction.DataAccess.csproj"
             },
-            "F:\\New folder\\Sujan\\task4\\Auction.Utility\\Auction.Utility.csproj": {
-              "projectPath": "F:\\New folder\\Sujan\\task4\\Auction.Utility\\Auction.Utility.csproj"
+            "F:\\New folder\\test\\task4\\Auction.Utility\\Auction.Utility.csproj": {
+              "projectPath": "F:\\New folder\\test\\task4\\Auction.Utility\\Auction.Utility.csproj"
             }
           }
         }

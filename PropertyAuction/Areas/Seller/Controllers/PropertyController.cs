@@ -10,7 +10,9 @@ using System.Data;
 
 namespace PropertyAuction.Controllers
 {
-    
+    [Area("Seller")]
+    [Authorize(Roles = SD.Role_Seller + "," + SD.Role_Admin)]
+
     public class PropertyController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;

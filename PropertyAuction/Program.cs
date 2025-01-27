@@ -21,7 +21,7 @@ builder.Services.ConfigureApplicationCookie(options => {
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IEmailSender, EmailSender>();
-
+builder.Services.AddRazorPages();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -42,5 +42,5 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{area=Buyer}/{controller=Home}/{action=Index}/{id?}");
-
+app.MapRazorPages();
 app.Run();

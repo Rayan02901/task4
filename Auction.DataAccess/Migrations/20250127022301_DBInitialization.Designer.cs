@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Auction.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250126111153_DBInit2")]
-    partial class DBInit2
+    [Migration("20250127022301_DBInitialization")]
+    partial class DBInitialization
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -77,13 +77,13 @@ namespace Auction.DataAccess.Migrations
                         {
                             AuctionId = 1,
                             CurrentHighestBid = 500000m,
-                            EndDate = new DateTime(2025, 2, 2, 16, 56, 52, 742, DateTimeKind.Local).AddTicks(3637),
+                            EndDate = new DateTime(2025, 2, 3, 8, 7, 59, 764, DateTimeKind.Local).AddTicks(1416),
                             IsBidStarted = false,
                             IsReservationPriceMet = false,
                             MinimumBidIncrement = 5000m,
                             PropertyId = 1,
                             ReservationPrice = 600000m,
-                            StartDate = new DateTime(2025, 1, 27, 16, 56, 52, 742, DateTimeKind.Local).AddTicks(3618),
+                            StartDate = new DateTime(2025, 1, 28, 8, 7, 59, 764, DateTimeKind.Local).AddTicks(1377),
                             StartingBid = 500000m,
                             Status = 0
                         },
@@ -91,13 +91,13 @@ namespace Auction.DataAccess.Migrations
                         {
                             AuctionId = 2,
                             CurrentHighestBid = 1000000m,
-                            EndDate = new DateTime(2025, 2, 5, 16, 56, 52, 742, DateTimeKind.Local).AddTicks(3643),
+                            EndDate = new DateTime(2025, 2, 6, 8, 7, 59, 764, DateTimeKind.Local).AddTicks(1426),
                             IsBidStarted = false,
                             IsReservationPriceMet = false,
                             MinimumBidIncrement = 10000m,
                             PropertyId = 2,
                             ReservationPrice = 1200000m,
-                            StartDate = new DateTime(2025, 1, 28, 16, 56, 52, 742, DateTimeKind.Local).AddTicks(3641),
+                            StartDate = new DateTime(2025, 1, 29, 8, 7, 59, 764, DateTimeKind.Local).AddTicks(1424),
                             StartingBid = 1000000m,
                             Status = 0
                         },
@@ -105,13 +105,13 @@ namespace Auction.DataAccess.Migrations
                         {
                             AuctionId = 3,
                             CurrentHighestBid = 300000m,
-                            EndDate = new DateTime(2025, 2, 10, 16, 56, 52, 742, DateTimeKind.Local).AddTicks(3648),
+                            EndDate = new DateTime(2025, 2, 11, 8, 7, 59, 764, DateTimeKind.Local).AddTicks(1433),
                             IsBidStarted = false,
                             IsReservationPriceMet = false,
                             MinimumBidIncrement = 3000m,
                             PropertyId = 3,
                             ReservationPrice = 350000m,
-                            StartDate = new DateTime(2025, 1, 31, 16, 56, 52, 742, DateTimeKind.Local).AddTicks(3647),
+                            StartDate = new DateTime(2025, 2, 1, 8, 7, 59, 764, DateTimeKind.Local).AddTicks(1431),
                             StartingBid = 300000m,
                             Status = 0
                         });
@@ -343,6 +343,11 @@ namespace Auction.DataAccess.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasMaxLength(21)
+                        .HasColumnType("nvarchar(21)");
+
                     b.Property<string>("Email")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
@@ -394,6 +399,10 @@ namespace Auction.DataAccess.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
+
+                    b.HasDiscriminator().HasValue("IdentityUser");
+
+                    b.UseTphMappingStrategy();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -475,6 +484,29 @@ namespace Auction.DataAccess.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("Auction.Models.ApplicationUser", b =>
+                {
+                    b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
+
+                    b.Property<string>("City")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PostalCode")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("State")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("StreetAddress")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasDiscriminator().HasValue("ApplicationUser");
                 });
 
             modelBuilder.Entity("Auction.Models.AuctionListing", b =>

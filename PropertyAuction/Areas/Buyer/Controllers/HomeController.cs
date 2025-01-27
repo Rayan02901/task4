@@ -8,6 +8,7 @@ using Auction.DataAccess.Repository.IRepository;
 
 namespace PropertyAuction.Controllers
 {
+    [Area("Buyer")]
     public class HomeController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;

@@ -12,7 +12,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace PropertyAuction.Areas.Buyer.Controllers
 {
-    
+    [Area("Buyer")]
+    [Authorize(Roles = SD.Role_Buyer)]
+
     public class BuyerAuctionController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -24,9 +26,10 @@ namespace PropertyAuction.Areas.Buyer.Controllers
 
         public async Task<IActionResult> Index()
         {
+            // Get the auctions
             var auctions = await Task.FromResult(_unitOfWork.AuctionListing
                 .GetAll(includeProperties: "Property")
-                .Select(a => new AuctionListVM
+                .Select(a => new BuyerAuctionListVM  
                 {
                     AuctionId = a.AuctionId,
                     PropertyTitle = a.Property.Title,
@@ -38,8 +41,9 @@ namespace PropertyAuction.Areas.Buyer.Controllers
                 })
                 .ToList());
 
-            return View(auctions);
+            return View(auctions);  
         }
+
 
         public async Task<IActionResult> Details(int id)
         {

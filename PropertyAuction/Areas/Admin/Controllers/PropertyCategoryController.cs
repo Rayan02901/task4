@@ -8,7 +8,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace PropertyAuction.Controllers
 {
-   
+    [Area("Admin")]
+    [Authorize(Roles =  SD.Role_Admin)]
+
     public class PropertyCategoryController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;

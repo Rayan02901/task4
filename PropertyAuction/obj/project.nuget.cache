@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PFVHbC2vGGA=",
+  "dgSpecHash": "L4t7QzFuEH8=",
   "success": true,
-  "projectFilePath": "F:\\New folder\\Sujan\\task4\\PropertyAuction\\PropertyAuction.csproj",
+  "projectFilePath": "F:\\New folder\\test\\task4\\PropertyAuction\\PropertyAuction.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rayan\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\rayan\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
