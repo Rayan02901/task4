@@ -33,9 +33,9 @@ namespace Auction.Models
         [ValidateNever]
         public virtual PropertyCategory? PropertyCategory { get; set; }
         [ValidateNever]
-        public string ImageUrl { get; set; }
+        public string ?ImageUrl { get; set; }
         [ValidateNever]
-        public string VideoUrl { get; set; }
+        public string ?VideoUrl { get; set; }
 
         // Add SellerId
         [Required]

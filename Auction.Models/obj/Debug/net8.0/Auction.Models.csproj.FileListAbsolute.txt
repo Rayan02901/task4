@@ -18,7 +18,6 @@ F:\New folder\Sujan\task4\Auction.Models\obj\Debug\net8.0\Auction.Models.Generat
 F:\New folder\Sujan\task4\Auction.Models\obj\Debug\net8.0\Auction.Models.AssemblyInfoInputs.cache
 F:\New folder\Sujan\task4\Auction.Models\obj\Debug\net8.0\Auction.Models.AssemblyInfo.cs
 F:\New folder\Sujan\task4\Auction.Models\obj\Debug\net8.0\Auction.Models.csproj.CoreCompileInputs.cache
-F:\New folder\Sujan\task4\Auction.Models\obj\Debug\net8.0\Auction.Models.sourcelink.json
 F:\New folder\Sujan\task4\Auction.Models\obj\Debug\net8.0\Auction.Models.dll
 F:\New folder\Sujan\task4\Auction.Models\obj\Debug\net8.0\refint\Auction.Models.dll
 F:\New folder\Sujan\task4\Auction.Models\obj\Debug\net8.0\Auction.Models.pdb
@@ -49,3 +48,4 @@ F:\New folder\test\task4\Auction.Models\obj\Debug\net8.0\Auction.Models.dll
 F:\New folder\test\task4\Auction.Models\obj\Debug\net8.0\refint\Auction.Models.dll
 F:\New folder\test\task4\Auction.Models\obj\Debug\net8.0\Auction.Models.pdb
 F:\New folder\test\task4\Auction.Models\obj\Debug\net8.0\ref\Auction.Models.dll
+F:\New folder\Sujan\task4\Auction.Models\obj\Debug\net8.0\Auction.Models.sourcelink.json

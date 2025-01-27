@@ -56,7 +56,7 @@ namespace PropertyAuction.Areas.Seller.Controllers
         public IActionResult Create(int id)
         {
             string currentUserId = GetCurrentUserId();
-            var property = _unitOfWork.Property.Get(p => p.PropertyId == id);
+            var property = _unitOfWork.Property.Get(p => p.PropertyId == id, includeProperties: "PropertyCategory");
 
             if (property == null || (!User.IsInRole(SD.Role_Admin) && property.SellerId != currentUserId))
             {
@@ -72,6 +72,7 @@ namespace PropertyAuction.Areas.Seller.Controllers
                 TempData["error"] = "This property already has an active auction.";
                 return RedirectToAction(nameof(Index));
             }
+            
 
             var viewModel = new AuctionCreateVM
             {

@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Auction.DataAccess.Migrations
 {
     /// <inheritdoc />
-    public partial class DatabaseInitialization : Migration
+    public partial class DBInitialization : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -192,8 +192,8 @@ namespace Auction.DataAccess.Migrations
                     NumberOfBathrooms = table.Column<int>(type: "int", nullable: false),
                     YearBuilt = table.Column<int>(type: "int", nullable: false),
                     PropertyCategoryId = table.Column<int>(type: "int", nullable: false),
-                    ImageUrl = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
-                    VideoUrl = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
+                    ImageUrl = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: true),
+                    VideoUrl = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: true),
                     SellerId = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     PropertyCategoryId1 = table.Column<int>(type: "int", nullable: true)
                 },
@@ -275,9 +275,9 @@ namespace Auction.DataAccess.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "58913e9d-26b7-4429-8a33-0cd690bc50e8", null, "Seller", "SELLER" },
-                    { "cf296e51-0e51-43fc-a00d-409404f0513f", null, "Admin", "ADMIN" },
-                    { "ebf1c21d-7a4b-46c4-88c0-9ff513407f7a", null, "Buyer", "BUYER" }
+                    { "27f77397-3ab6-4cba-8e57-31e0d16e5a98", null, "Seller", "SELLER" },
+                    { "348e5667-5048-4292-b249-b4b55531606d", null, "Admin", "ADMIN" },
+                    { "82426088-ca71-439c-b0c2-9c9194aa2cc0", null, "Buyer", "BUYER" }
                 });
 
             migrationBuilder.InsertData(
@@ -285,13 +285,13 @@ namespace Auction.DataAccess.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "City", "ConcurrencyStamp", "Discriminator", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "Name", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "PostalCode", "SecurityStamp", "State", "StreetAddress", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "ab6d1234-5678-9012-3456-bc12def34567", 0, null, "cecd26eb-3c61-457d-9b91-6a2f7519dae5", "ApplicationUser", "buyer3@example.com", true, false, null, "Buyer Three", "BUYER3@EXAMPLE.COM", "BUYER3@EXAMPLE.COM", "AQAAAAIAAYagAAAAEI8UwPT5MxLuWbD+KQGPZ2udJv0ZCOyYM6baLtl5GCwcVE5LQh6hdpPkA0oDfZuhqQ==", null, false, null, "183e8b27-03a9-463b-a5e1-2a19d37cd784", null, null, false, "buyer3@example.com" },
-                    { "b4db56e8-1234-4567-8901-bc12def34567", 0, null, "5e27d744-4635-4ca1-bcee-0a59e8894ef3", "ApplicationUser", "admin@example.com", true, false, null, "Admin User", "ADMIN@EXAMPLE.COM", "ADMIN@EXAMPLE.COM", "AQAAAAIAAYagAAAAEO4nmJ0ZjDHLDAo89N7ZYUrzLwPsUPf64tkJPMxxY7DOuRHQ5FkK/zuxqppklE1uLg==", null, false, null, "7524ef11-b4a7-4c70-ba7b-11d4105df102", null, null, false, "admin@example.com" },
-                    { "cd2a7890-5678-1234-4567-bc12def34567", 0, null, "5532a03a-1734-4a9a-bb1c-fa9b7486d499", "ApplicationUser", "seller2@example.com", true, false, null, "Seller Two", "SELLER2@EXAMPLE.COM", "SELLER2@EXAMPLE.COM", "AQAAAAIAAYagAAAAEHvgXc44Txek9lGUpRx2Ukrbz6ptkCG64yRk2yQhcr2jppAiP6siFfw92XnxYsitgw==", null, false, null, "f2fbfee3-2820-4c36-ab91-61affd6e1b73", null, null, false, "seller2@example.com" },
-                    { "de3a8901-3456-7890-1234-bc12def34567", 0, null, "d589efba-9067-4ddd-aaa0-36bb5c151b5e", "ApplicationUser", "seller3@example.com", true, false, null, "Seller Three", "SELLER3@EXAMPLE.COM", "SELLER3@EXAMPLE.COM", "AQAAAAIAAYagAAAAELvd6wCFod2MvuM0kH4hdfGviA2E3IiLIDg6ipILq3uG2dYjVDUNzZdrIr7Ek5a1Jw==", null, false, null, "f163838a-68ed-44d8-bf1c-ed8f826f1ebb", null, null, false, "seller3@example.com" },
-                    { "ed4b9012-2345-6789-1234-bc12def34567", 0, null, "45803307-b15b-4a16-9b18-f6054102c538", "ApplicationUser", "buyer1@example.com", true, false, null, "Buyer One", "BUYER1@EXAMPLE.COM", "BUYER1@EXAMPLE.COM", "AQAAAAIAAYagAAAAEHtHSQP8v94Z6JFySYWlIyH1UZifA9w/cNIj8lJnvBbn9AlSJKCL/wFSRYS1HGjC0Q==", null, false, null, "2e3a7fb8-d4dc-4311-9bd1-09b499b9d248", null, null, false, "buyer1@example.com" },
-                    { "fa0a5657-8901-2345-6789-bc12def34567", 0, null, "a64f9859-55a4-44bd-bb63-8275766b816e", "ApplicationUser", "seller1@example.com", true, false, null, "Seller One", "SELLER1@EXAMPLE.COM", "SELLER1@EXAMPLE.COM", "AQAAAAIAAYagAAAAEIj09wvxTYaig69U8XJq/af/YuI8of726CaK5B9e5zaBCU31NOv7I1CM2AWyLwEjjQ==", null, false, null, "4beb7ee2-a19d-4bff-ac83-155c0c624238", null, null, false, "seller1@example.com" },
-                    { "fc5c0123-4567-8901-2345-bc12def34567", 0, null, "02c2a436-5621-4160-966a-14f963ea4958", "ApplicationUser", "buyer2@example.com", true, false, null, "Buyer Two", "BUYER2@EXAMPLE.COM", "BUYER2@EXAMPLE.COM", "AQAAAAIAAYagAAAAEDJ3if4zEA510GYWoDOqbGnfZcJb7sQf2t4Dm8EQx6mKx4u+HiiWBMUWnJyhRWG7+g==", null, false, null, "77d0c4c7-b52a-458a-a985-2aa1dab496ba", null, null, false, "buyer2@example.com" }
+                    { "ab6d1234-5678-9012-3456-bc12def34567", 0, null, "afddfb46-b4d0-421c-afd0-18ca63641f97", "ApplicationUser", "buyer3@example.com", true, false, null, "Buyer Three", "BUYER3@EXAMPLE.COM", "BUYER3@EXAMPLE.COM", "AQAAAAIAAYagAAAAEFDV0W9dxs/TZR6OubkVmM7BXnTLauIrA0DSaXtZaz0hEvjRQIm3Gi4z+RNM19KGUg==", null, false, null, "2076fe34-6a39-480b-9946-c92b46911929", null, null, false, "buyer3@example.com" },
+                    { "b4db56e8-1234-4567-8901-bc12def34567", 0, null, "ab0c4f98-0992-45d1-9ca0-508ba97f6ff5", "ApplicationUser", "admin@example.com", true, false, null, "Admin User", "ADMIN@EXAMPLE.COM", "ADMIN@EXAMPLE.COM", "AQAAAAIAAYagAAAAENWDZNev4PbH/CfJR0FrbUiM3DXHEgmJ0um/5u0xCFim70jxmFG6jglFAl/pVkcwsw==", null, false, null, "cb298898-76da-41a3-bdee-02da1cd3859b", null, null, false, "admin@example.com" },
+                    { "cd2a7890-5678-1234-4567-bc12def34567", 0, null, "dea9d862-1b12-41f3-98a2-6d430e9751c9", "ApplicationUser", "seller2@example.com", true, false, null, "Seller Two", "SELLER2@EXAMPLE.COM", "SELLER2@EXAMPLE.COM", "AQAAAAIAAYagAAAAEOv/XGyqUR8IVY83zNzUeZWT+VW622F9WFX8XnZkAfgfobeoIOAFsZSWDqd6Hidgzw==", null, false, null, "bc6af4d5-8003-46d0-9fc4-6e1968feb42d", null, null, false, "seller2@example.com" },
+                    { "de3a8901-3456-7890-1234-bc12def34567", 0, null, "b37ce505-ed51-4378-b6bb-7084500f762c", "ApplicationUser", "seller3@example.com", true, false, null, "Seller Three", "SELLER3@EXAMPLE.COM", "SELLER3@EXAMPLE.COM", "AQAAAAIAAYagAAAAEKfgBf1BE4FsKrdNJ0s6UFAfjRNOPljLMkk453mBY7dfE3O/4If81PVPp9TdXAbg9g==", null, false, null, "957e0e26-2bd6-404f-9d73-17a4876e00e5", null, null, false, "seller3@example.com" },
+                    { "ed4b9012-2345-6789-1234-bc12def34567", 0, null, "229ae3d4-880d-41d2-ad6c-8ce45658bf61", "ApplicationUser", "buyer1@example.com", true, false, null, "Buyer One", "BUYER1@EXAMPLE.COM", "BUYER1@EXAMPLE.COM", "AQAAAAIAAYagAAAAECf2S5ey/BDRrkn3ZvgGHEYakZA4Ndjfif15JnvwAuWF80PPgXaOEKJF/diUGeJoSQ==", null, false, null, "fa29f5f7-86e1-4a73-95c8-39453173e7ff", null, null, false, "buyer1@example.com" },
+                    { "fa0a5657-8901-2345-6789-bc12def34567", 0, null, "259568c7-58dc-4bc1-b4c5-ba761a1fd2be", "ApplicationUser", "seller1@example.com", true, false, null, "Seller One", "SELLER1@EXAMPLE.COM", "SELLER1@EXAMPLE.COM", "AQAAAAIAAYagAAAAEBmPpVL+d4oH7hyRZD/guU2BZ1k75TZIXxWgA3sjNOvJ1wBVlmfPpK+ZjUt2nWtrtw==", null, false, null, "c8c45829-2f39-4bdd-8364-9b62f79a7073", null, null, false, "seller1@example.com" },
+                    { "fc5c0123-4567-8901-2345-bc12def34567", 0, null, "504d4ec3-6f2e-464d-b0a1-3339956229a9", "ApplicationUser", "buyer2@example.com", true, false, null, "Buyer Two", "BUYER2@EXAMPLE.COM", "BUYER2@EXAMPLE.COM", "AQAAAAIAAYagAAAAEIJOWksR9myMuO5yyy9l5Xe0Scn9GuqBprNFG1xsQOXdoHitwsMv1RFsZis4GxvtIg==", null, false, null, "7af39da3-0773-4c7d-97c7-83c943cb0c6c", null, null, false, "buyer2@example.com" }
                 });
 
             migrationBuilder.InsertData(
@@ -309,13 +309,13 @@ namespace Auction.DataAccess.Migrations
                 columns: new[] { "RoleId", "UserId" },
                 values: new object[,]
                 {
-                    { "ebf1c21d-7a4b-46c4-88c0-9ff513407f7a", "ab6d1234-5678-9012-3456-bc12def34567" },
-                    { "cf296e51-0e51-43fc-a00d-409404f0513f", "b4db56e8-1234-4567-8901-bc12def34567" },
-                    { "58913e9d-26b7-4429-8a33-0cd690bc50e8", "cd2a7890-5678-1234-4567-bc12def34567" },
-                    { "58913e9d-26b7-4429-8a33-0cd690bc50e8", "de3a8901-3456-7890-1234-bc12def34567" },
-                    { "ebf1c21d-7a4b-46c4-88c0-9ff513407f7a", "ed4b9012-2345-6789-1234-bc12def34567" },
-                    { "58913e9d-26b7-4429-8a33-0cd690bc50e8", "fa0a5657-8901-2345-6789-bc12def34567" },
-                    { "ebf1c21d-7a4b-46c4-88c0-9ff513407f7a", "fc5c0123-4567-8901-2345-bc12def34567" }
+                    { "82426088-ca71-439c-b0c2-9c9194aa2cc0", "ab6d1234-5678-9012-3456-bc12def34567" },
+                    { "348e5667-5048-4292-b249-b4b55531606d", "b4db56e8-1234-4567-8901-bc12def34567" },
+                    { "27f77397-3ab6-4cba-8e57-31e0d16e5a98", "cd2a7890-5678-1234-4567-bc12def34567" },
+                    { "27f77397-3ab6-4cba-8e57-31e0d16e5a98", "de3a8901-3456-7890-1234-bc12def34567" },
+                    { "82426088-ca71-439c-b0c2-9c9194aa2cc0", "ed4b9012-2345-6789-1234-bc12def34567" },
+                    { "27f77397-3ab6-4cba-8e57-31e0d16e5a98", "fa0a5657-8901-2345-6789-bc12def34567" },
+                    { "82426088-ca71-439c-b0c2-9c9194aa2cc0", "fc5c0123-4567-8901-2345-bc12def34567" }
                 });
 
             migrationBuilder.InsertData(

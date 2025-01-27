@@ -18,7 +18,6 @@ F:\New folder\Sujan\task4\Auction.Utility\obj\Debug\net8.0\Auction.Utility.Gener
 F:\New folder\Sujan\task4\Auction.Utility\obj\Debug\net8.0\Auction.Utility.AssemblyInfoInputs.cache
 F:\New folder\Sujan\task4\Auction.Utility\obj\Debug\net8.0\Auction.Utility.AssemblyInfo.cs
 F:\New folder\Sujan\task4\Auction.Utility\obj\Debug\net8.0\Auction.Utility.csproj.CoreCompileInputs.cache
-F:\New folder\Sujan\task4\Auction.Utility\obj\Debug\net8.0\Auction.Utility.sourcelink.json
 F:\New folder\Sujan\task4\Auction.Utility\obj\Debug\net8.0\Auction.Utility.dll
 F:\New folder\Sujan\task4\Auction.Utility\obj\Debug\net8.0\refint\Auction.Utility.dll
 F:\New folder\Sujan\task4\Auction.Utility\obj\Debug\net8.0\Auction.Utility.pdb

@@ -423,7 +423,6 @@ F:\New folder\Sujan\task4\PropertyAuction\obj\Debug\net8.0\PropertyAuction.MvcAp
 F:\New folder\Sujan\task4\PropertyAuction\obj\Debug\net8.0\PropertyAuction.MvcApplicationPartsAssemblyInfo.cache
 F:\New folder\Sujan\task4\PropertyAuction\obj\Debug\net8.0\PropertyAuction.RazorAssemblyInfo.cache
 F:\New folder\Sujan\task4\PropertyAuction\obj\Debug\net8.0\PropertyAuction.RazorAssemblyInfo.cs
-F:\New folder\Sujan\task4\PropertyAuction\obj\Debug\net8.0\PropertyAuction.sourcelink.json
 F:\New folder\Sujan\task4\PropertyAuction\obj\Debug\net8.0\staticwebassets.build.json
 F:\New folder\Sujan\task4\PropertyAuction\obj\Debug\net8.0\staticwebassets.development.json
 F:\New folder\Sujan\task4\PropertyAuction\obj\Debug\net8.0\staticwebassets\msbuild.PropertyAuction.Microsoft.AspNetCore.StaticWebAssets.props
@@ -1075,3 +1074,4 @@ F:\New folder\test\task4\PropertyAuction\obj\Debug\net8.0\refint\PropertyAuction
 F:\New folder\test\task4\PropertyAuction\obj\Debug\net8.0\PropertyAuction.pdb
 F:\New folder\test\task4\PropertyAuction\obj\Debug\net8.0\PropertyAuction.genruntimeconfig.cache
 F:\New folder\test\task4\PropertyAuction\obj\Debug\net8.0\ref\PropertyAuction.dll
+F:\New folder\Sujan\task4\PropertyAuction\obj\Debug\net8.0\PropertyAuction.sourcelink.json

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Security.Claims;
 
+
 namespace PropertyAuction.Areas.Seller.Controllers
 {
     [Area("Seller")]
@@ -76,11 +77,21 @@ namespace PropertyAuction.Areas.Seller.Controllers
         [HttpPost]
         public IActionResult Create(PropertyVM propertyVM, IFormFile? imagefile, IFormFile? videofile)
         {
+            // First, get the current user's ID
+            string currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            // Set the SellerId on the property object before validation
+            propertyVM.Property.SellerId = currentUserId;
+
+            // Remove SellerId from validation (optional)
+            ModelState.Remove("Property.SellerId");
+
+            // Now, perform model validation for the other properties
             if (ModelState.IsValid)
             {
-                propertyVM.Property.SellerId = GetCurrentUserId();
-                
                 string wwwRootPath = _webHostEnvironment.WebRootPath;
+
+                // Handling image upload
                 if (imagefile != null)
                 {
                     string fileName = Guid.NewGuid().ToString() + Path.GetExtension(imagefile.FileName);
@@ -92,6 +103,7 @@ namespace PropertyAuction.Areas.Seller.Controllers
                     propertyVM.Property.ImageUrl = @"\images\property\" + fileName;
                 }
 
+                // Handling video upload
                 if (videofile != null)
                 {
                     string fileName = Guid.NewGuid().ToString() + Path.GetExtension(videofile.FileName);
@@ -103,19 +115,26 @@ namespace PropertyAuction.Areas.Seller.Controllers
                     propertyVM.Property.VideoUrl = @"\videos\property\" + fileName;
                 }
 
+                // Save the property to the database
                 _unitOfWork.Property.Add(propertyVM.Property);
                 _unitOfWork.Save();
+
                 TempData["success"] = "Property created successfully";
                 return RedirectToAction("Index");
             }
 
+            // Populate the categories dropdown if model is not valid
             propertyVM.PropertyCategories = _unitOfWork.PropertyCategory.GetAll().Select(u => new SelectListItem
             {
                 Text = u.Name,
                 Value = u.Id.ToString()
             });
+
             return View(propertyVM);
         }
+
+
+
 
         public IActionResult Edit(int id)
         {
@@ -244,7 +263,7 @@ namespace PropertyAuction.Areas.Seller.Controllers
         public IActionResult DeletePOST(int? id)
         {
             string currentUserId = GetCurrentUserId();
-            
+
             if (id == null || id == 0)
             {
                 return NotFound();
@@ -256,21 +275,28 @@ namespace PropertyAuction.Areas.Seller.Controllers
                 return NotFound();
             }
 
-            var oldImagePath = Path.Combine(_webHostEnvironment.WebRootPath, propertyToBeDeleted.ImageUrl.TrimStart('\\'));
-            if (System.IO.File.Exists(oldImagePath))
+            // Safely handle image deletion
+            if (!string.IsNullOrEmpty(propertyToBeDeleted.ImageUrl))
             {
-                System.IO.File.Delete(oldImagePath);
+                var oldImagePath = Path.Combine(_webHostEnvironment.WebRootPath, propertyToBeDeleted.ImageUrl.TrimStart('\\'));
+                if (System.IO.File.Exists(oldImagePath))
+                {
+                    System.IO.File.Delete(oldImagePath);
+                }
             }
 
-            var oldVideoPath = Path.Combine(_webHostEnvironment.WebRootPath, propertyToBeDeleted.VideoUrl.TrimStart('\\'));
-            if (System.IO.File.Exists(oldVideoPath))
+            // Safely handle video deletion
+            if (!string.IsNullOrEmpty(propertyToBeDeleted.VideoUrl))
             {
-                System.IO.File.Delete(oldVideoPath);
+                var oldVideoPath = Path.Combine(_webHostEnvironment.WebRootPath, propertyToBeDeleted.VideoUrl.TrimStart('\\'));
+                if (System.IO.File.Exists(oldVideoPath))
+                {
+                    System.IO.File.Delete(oldVideoPath);
+                }
             }
 
             _unitOfWork.Property.Remove(propertyToBeDeleted);
             _unitOfWork.Save();
-
             TempData["success"] = "Property deleted successfully";
             return RedirectToAction("Index");
         }

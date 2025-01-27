@@ -203,7 +203,6 @@ namespace Auction.DataAccess.Migrations
                         .HasColumnType("nvarchar(500)");
 
                     b.Property<string>("ImageUrl")
-                        .IsRequired()
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
@@ -237,7 +236,6 @@ namespace Auction.DataAccess.Migrations
                         .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("VideoUrl")
-                        .IsRequired()
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
@@ -417,19 +415,19 @@ namespace Auction.DataAccess.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "cf296e51-0e51-43fc-a00d-409404f0513f",
+                            Id = "348e5667-5048-4292-b249-b4b55531606d",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "58913e9d-26b7-4429-8a33-0cd690bc50e8",
+                            Id = "27f77397-3ab6-4cba-8e57-31e0d16e5a98",
                             Name = "Seller",
                             NormalizedName = "SELLER"
                         },
                         new
                         {
-                            Id = "ebf1c21d-7a4b-46c4-88c0-9ff513407f7a",
+                            Id = "82426088-ca71-439c-b0c2-9c9194aa2cc0",
                             Name = "Buyer",
                             NormalizedName = "BUYER"
                         });
@@ -599,37 +597,37 @@ namespace Auction.DataAccess.Migrations
                         new
                         {
                             UserId = "b4db56e8-1234-4567-8901-bc12def34567",
-                            RoleId = "cf296e51-0e51-43fc-a00d-409404f0513f"
+                            RoleId = "348e5667-5048-4292-b249-b4b55531606d"
                         },
                         new
                         {
                             UserId = "fa0a5657-8901-2345-6789-bc12def34567",
-                            RoleId = "58913e9d-26b7-4429-8a33-0cd690bc50e8"
+                            RoleId = "27f77397-3ab6-4cba-8e57-31e0d16e5a98"
                         },
                         new
                         {
                             UserId = "cd2a7890-5678-1234-4567-bc12def34567",
-                            RoleId = "58913e9d-26b7-4429-8a33-0cd690bc50e8"
+                            RoleId = "27f77397-3ab6-4cba-8e57-31e0d16e5a98"
                         },
                         new
                         {
                             UserId = "de3a8901-3456-7890-1234-bc12def34567",
-                            RoleId = "58913e9d-26b7-4429-8a33-0cd690bc50e8"
+                            RoleId = "27f77397-3ab6-4cba-8e57-31e0d16e5a98"
                         },
                         new
                         {
                             UserId = "ed4b9012-2345-6789-1234-bc12def34567",
-                            RoleId = "ebf1c21d-7a4b-46c4-88c0-9ff513407f7a"
+                            RoleId = "82426088-ca71-439c-b0c2-9c9194aa2cc0"
                         },
                         new
                         {
                             UserId = "fc5c0123-4567-8901-2345-bc12def34567",
-                            RoleId = "ebf1c21d-7a4b-46c4-88c0-9ff513407f7a"
+                            RoleId = "82426088-ca71-439c-b0c2-9c9194aa2cc0"
                         },
                         new
                         {
                             UserId = "ab6d1234-5678-9012-3456-bc12def34567",
-                            RoleId = "ebf1c21d-7a4b-46c4-88c0-9ff513407f7a"
+                            RoleId = "82426088-ca71-439c-b0c2-9c9194aa2cc0"
                         });
                 });
 
@@ -680,15 +678,15 @@ namespace Auction.DataAccess.Migrations
                         {
                             Id = "b4db56e8-1234-4567-8901-bc12def34567",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "5e27d744-4635-4ca1-bcee-0a59e8894ef3",
+                            ConcurrencyStamp = "ab0c4f98-0992-45d1-9ca0-508ba97f6ff5",
                             Email = "admin@example.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@EXAMPLE.COM",
                             NormalizedUserName = "ADMIN@EXAMPLE.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEO4nmJ0ZjDHLDAo89N7ZYUrzLwPsUPf64tkJPMxxY7DOuRHQ5FkK/zuxqppklE1uLg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAENWDZNev4PbH/CfJR0FrbUiM3DXHEgmJ0um/5u0xCFim70jxmFG6jglFAl/pVkcwsw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "7524ef11-b4a7-4c70-ba7b-11d4105df102",
+                            SecurityStamp = "cb298898-76da-41a3-bdee-02da1cd3859b",
                             TwoFactorEnabled = false,
                             UserName = "admin@example.com",
                             Name = "Admin User"
@@ -697,15 +695,15 @@ namespace Auction.DataAccess.Migrations
                         {
                             Id = "fa0a5657-8901-2345-6789-bc12def34567",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "a64f9859-55a4-44bd-bb63-8275766b816e",
+                            ConcurrencyStamp = "259568c7-58dc-4bc1-b4c5-ba761a1fd2be",
                             Email = "seller1@example.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "SELLER1@EXAMPLE.COM",
                             NormalizedUserName = "SELLER1@EXAMPLE.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEIj09wvxTYaig69U8XJq/af/YuI8of726CaK5B9e5zaBCU31NOv7I1CM2AWyLwEjjQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEBmPpVL+d4oH7hyRZD/guU2BZ1k75TZIXxWgA3sjNOvJ1wBVlmfPpK+ZjUt2nWtrtw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "4beb7ee2-a19d-4bff-ac83-155c0c624238",
+                            SecurityStamp = "c8c45829-2f39-4bdd-8364-9b62f79a7073",
                             TwoFactorEnabled = false,
                             UserName = "seller1@example.com",
                             Name = "Seller One"
@@ -714,15 +712,15 @@ namespace Auction.DataAccess.Migrations
                         {
                             Id = "cd2a7890-5678-1234-4567-bc12def34567",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "5532a03a-1734-4a9a-bb1c-fa9b7486d499",
+                            ConcurrencyStamp = "dea9d862-1b12-41f3-98a2-6d430e9751c9",
                             Email = "seller2@example.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "SELLER2@EXAMPLE.COM",
                             NormalizedUserName = "SELLER2@EXAMPLE.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEHvgXc44Txek9lGUpRx2Ukrbz6ptkCG64yRk2yQhcr2jppAiP6siFfw92XnxYsitgw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEOv/XGyqUR8IVY83zNzUeZWT+VW622F9WFX8XnZkAfgfobeoIOAFsZSWDqd6Hidgzw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "f2fbfee3-2820-4c36-ab91-61affd6e1b73",
+                            SecurityStamp = "bc6af4d5-8003-46d0-9fc4-6e1968feb42d",
                             TwoFactorEnabled = false,
                             UserName = "seller2@example.com",
                             Name = "Seller Two"
@@ -731,15 +729,15 @@ namespace Auction.DataAccess.Migrations
                         {
                             Id = "de3a8901-3456-7890-1234-bc12def34567",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "d589efba-9067-4ddd-aaa0-36bb5c151b5e",
+                            ConcurrencyStamp = "b37ce505-ed51-4378-b6bb-7084500f762c",
                             Email = "seller3@example.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "SELLER3@EXAMPLE.COM",
                             NormalizedUserName = "SELLER3@EXAMPLE.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAELvd6wCFod2MvuM0kH4hdfGviA2E3IiLIDg6ipILq3uG2dYjVDUNzZdrIr7Ek5a1Jw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEKfgBf1BE4FsKrdNJ0s6UFAfjRNOPljLMkk453mBY7dfE3O/4If81PVPp9TdXAbg9g==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "f163838a-68ed-44d8-bf1c-ed8f826f1ebb",
+                            SecurityStamp = "957e0e26-2bd6-404f-9d73-17a4876e00e5",
                             TwoFactorEnabled = false,
                             UserName = "seller3@example.com",
                             Name = "Seller Three"
@@ -748,15 +746,15 @@ namespace Auction.DataAccess.Migrations
                         {
                             Id = "ed4b9012-2345-6789-1234-bc12def34567",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "45803307-b15b-4a16-9b18-f6054102c538",
+                            ConcurrencyStamp = "229ae3d4-880d-41d2-ad6c-8ce45658bf61",
                             Email = "buyer1@example.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "BUYER1@EXAMPLE.COM",
                             NormalizedUserName = "BUYER1@EXAMPLE.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEHtHSQP8v94Z6JFySYWlIyH1UZifA9w/cNIj8lJnvBbn9AlSJKCL/wFSRYS1HGjC0Q==",
+                            PasswordHash = "AQAAAAIAAYagAAAAECf2S5ey/BDRrkn3ZvgGHEYakZA4Ndjfif15JnvwAuWF80PPgXaOEKJF/diUGeJoSQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "2e3a7fb8-d4dc-4311-9bd1-09b499b9d248",
+                            SecurityStamp = "fa29f5f7-86e1-4a73-95c8-39453173e7ff",
                             TwoFactorEnabled = false,
                             UserName = "buyer1@example.com",
                             Name = "Buyer One"
@@ -765,15 +763,15 @@ namespace Auction.DataAccess.Migrations
                         {
                             Id = "fc5c0123-4567-8901-2345-bc12def34567",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "02c2a436-5621-4160-966a-14f963ea4958",
+                            ConcurrencyStamp = "504d4ec3-6f2e-464d-b0a1-3339956229a9",
                             Email = "buyer2@example.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "BUYER2@EXAMPLE.COM",
                             NormalizedUserName = "BUYER2@EXAMPLE.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEDJ3if4zEA510GYWoDOqbGnfZcJb7sQf2t4Dm8EQx6mKx4u+HiiWBMUWnJyhRWG7+g==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEIJOWksR9myMuO5yyy9l5Xe0Scn9GuqBprNFG1xsQOXdoHitwsMv1RFsZis4GxvtIg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "77d0c4c7-b52a-458a-a985-2aa1dab496ba",
+                            SecurityStamp = "7af39da3-0773-4c7d-97c7-83c943cb0c6c",
                             TwoFactorEnabled = false,
                             UserName = "buyer2@example.com",
                             Name = "Buyer Two"
@@ -782,15 +780,15 @@ namespace Auction.DataAccess.Migrations
                         {
                             Id = "ab6d1234-5678-9012-3456-bc12def34567",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "cecd26eb-3c61-457d-9b91-6a2f7519dae5",
+                            ConcurrencyStamp = "afddfb46-b4d0-421c-afd0-18ca63641f97",
                             Email = "buyer3@example.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "BUYER3@EXAMPLE.COM",
                             NormalizedUserName = "BUYER3@EXAMPLE.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEI8UwPT5MxLuWbD+KQGPZ2udJv0ZCOyYM6baLtl5GCwcVE5LQh6hdpPkA0oDfZuhqQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEFDV0W9dxs/TZR6OubkVmM7BXnTLauIrA0DSaXtZaz0hEvjRQIm3Gi4z+RNM19KGUg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "183e8b27-03a9-463b-a5e1-2a19d37cd784",
+                            SecurityStamp = "2076fe34-6a39-480b-9946-c92b46911929",
                             TwoFactorEnabled = false,
                             UserName = "buyer3@example.com",
                             Name = "Buyer Three"

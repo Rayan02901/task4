@@ -27,7 +27,6 @@ F:\New folder\Sujan\task4\Auction.DataAccess\obj\Debug\net8.0\Auction.DataAccess
 F:\New folder\Sujan\task4\Auction.DataAccess\obj\Debug\net8.0\Auction.DataAccess.AssemblyInfoInputs.cache
 F:\New folder\Sujan\task4\Auction.DataAccess\obj\Debug\net8.0\Auction.DataAccess.AssemblyInfo.cs
 F:\New folder\Sujan\task4\Auction.DataAccess\obj\Debug\net8.0\Auction.DataAccess.csproj.CoreCompileInputs.cache
-F:\New folder\Sujan\task4\Auction.DataAccess\obj\Debug\net8.0\Auction.DataAccess.sourcelink.json
 F:\New folder\Sujan\task4\Auction.DataAccess\obj\Debug\net8.0\Auction..F4368E20.Up2Date
 F:\New folder\Sujan\task4\Auction.DataAccess\obj\Debug\net8.0\Auction.DataAccess.dll
 F:\New folder\Sujan\task4\Auction.DataAccess\obj\Debug\net8.0\refint\Auction.DataAccess.dll
@@ -70,3 +69,4 @@ F:\New folder\test\task4\Auction.DataAccess\obj\Debug\net8.0\refint\Auction.Data
 F:\New folder\test\task4\Auction.DataAccess\obj\Debug\net8.0\Auction.DataAccess.pdb
 F:\New folder\test\task4\Auction.DataAccess\obj\Debug\net8.0\Auction.DataAccess.genruntimeconfig.cache
 F:\New folder\test\task4\Auction.DataAccess\obj\Debug\net8.0\ref\Auction.DataAccess.dll
+F:\New folder\Sujan\task4\Auction.DataAccess\obj\Debug\net8.0\Auction.DataAccess.sourcelink.json
