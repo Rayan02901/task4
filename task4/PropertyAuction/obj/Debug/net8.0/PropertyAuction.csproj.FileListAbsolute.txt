@@ -1074,3 +1074,4 @@ F:\New folder\test\task4\PropertyAuction\obj\Debug\net8.0\refint\PropertyAuction
 F:\New folder\test\task4\PropertyAuction\obj\Debug\net8.0\PropertyAuction.pdb
 F:\New folder\test\task4\PropertyAuction\obj\Debug\net8.0\PropertyAuction.genruntimeconfig.cache
 F:\New folder\test\task4\PropertyAuction\obj\Debug\net8.0\ref\PropertyAuction.dll
+F:\New folder\Sujan\task4\PropertyAuction\obj\Debug\net8.0\PropertyAuction.sourcelink.json

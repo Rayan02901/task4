@@ -1,29 +1,31 @@
 ﻿@model PropertyVM
+@using System.Security.Claims
 
 <div class="card shadow border-0 my-4">
     <div class="card-header bg-secondary bg-gradient ml-0 py-3">
-    <div class="row">
-        <div class="col-12 text-center">
-                <h2 class="text-white py-2">Edit Property</h2>
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-white py-2">Create Property</h2>
+            </div>
         </div>
-    </div>
     </div>
     <div class="card-body p-4">
         <form method="post" class="row" enctype="multipart/form-data">
             <div class="border p-3">
-                @*<div asp-validation-summary="ModelOnly"></div>*@
+                <input type="hidden" asp-for="Property.SellerId" value="@User.FindFirst(ClaimTypes.NameIdentifier)?.Value" />
+
                 <div class="form-floating py-2 col-12">
                     <input asp-for="Property.Title" class="form-control border-0 shadow" />
                     <label asp-for="Property.Title" class="ms-2"></label>
                     <span asp-validation-for="Property.Title" class="text-danger"></span>
                 </div>
                 <div class="form-floating py-2 col-12">
-                    <input type="textarea" asp-for="Property.Description" class="form-control border-0 shadow" />
+                    <textarea asp-for="Property.Description" class="form-control border-0 shadow" style="height: 100px"></textarea>
                     <label asp-for="Property.Description" class="ms-2"></label>
                     <span asp-validation-for="Property.Description" class="text-danger"></span>
                 </div>
                 <div class="form-floating py-2 col-12">
-                    <input type="textarea" asp-for="Property.Location" class="form-control border-0 shadow" />
+                    <input asp-for="Property.Location" class="form-control border-0 shadow" />
                     <label asp-for="Property.Location" class="ms-2"></label>
                     <span asp-validation-for="Property.Location" class="text-danger"></span>
                 </div>
@@ -47,10 +49,9 @@
                     <label asp-for="Property.YearBuilt" class="ms-2"></label>
                     <span asp-validation-for="Property.YearBuilt" class="text-danger"></span>
                 </div>
-                
 
                 <div class="form-floating py-2 col-12">
-                    <select asp-for="@Model.Property.PropertyCategoryId" asp-items="@Model.PropertyCategories" class="form-select border-0 shadow">
+                    <select asp-for="Property.PropertyCategoryId" asp-items="@Model.PropertyCategories" class="form-select border-0 shadow">
                         <option disabled selected>--Select Category--</option>
                     </select>
                     <label asp-for="Property.PropertyCategoryId" class="ms-2"></label>
@@ -69,23 +70,16 @@
                         <button type="submit" class="btn btn-primary form-control">Create</button>
                     </div>
                     <div class="col-6 col-md-3">
-                        <a asp-controller="Product" asp-action="Index" class="btn btn-outline-primary border  form-control">
+                        <a asp-area="Admin" asp-controller="Property" asp-action="Index" class="btn btn-outline-primary border form-control">
                             Back to List
                         </a>
                     </div>
                 </div>
-
-
             </div>
         </form>
     </div>
 </div>
 
-
-
-
-@section Scripts{
-    @{
-    <partial name="_ValidationScriptsPartial"/>
-    }
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
 }
