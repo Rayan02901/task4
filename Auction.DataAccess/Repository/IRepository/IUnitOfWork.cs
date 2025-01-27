@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Auction.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ namespace Auction.DataAccess.Repository.IRepository
         IPropertyRepository Property { get; }
         IAuctionListingRepository AuctionListing { get; }
         IBidsRepository Bids { get; }
+        IRepository<ApplicationUser> ApplicationUser { get; } // Add this
 
         void Save();
     }

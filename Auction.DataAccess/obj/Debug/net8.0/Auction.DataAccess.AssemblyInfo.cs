@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Auction.DataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af72912e6caa83c77efd046ab67839a742f37b22")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a01f1820b9d7ba12832bd87b6d7ca9a63562ce4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Auction.DataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Auction.DataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

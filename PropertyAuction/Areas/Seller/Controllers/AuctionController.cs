@@ -121,5 +121,27 @@ namespace PropertyAuction.Areas.Seller.Controllers
 
             return View(viewModel);
         }
+        public async Task<IActionResult> Report()
+        {
+            // Fetch completed auctions
+            var completedAuctions = await Task.FromResult(_unitOfWork.AuctionListing
+                .GetAll(
+                    filter: a => a.Status == AuctionStatus.Completed,
+                    includeProperties: "Bids,Property"
+                )
+                .Select(a => new AuctionReportVM
+                {
+                    AuctionId = a.AuctionId,
+                    PropertyTitle = a.Property.Title,
+                    WinningBid = a.CurrentHighestBid ?? 0,
+                    HighestBidderName = a.HighestBidderId != null
+                        ? _unitOfWork.ApplicationUser.Get(u => u.Id == a.HighestBidderId)?.Name
+                        : "No Bids"
+                })
+                .ToList());
+
+            return View(completedAuctions);
+        }
+
     }
 }
