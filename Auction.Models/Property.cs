@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 namespace Auction.Models
 {
+    // First, update the Property model to include SellerId
     public class Property
     {
         [Key]
@@ -36,7 +37,12 @@ namespace Auction.Models
         [ValidateNever]
         public string VideoUrl { get; set; }
 
-
-
+        // Add SellerId
+        [Required]
+        public string SellerId { get; set; }
+        [ForeignKey("SellerId")]
+        [ValidateNever]
+        public virtual ApplicationUser? Seller { get; set; }
     }
+
 }

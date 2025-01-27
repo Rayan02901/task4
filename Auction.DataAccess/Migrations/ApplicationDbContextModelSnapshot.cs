@@ -37,7 +37,8 @@ namespace Auction.DataAccess.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("HighestBidderId")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(450)
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<bool>("IsBidStarted")
                         .HasColumnType("bit");
@@ -74,13 +75,13 @@ namespace Auction.DataAccess.Migrations
                         {
                             AuctionId = 1,
                             CurrentHighestBid = 500000m,
-                            EndDate = new DateTime(2025, 2, 3, 8, 7, 59, 764, DateTimeKind.Local).AddTicks(1416),
+                            EndDate = new DateTime(2025, 2, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsBidStarted = false,
                             IsReservationPriceMet = false,
                             MinimumBidIncrement = 5000m,
                             PropertyId = 1,
                             ReservationPrice = 600000m,
-                            StartDate = new DateTime(2025, 1, 28, 8, 7, 59, 764, DateTimeKind.Local).AddTicks(1377),
+                            StartDate = new DateTime(2025, 1, 28, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             StartingBid = 500000m,
                             Status = 0
                         },
@@ -88,13 +89,13 @@ namespace Auction.DataAccess.Migrations
                         {
                             AuctionId = 2,
                             CurrentHighestBid = 1000000m,
-                            EndDate = new DateTime(2025, 2, 6, 8, 7, 59, 764, DateTimeKind.Local).AddTicks(1426),
+                            EndDate = new DateTime(2025, 2, 6, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsBidStarted = false,
                             IsReservationPriceMet = false,
                             MinimumBidIncrement = 10000m,
                             PropertyId = 2,
                             ReservationPrice = 1200000m,
-                            StartDate = new DateTime(2025, 1, 29, 8, 7, 59, 764, DateTimeKind.Local).AddTicks(1424),
+                            StartDate = new DateTime(2025, 1, 29, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             StartingBid = 1000000m,
                             Status = 0
                         },
@@ -102,15 +103,60 @@ namespace Auction.DataAccess.Migrations
                         {
                             AuctionId = 3,
                             CurrentHighestBid = 300000m,
-                            EndDate = new DateTime(2025, 2, 11, 8, 7, 59, 764, DateTimeKind.Local).AddTicks(1433),
+                            EndDate = new DateTime(2025, 2, 11, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsBidStarted = false,
                             IsReservationPriceMet = false,
                             MinimumBidIncrement = 3000m,
                             PropertyId = 3,
                             ReservationPrice = 350000m,
-                            StartDate = new DateTime(2025, 2, 1, 8, 7, 59, 764, DateTimeKind.Local).AddTicks(1431),
+                            StartDate = new DateTime(2025, 2, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             StartingBid = 300000m,
                             Status = 0
+                        },
+                        new
+                        {
+                            AuctionId = 4,
+                            CurrentHighestBid = 950000m,
+                            EndDate = new DateTime(2025, 1, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            HighestBidderId = "ed4b9012-2345-6789-1234-bc12def34567",
+                            IsBidStarted = true,
+                            IsReservationPriceMet = true,
+                            MinimumBidIncrement = 5000m,
+                            PropertyId = 4,
+                            ReservationPrice = 900000m,
+                            StartDate = new DateTime(2024, 12, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            StartingBid = 800000m,
+                            Status = 1
+                        },
+                        new
+                        {
+                            AuctionId = 5,
+                            CurrentHighestBid = 2500000m,
+                            EndDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            HighestBidderId = "fc5c0123-4567-8901-2345-bc12def34567",
+                            IsBidStarted = true,
+                            IsReservationPriceMet = true,
+                            MinimumBidIncrement = 20000m,
+                            PropertyId = 5,
+                            ReservationPrice = 2200000m,
+                            StartDate = new DateTime(2024, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            StartingBid = 2000000m,
+                            Status = 1
+                        },
+                        new
+                        {
+                            AuctionId = 6,
+                            CurrentHighestBid = 1800000m,
+                            EndDate = new DateTime(2024, 12, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            HighestBidderId = "ab6d1234-5678-9012-3456-bc12def34567",
+                            IsBidStarted = true,
+                            IsReservationPriceMet = true,
+                            MinimumBidIncrement = 10000m,
+                            PropertyId = 6,
+                            ReservationPrice = 1700000m,
+                            StartDate = new DateTime(2024, 11, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            StartingBid = 1500000m,
+                            Status = 1
                         });
                 });
 
@@ -132,7 +178,9 @@ namespace Auction.DataAccess.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(450)
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
 
@@ -151,15 +199,18 @@ namespace Auction.DataAccess.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<string>("ImageUrl")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<string>("Location")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<int>("NumberOfBathrooms")
                         .HasColumnType("int");
@@ -170,16 +221,25 @@ namespace Auction.DataAccess.Migrations
                     b.Property<int>("PropertyCategoryId")
                         .HasColumnType("int");
 
+                    b.Property<int?>("PropertyCategoryId1")
+                        .HasColumnType("int");
+
+                    b.Property<string>("SellerId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<double>("Size")
                         .HasColumnType("float");
 
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("VideoUrl")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<int>("YearBuilt")
                         .HasColumnType("int");
@@ -187,6 +247,10 @@ namespace Auction.DataAccess.Migrations
                     b.HasKey("PropertyId");
 
                     b.HasIndex("PropertyCategoryId");
+
+                    b.HasIndex("PropertyCategoryId1");
+
+                    b.HasIndex("SellerId");
 
                     b.ToTable("Properties");
 
@@ -200,6 +264,7 @@ namespace Auction.DataAccess.Migrations
                             NumberOfBathrooms = 3,
                             NumberOfRooms = 4,
                             PropertyCategoryId = 1,
+                            SellerId = "fa0a5657-8901-2345-6789-bc12def34567",
                             Size = 2500.5,
                             Title = "Modern Family House",
                             VideoUrl = "",
@@ -214,6 +279,7 @@ namespace Auction.DataAccess.Migrations
                             NumberOfBathrooms = 5,
                             NumberOfRooms = 6,
                             PropertyCategoryId = 2,
+                            SellerId = "fa0a5657-8901-2345-6789-bc12def34567",
                             Size = 4500.0,
                             Title = "Luxury Beachfront Villa",
                             VideoUrl = "",
@@ -228,10 +294,56 @@ namespace Auction.DataAccess.Migrations
                             NumberOfBathrooms = 2,
                             NumberOfRooms = 3,
                             PropertyCategoryId = 3,
+                            SellerId = "cd2a7890-5678-1234-4567-bc12def34567",
                             Size = 1200.0,
                             Title = "Cozy Cottage",
                             VideoUrl = "",
                             YearBuilt = 1990
+                        },
+                        new
+                        {
+                            PropertyId = 4,
+                            Description = "Luxurious penthouse with panoramic city views.",
+                            ImageUrl = "",
+                            Location = "New York, NY",
+                            NumberOfBathrooms = 4,
+                            NumberOfRooms = 5,
+                            PropertyCategoryId = 1,
+                            SellerId = "cd2a7890-5678-1234-4567-bc12def34567",
+                            Size = 3000.0,
+                            Title = "Downtown Penthouse",
+                            VideoUrl = "",
+                            YearBuilt = 2018
+                        },
+                        new
+                        {
+                            PropertyId = 5,
+                            Description = "Prime location office space in business district.",
+                            ImageUrl = "",
+                            Location = "Chicago, IL",
+                            NumberOfBathrooms = 4,
+                            NumberOfRooms = 8,
+                            PropertyCategoryId = 2,
+                            SellerId = "de3a8901-3456-7890-1234-bc12def34567",
+                            Size = 5000.0,
+                            Title = "Commercial Office Space",
+                            VideoUrl = "",
+                            YearBuilt = 2019
+                        },
+                        new
+                        {
+                            PropertyId = 6,
+                            Description = "Beautiful waterfront land ready for development.",
+                            ImageUrl = "",
+                            Location = "Seattle, WA",
+                            NumberOfBathrooms = 0,
+                            NumberOfRooms = 0,
+                            PropertyCategoryId = 3,
+                            SellerId = "de3a8901-3456-7890-1234-bc12def34567",
+                            Size = 10000.0,
+                            Title = "Waterfront Land Plot",
+                            VideoUrl = "",
+                            YearBuilt = 0
                         });
                 });
 
@@ -301,6 +413,26 @@ namespace Auction.DataAccess.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "cf296e51-0e51-43fc-a00d-409404f0513f",
+                            Name = "Admin",
+                            NormalizedName = "ADMIN"
+                        },
+                        new
+                        {
+                            Id = "58913e9d-26b7-4429-8a33-0cd690bc50e8",
+                            Name = "Seller",
+                            NormalizedName = "SELLER"
+                        },
+                        new
+                        {
+                            Id = "ebf1c21d-7a4b-46c4-88c0-9ff513407f7a",
+                            Name = "Buyer",
+                            NormalizedName = "BUYER"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -462,6 +594,43 @@ namespace Auction.DataAccess.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = "b4db56e8-1234-4567-8901-bc12def34567",
+                            RoleId = "cf296e51-0e51-43fc-a00d-409404f0513f"
+                        },
+                        new
+                        {
+                            UserId = "fa0a5657-8901-2345-6789-bc12def34567",
+                            RoleId = "58913e9d-26b7-4429-8a33-0cd690bc50e8"
+                        },
+                        new
+                        {
+                            UserId = "cd2a7890-5678-1234-4567-bc12def34567",
+                            RoleId = "58913e9d-26b7-4429-8a33-0cd690bc50e8"
+                        },
+                        new
+                        {
+                            UserId = "de3a8901-3456-7890-1234-bc12def34567",
+                            RoleId = "58913e9d-26b7-4429-8a33-0cd690bc50e8"
+                        },
+                        new
+                        {
+                            UserId = "ed4b9012-2345-6789-1234-bc12def34567",
+                            RoleId = "ebf1c21d-7a4b-46c4-88c0-9ff513407f7a"
+                        },
+                        new
+                        {
+                            UserId = "fc5c0123-4567-8901-2345-bc12def34567",
+                            RoleId = "ebf1c21d-7a4b-46c4-88c0-9ff513407f7a"
+                        },
+                        new
+                        {
+                            UserId = "ab6d1234-5678-9012-3456-bc12def34567",
+                            RoleId = "ebf1c21d-7a4b-46c4-88c0-9ff513407f7a"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
@@ -492,7 +661,8 @@ namespace Auction.DataAccess.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("PostalCode")
                         .HasColumnType("nvarchar(max)");
@@ -504,6 +674,127 @@ namespace Auction.DataAccess.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasDiscriminator().HasValue("ApplicationUser");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "b4db56e8-1234-4567-8901-bc12def34567",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "5e27d744-4635-4ca1-bcee-0a59e8894ef3",
+                            Email = "admin@example.com",
+                            EmailConfirmed = true,
+                            LockoutEnabled = false,
+                            NormalizedEmail = "ADMIN@EXAMPLE.COM",
+                            NormalizedUserName = "ADMIN@EXAMPLE.COM",
+                            PasswordHash = "AQAAAAIAAYagAAAAEO4nmJ0ZjDHLDAo89N7ZYUrzLwPsUPf64tkJPMxxY7DOuRHQ5FkK/zuxqppklE1uLg==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "7524ef11-b4a7-4c70-ba7b-11d4105df102",
+                            TwoFactorEnabled = false,
+                            UserName = "admin@example.com",
+                            Name = "Admin User"
+                        },
+                        new
+                        {
+                            Id = "fa0a5657-8901-2345-6789-bc12def34567",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "a64f9859-55a4-44bd-bb63-8275766b816e",
+                            Email = "seller1@example.com",
+                            EmailConfirmed = true,
+                            LockoutEnabled = false,
+                            NormalizedEmail = "SELLER1@EXAMPLE.COM",
+                            NormalizedUserName = "SELLER1@EXAMPLE.COM",
+                            PasswordHash = "AQAAAAIAAYagAAAAEIj09wvxTYaig69U8XJq/af/YuI8of726CaK5B9e5zaBCU31NOv7I1CM2AWyLwEjjQ==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "4beb7ee2-a19d-4bff-ac83-155c0c624238",
+                            TwoFactorEnabled = false,
+                            UserName = "seller1@example.com",
+                            Name = "Seller One"
+                        },
+                        new
+                        {
+                            Id = "cd2a7890-5678-1234-4567-bc12def34567",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "5532a03a-1734-4a9a-bb1c-fa9b7486d499",
+                            Email = "seller2@example.com",
+                            EmailConfirmed = true,
+                            LockoutEnabled = false,
+                            NormalizedEmail = "SELLER2@EXAMPLE.COM",
+                            NormalizedUserName = "SELLER2@EXAMPLE.COM",
+                            PasswordHash = "AQAAAAIAAYagAAAAEHvgXc44Txek9lGUpRx2Ukrbz6ptkCG64yRk2yQhcr2jppAiP6siFfw92XnxYsitgw==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "f2fbfee3-2820-4c36-ab91-61affd6e1b73",
+                            TwoFactorEnabled = false,
+                            UserName = "seller2@example.com",
+                            Name = "Seller Two"
+                        },
+                        new
+                        {
+                            Id = "de3a8901-3456-7890-1234-bc12def34567",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "d589efba-9067-4ddd-aaa0-36bb5c151b5e",
+                            Email = "seller3@example.com",
+                            EmailConfirmed = true,
+                            LockoutEnabled = false,
+                            NormalizedEmail = "SELLER3@EXAMPLE.COM",
+                            NormalizedUserName = "SELLER3@EXAMPLE.COM",
+                            PasswordHash = "AQAAAAIAAYagAAAAELvd6wCFod2MvuM0kH4hdfGviA2E3IiLIDg6ipILq3uG2dYjVDUNzZdrIr7Ek5a1Jw==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "f163838a-68ed-44d8-bf1c-ed8f826f1ebb",
+                            TwoFactorEnabled = false,
+                            UserName = "seller3@example.com",
+                            Name = "Seller Three"
+                        },
+                        new
+                        {
+                            Id = "ed4b9012-2345-6789-1234-bc12def34567",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "45803307-b15b-4a16-9b18-f6054102c538",
+                            Email = "buyer1@example.com",
+                            EmailConfirmed = true,
+                            LockoutEnabled = false,
+                            NormalizedEmail = "BUYER1@EXAMPLE.COM",
+                            NormalizedUserName = "BUYER1@EXAMPLE.COM",
+                            PasswordHash = "AQAAAAIAAYagAAAAEHtHSQP8v94Z6JFySYWlIyH1UZifA9w/cNIj8lJnvBbn9AlSJKCL/wFSRYS1HGjC0Q==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "2e3a7fb8-d4dc-4311-9bd1-09b499b9d248",
+                            TwoFactorEnabled = false,
+                            UserName = "buyer1@example.com",
+                            Name = "Buyer One"
+                        },
+                        new
+                        {
+                            Id = "fc5c0123-4567-8901-2345-bc12def34567",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "02c2a436-5621-4160-966a-14f963ea4958",
+                            Email = "buyer2@example.com",
+                            EmailConfirmed = true,
+                            LockoutEnabled = false,
+                            NormalizedEmail = "BUYER2@EXAMPLE.COM",
+                            NormalizedUserName = "BUYER2@EXAMPLE.COM",
+                            PasswordHash = "AQAAAAIAAYagAAAAEDJ3if4zEA510GYWoDOqbGnfZcJb7sQf2t4Dm8EQx6mKx4u+HiiWBMUWnJyhRWG7+g==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "77d0c4c7-b52a-458a-a985-2aa1dab496ba",
+                            TwoFactorEnabled = false,
+                            UserName = "buyer2@example.com",
+                            Name = "Buyer Two"
+                        },
+                        new
+                        {
+                            Id = "ab6d1234-5678-9012-3456-bc12def34567",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "cecd26eb-3c61-457d-9b91-6a2f7519dae5",
+                            Email = "buyer3@example.com",
+                            EmailConfirmed = true,
+                            LockoutEnabled = false,
+                            NormalizedEmail = "BUYER3@EXAMPLE.COM",
+                            NormalizedUserName = "BUYER3@EXAMPLE.COM",
+                            PasswordHash = "AQAAAAIAAYagAAAAEI8UwPT5MxLuWbD+KQGPZ2udJv0ZCOyYM6baLtl5GCwcVE5LQh6hdpPkA0oDfZuhqQ==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "183e8b27-03a9-463b-a5e1-2a19d37cd784",
+                            TwoFactorEnabled = false,
+                            UserName = "buyer3@example.com",
+                            Name = "Buyer Three"
+                        });
                 });
 
             modelBuilder.Entity("Auction.Models.AuctionListing", b =>
@@ -511,7 +802,7 @@ namespace Auction.DataAccess.Migrations
                     b.HasOne("Auction.Models.Property", "Property")
                         .WithMany()
                         .HasForeignKey("PropertyId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Property");
@@ -522,7 +813,7 @@ namespace Auction.DataAccess.Migrations
                     b.HasOne("Auction.Models.AuctionListing", "Auction")
                         .WithMany("Bids")
                         .HasForeignKey("AuctionId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Auction");
@@ -531,12 +822,24 @@ namespace Auction.DataAccess.Migrations
             modelBuilder.Entity("Auction.Models.Property", b =>
                 {
                     b.HasOne("Auction.Models.PropertyCategory", "PropertyCategory")
-                        .WithMany("Properties")
+                        .WithMany()
                         .HasForeignKey("PropertyCategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Auction.Models.PropertyCategory", null)
+                        .WithMany("Properties")
+                        .HasForeignKey("PropertyCategoryId1");
+
+                    b.HasOne("Auction.Models.ApplicationUser", "Seller")
+                        .WithMany()
+                        .HasForeignKey("SellerId")
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("PropertyCategory");
+
+                    b.Navigation("Seller");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
