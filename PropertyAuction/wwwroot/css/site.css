@@ -20,3 +20,303 @@ html {
 body {
   margin-bottom: 60px;
 }
+//
+/* Base styles for dark theme */
+html {
+    font-size: 14px;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #121212; /* Dark body background */
+    color: #e0e0e0; /* Light text color for the body */
+}
+
+/* Dark theme table styles */
+.table {
+    background-color: #1e1e1e; /* Dark table background */
+    border-collapse: collapse; /* To ensure borders are neat */
+    width: 100%; /* Table takes full width */
+}
+
+    .table th, .table td {
+        padding: 12px; /* Add padding for a better layout */
+        text-align: left; /* Left-align the text */
+        border-bottom: 1px solid #333; /* Subtle border to separate rows */
+    }
+
+    .table th {
+        background-color: #333; /* Dark background for header */
+        color: #fff; /* Light text color in header */
+    }
+
+    .table tr:nth-child(even) {
+        background-color: #262626; /* Slightly lighter rows for readability */
+    }
+
+    .table tr:hover {
+        background-color: #444; /* Highlight row on hover */
+    }
+
+    .table td {
+        color: #e0e0e0; /* Light text color in the table body */
+    }
+
+    .table a {
+        color: #258cfb; /* Button/link color */
+        text-decoration: none;
+    }
+
+        .table a:hover {
+            color: #1d7ddf; /* Lighter blue on hover */
+        }
+
+/* Button styles */
+.btn-info {
+    background-color: #444; /* Dark button background */
+    border: 1px solid #555; /* Light border for buttons */
+    color: #e0e0e0; /* Light text color */
+}
+
+    .btn-info:hover {
+        background-color: #555; /* Lighter button background on hover */
+        border-color: #666;
+    }
+
+    .btn-info:focus, .btn-info:active:focus {
+        box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb; /* Keep focus outline */
+    }
+
+/* Dark theme for links */
+a, .btn-link.nav-link {
+    color: #e0e0e0; /* Light text color for links */
+}
+
+    a:hover, .btn-link.nav-link:hover {
+        color: #258cfb; /* Change link color on hover */
+    }
+
+/* Adjusting the page to ensure proper dark theme appearance */
+html {
+    position: relative;
+    min-height: 100%;
+}
+/* Base styles for dark theme */
+html {
+    font-size: 14px;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #121212; /* Dark body background */
+    color: #e0e0e0; /* Light text color for the body */
+}
+
+/* Dark theme for the container and layout */
+.container {
+    background-color: #1e1e1e; /* Dark background for container */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Card styles for dark theme */
+.card {
+    background-color: #333; /* Dark card background */
+    border: 1px solid #444; /* Subtle border around the cards */
+    color: #e0e0e0; /* Light text color inside cards */
+    border-radius: 8px; /* Rounded corners for cards */
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: #444; /* Darker header background */
+    color: #fff; /* Light text color in the header */
+    padding: 10px;
+}
+
+.card-body {
+    background-color: #333; /* Dark body background for card */
+    color: #e0e0e0; /* Light text color */
+    padding: 15px;
+}
+
+/* Dark themed definition list (dl) */
+dl {
+    margin-bottom: 0;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 20px;
+}
+
+/* Specific styles for headings */
+h2, h3 {
+    color: #fff; /* Light color for headings */
+}
+
+/* Light themed links */
+a {
+    color: #258cfb; /* Light blue color for links */
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #1d7ddf; /* Lighter blue on hover */
+    }
+
+/* Ensure input and button styling fits the dark theme */
+input, select, textarea {
+    background-color: #444; /* Dark input field */
+    color: #e0e0e0; /* Light text inside inputs */
+    border: 1px solid #555;
+}
+
+    input:focus, select:focus, textarea:focus {
+        background-color: #555; /* Lighter focus background */
+        border-color: #258cfb; /* Focus border color */
+    }
+
+.btn-info {
+    background-color: #444; /* Dark button background */
+    border: 1px solid #555; /* Light border for buttons */
+    color: #e0e0e0; /* Light text color */
+}
+
+    .btn-info:hover {
+        background-color: #555; /* Lighter button background on hover */
+        border-color: #666;
+    }
+
+    .btn-info:focus, .btn-info:active:focus {
+        box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb; /* Keep focus outline */
+    }
+
+/* Dark theme for links */
+a, .btn-link.nav-link {
+    color: #e0e0e0; /* Light text color for links */
+}
+
+    a:hover, .btn-link.nav-link:hover {
+        color: #258cfb; /* Change link color on hover */
+    }
+
+/* Adjusting the page to ensure proper dark theme appearance */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+/* Base styles for dark theme */
+html {
+    font-size: 14px;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #121212; /* Dark body background */
+    color: #e0e0e0; /* Light text color for the body */
+}
+
+/* Dark theme form label styles */
+label {
+    color: #000000; /* Black color for labels in dark mode */
+}
+
+/* Dark theme for input, select, textarea */
+input, select, textarea {
+    background-color: #444; /* Dark input field */
+    color: #e0e0e0; /* Light text inside inputs */
+    border: 1px solid #555;
+}
+
+    input:focus, select:focus, textarea:focus {
+        background-color: #555; /* Lighter focus background */
+        border-color: #258cfb; /* Focus border color */
+    }
+
+/* Button styles */
+.btn-info {
+    background-color: #444; /* Dark button background */
+    border: 1px solid #555; /* Light border for buttons */
+    color: #e0e0e0; /* Light text color */
+}
+
+    .btn-info:hover {
+        background-color: #555; /* Lighter button background on hover */
+        border-color: #666;
+    }
+
+    .btn-info:focus, .btn-info:active:focus {
+        box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb; /* Keep focus outline */
+    }
+
+/* Dark theme for links */
+a, .btn-link.nav-link {
+    color: #e0e0e0; /* Light text color for links */
+}
+
+    a:hover, .btn-link.nav-link:hover {
+        color: #258cfb; /* Change link color on hover */
+    }
+
+/* Ensure dark theme card, table and container styles */
+.card {
+    background-color: #333; /* Dark card background */
+    border: 1px solid #444; /* Subtle border around the cards */
+    color: #e0e0e0; /* Light text color inside cards */
+    border-radius: 8px; /* Rounded corners for cards */
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: #444; /* Darker header background */
+    color: #fff; /* Light text color in the header */
+    padding: 10px;
+}
+
+.card-body {
+    background-color: #333; /* Dark body background for card */
+    color: #e0e0e0; /* Light text color */
+    padding: 15px;
+}
+
+/* Specific styles for headings */
+h2, h3 {
+    color: #fff; /* Light color for headings */
+}
+
+/* Adjusting the page to ensure proper dark theme appearance */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+

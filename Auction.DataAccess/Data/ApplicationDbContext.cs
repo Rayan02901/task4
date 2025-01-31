@@ -181,13 +181,13 @@ namespace Auction.DataAccess.Data
             );
 
             // Define specific UserIds
-            string adminUserId = "b4db56e8-1234-4567-8901-bc12def34567";
-            string sellerUserId1 = "fa0a5657-8901-2345-6789-bc12def34567";
-            string sellerUserId2 = "cd2a7890-5678-1234-4567-bc12def34567";
-            string sellerUserId3 = "de3a8901-3456-7890-1234-bc12def34567";
-            string buyerUserId1 = "ed4b9012-2345-6789-1234-bc12def34567";
-            string buyerUserId2 = "fc5c0123-4567-8901-2345-bc12def34567";
-            string buyerUserId3 = "ab6d1234-5678-9012-3456-bc12def34567";
+            string adminUserId = "a18be9c0-aa65-4af8-bd17-00bd9344e575";
+            string sellerUserId1 = "b68d3f5a-b414-48d9-8e34-7c6dde3941ef";
+            string sellerUserId2 = "c1ce93ad-1e91-4b79-9f43-9f1d51d33511";
+            string sellerUserId3 = "d9a9b8d7-73b2-4f28-9177-e1f9239e6673";
+            string buyerUserId1 = "e4c2f668-5c51-4fd1-9b55-b5dd9b33abb7";
+            string buyerUserId2 = "f682334f-82e1-4b89-8a56-89e4b7efde93";
+            string buyerUserId3 = "g7d1c8e2-94a3-4d6b-ac32-b61e1e7b76d9";
 
             var hasher = new PasswordHasher<ApplicationUser>();
 
@@ -302,85 +302,85 @@ namespace Auction.DataAccess.Data
                 new Property
                 {
                     PropertyId = 1,
-                    Title = "Modern Family House",
-                    Description = "A beautiful modern house located in the heart of the city.",
-                    Location = "Los Angeles, CA",
-                    Size = 2500.5,
+                    Title = "Sunset Valley Estate",
+                    Description = "Elegant contemporary mansion with smart home features and panoramic valley views.",
+                    Location = "Beverly Hills, CA",
+                    Size = 5200.0,
                     ImageUrl = "",
                     VideoUrl = "",
-                    NumberOfRooms = 4,
-                    NumberOfBathrooms = 3,
-                    YearBuilt = 2015,
+                    NumberOfRooms = 6,
+                    NumberOfBathrooms = 5,
+                    YearBuilt = 2022,
                     PropertyCategoryId = 1,
                     SellerId = sellerUserId1
                 },
                 new Property
                 {
                     PropertyId = 2,
-                    Title = "Luxury Beachfront Villa",
-                    Description = "A stunning villa overlooking the ocean with premium amenities.",
-                    Location = "Miami, FL",
-                    Size = 4500.0,
+                    Title = "Ocean Breeze Resort Complex",
+                    Description = "Luxury beachfront resort property with private beach access and full-service amenities.",
+                    Location = "Maui, HI",
+                    Size = 8500.0,
                     ImageUrl = "",
                     VideoUrl = "",
-                    NumberOfRooms = 6,
-                    NumberOfBathrooms = 5,
-                    YearBuilt = 2020,
+                    NumberOfRooms = 12,
+                    NumberOfBathrooms = 14,
+                    YearBuilt = 2021,
                     PropertyCategoryId = 2,
                     SellerId = sellerUserId1
                 },
                 new Property
                 {
                     PropertyId = 3,
-                    Title = "Cozy Cottage",
-                    Description = "A charming cottage in a peaceful countryside setting.",
-                    Location = "Asheville, NC",
-                    Size = 1200.0,
+                    Title = "Mountain View Ranch",
+                    Description = "Expansive ranch property with equestrian facilities and mountain backdrop.",
+                    Location = "Aspen, CO",
+                    Size = 15000.0,
                     ImageUrl = "",
                     VideoUrl = "",
-                    NumberOfRooms = 3,
-                    NumberOfBathrooms = 2,
-                    YearBuilt = 1990,
+                    NumberOfRooms = 4,
+                    NumberOfBathrooms = 3,
+                    YearBuilt = 2015,
                     PropertyCategoryId = 3,
                     SellerId = sellerUserId2
                 },
                 new Property
                 {
                     PropertyId = 4,
-                    Title = "Downtown Penthouse",
-                    Description = "Luxurious penthouse with panoramic city views.",
-                    Location = "New York, NY",
-                    Size = 3000.0,
+                    Title = "Skyline Tower Penthouse",
+                    Description = "Ultra-luxury penthouse with 360-degree views and private helipad access.",
+                    Location = "Manhattan, NY",
+                    Size = 4800.0,
                     ImageUrl = "",
                     VideoUrl = "",
                     NumberOfRooms = 5,
-                    NumberOfBathrooms = 4,
-                    YearBuilt = 2018,
+                    NumberOfBathrooms = 5,
+                    YearBuilt = 2023,
                     PropertyCategoryId = 1,
                     SellerId = sellerUserId2
                 },
                 new Property
                 {
                     PropertyId = 5,
-                    Title = "Commercial Office Space",
-                    Description = "Prime location office space in business district.",
-                    Location = "Chicago, IL",
-                    Size = 5000.0,
+                    Title = "Innovation Hub Complex",
+                    Description = "State-of-the-art office complex with sustainable design and tech infrastructure.",
+                    Location = "Austin, TX",
+                    Size = 12000.0,
                     ImageUrl = "",
                     VideoUrl = "",
-                    NumberOfRooms = 8,
-                    NumberOfBathrooms = 4,
-                    YearBuilt = 2019,
+                    NumberOfRooms = 20,
+                    NumberOfBathrooms = 8,
+                    YearBuilt = 2024,
                     PropertyCategoryId = 2,
                     SellerId = sellerUserId3
                 },
                 new Property
                 {
                     PropertyId = 6,
-                    Title = "Waterfront Land Plot",
-                    Description = "Beautiful waterfront land ready for development.",
-                    Location = "Seattle, WA",
-                    Size = 10000.0,
+                    Title = "Vineyard Estate Development",
+                    Description = "Prime wine country acreage with approved development plans and existing vineyards.",
+                    Location = "Napa Valley, CA",
+                    Size = 25000.0,
                     ImageUrl = "",
                     VideoUrl = "",
                     NumberOfRooms = 0,
@@ -398,12 +398,12 @@ namespace Auction.DataAccess.Data
                 {
                     AuctionId = 1,
                     PropertyId = 1,
-                    StartingBid = 500000,
-                    CurrentHighestBid = 500000,
-                    ReservationPrice = 600000,
-                    MinimumBidIncrement = 5000,
-                    StartDate = new DateTime(2025, 1, 28),  // Tomorrow
-                    EndDate = new DateTime(2025, 2, 3),     // Week later
+                    StartingBid = 8500000,
+                    CurrentHighestBid = 8500000,
+                    ReservationPrice = 10000000,
+                    MinimumBidIncrement = 50000,
+                    StartDate = new DateTime(2025, 1, 28),
+                    EndDate = new DateTime(2025, 2, 3),
                     Status = AuctionStatus.Active,
                     IsBidStarted = false,
                     IsReservationPriceMet = false
@@ -412,12 +412,12 @@ namespace Auction.DataAccess.Data
                 {
                     AuctionId = 2,
                     PropertyId = 2,
-                    StartingBid = 1000000,
-                    CurrentHighestBid = 1000000,
-                    ReservationPrice = 1200000,
-                    MinimumBidIncrement = 10000,
-                    StartDate = new DateTime(2025, 1, 29),  // Day after tomorrow
-                    EndDate = new DateTime(2025, 2, 6),     // 10 days later
+                    StartingBid = 15000000,
+                    CurrentHighestBid = 15000000,
+                    ReservationPrice = 18000000,
+                    MinimumBidIncrement = 100000,
+                    StartDate = new DateTime(2025, 1, 29),
+                    EndDate = new DateTime(2025, 2, 6),
                     Status = AuctionStatus.Active,
                     IsBidStarted = false,
                     IsReservationPriceMet = false
@@ -426,12 +426,12 @@ namespace Auction.DataAccess.Data
                 {
                     AuctionId = 3,
                     PropertyId = 3,
-                    StartingBid = 300000,
-                    CurrentHighestBid = 300000,
-                    ReservationPrice = 350000,
-                    MinimumBidIncrement = 3000,
-                    StartDate = new DateTime(2025, 2, 1),   // 5 days from now
-                    EndDate = new DateTime(2025, 2, 11),    // 15 days from now
+                    StartingBid = 12000000,
+                    CurrentHighestBid = 12000000,
+                    ReservationPrice = 14000000,
+                    MinimumBidIncrement = 75000,
+                    StartDate = new DateTime(2025, 2, 1),
+                    EndDate = new DateTime(2025, 2, 11),
                     Status = AuctionStatus.Active,
                     IsBidStarted = false,
                     IsReservationPriceMet = false
@@ -441,10 +441,10 @@ namespace Auction.DataAccess.Data
                 {
                     AuctionId = 4,
                     PropertyId = 4,
-                    StartingBid = 800000,
-                    CurrentHighestBid = 950000,
-                    ReservationPrice = 900000,
-                    MinimumBidIncrement = 5000,
+                    StartingBid = 25000000,
+                    CurrentHighestBid = 28500000,
+                    ReservationPrice = 27000000,
+                    MinimumBidIncrement = 150000,
                     StartDate = new DateTime(2024, 12, 15),
                     EndDate = new DateTime(2025, 1, 15),
                     Status = AuctionStatus.Completed,
@@ -456,10 +456,10 @@ namespace Auction.DataAccess.Data
                 {
                     AuctionId = 5,
                     PropertyId = 5,
-                    StartingBid = 2000000,
-                    CurrentHighestBid = 2500000,
-                    ReservationPrice = 2200000,
-                    MinimumBidIncrement = 20000,
+                    StartingBid = 45000000,
+                    CurrentHighestBid = 52000000,
+                    ReservationPrice = 48000000,
+                    MinimumBidIncrement = 250000,
                     StartDate = new DateTime(2024, 12, 1),
                     EndDate = new DateTime(2025, 1, 1),
                     Status = AuctionStatus.Completed,
@@ -471,10 +471,10 @@ namespace Auction.DataAccess.Data
                 {
                     AuctionId = 6,
                     PropertyId = 6,
-                    StartingBid = 1500000,
-                    CurrentHighestBid = 1800000,
-                    ReservationPrice = 1700000,
-                    MinimumBidIncrement = 10000,
+                    StartingBid = 20000000,
+                    CurrentHighestBid = 23500000,
+                    ReservationPrice = 22000000,
+                    MinimumBidIncrement = 100000,
                     StartDate = new DateTime(2024, 11, 15),
                     EndDate = new DateTime(2024, 12, 15),
                     Status = AuctionStatus.Completed,
@@ -482,7 +482,8 @@ namespace Auction.DataAccess.Data
                     IsReservationPriceMet = true,
                     HighestBidderId = buyerUserId3
                 }
-                );
-        }
+            );
+        
+    }
     }
 }

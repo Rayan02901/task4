@@ -45,7 +45,7 @@
                                 @foreach (var bid in Model.RecentBids)
                                 {
                                     <tr>
-                                        <td>@(string.IsNullOrEmpty(bid.UserId) ? "Anonymous" : bid.UserId)</td>
+                                        <td>@(string.IsNullOrEmpty(bid.BidderName) ? "Anonymous" : bid.BidderName)</td>
                                         <td>@bid.BidAmount.ToString("C")</td>
                                         <td>@bid.BidTime.ToString("g")</td>
                                     </tr>
@@ -96,3 +96,5 @@
         </div>
     </div>
 </div>
+
+//

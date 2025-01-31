@@ -74,88 +74,88 @@ namespace Auction.DataAccess.Migrations
                         new
                         {
                             AuctionId = 1,
-                            CurrentHighestBid = 500000m,
+                            CurrentHighestBid = 8500000m,
                             EndDate = new DateTime(2025, 2, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsBidStarted = false,
                             IsReservationPriceMet = false,
-                            MinimumBidIncrement = 5000m,
+                            MinimumBidIncrement = 50000m,
                             PropertyId = 1,
-                            ReservationPrice = 600000m,
+                            ReservationPrice = 10000000m,
                             StartDate = new DateTime(2025, 1, 28, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            StartingBid = 500000m,
+                            StartingBid = 8500000m,
                             Status = 0
                         },
                         new
                         {
                             AuctionId = 2,
-                            CurrentHighestBid = 1000000m,
+                            CurrentHighestBid = 15000000m,
                             EndDate = new DateTime(2025, 2, 6, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsBidStarted = false,
                             IsReservationPriceMet = false,
-                            MinimumBidIncrement = 10000m,
+                            MinimumBidIncrement = 100000m,
                             PropertyId = 2,
-                            ReservationPrice = 1200000m,
+                            ReservationPrice = 18000000m,
                             StartDate = new DateTime(2025, 1, 29, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            StartingBid = 1000000m,
+                            StartingBid = 15000000m,
                             Status = 0
                         },
                         new
                         {
                             AuctionId = 3,
-                            CurrentHighestBid = 300000m,
+                            CurrentHighestBid = 12000000m,
                             EndDate = new DateTime(2025, 2, 11, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsBidStarted = false,
                             IsReservationPriceMet = false,
-                            MinimumBidIncrement = 3000m,
+                            MinimumBidIncrement = 75000m,
                             PropertyId = 3,
-                            ReservationPrice = 350000m,
+                            ReservationPrice = 14000000m,
                             StartDate = new DateTime(2025, 2, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            StartingBid = 300000m,
+                            StartingBid = 12000000m,
                             Status = 0
                         },
                         new
                         {
                             AuctionId = 4,
-                            CurrentHighestBid = 950000m,
+                            CurrentHighestBid = 28500000m,
                             EndDate = new DateTime(2025, 1, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            HighestBidderId = "ed4b9012-2345-6789-1234-bc12def34567",
+                            HighestBidderId = "e4c2f668-5c51-4fd1-9b55-b5dd9b33abb7",
                             IsBidStarted = true,
                             IsReservationPriceMet = true,
-                            MinimumBidIncrement = 5000m,
+                            MinimumBidIncrement = 150000m,
                             PropertyId = 4,
-                            ReservationPrice = 900000m,
+                            ReservationPrice = 27000000m,
                             StartDate = new DateTime(2024, 12, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            StartingBid = 800000m,
+                            StartingBid = 25000000m,
                             Status = 1
                         },
                         new
                         {
                             AuctionId = 5,
-                            CurrentHighestBid = 2500000m,
+                            CurrentHighestBid = 52000000m,
                             EndDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            HighestBidderId = "fc5c0123-4567-8901-2345-bc12def34567",
+                            HighestBidderId = "f682334f-82e1-4b89-8a56-89e4b7efde93",
                             IsBidStarted = true,
                             IsReservationPriceMet = true,
-                            MinimumBidIncrement = 20000m,
+                            MinimumBidIncrement = 250000m,
                             PropertyId = 5,
-                            ReservationPrice = 2200000m,
+                            ReservationPrice = 48000000m,
                             StartDate = new DateTime(2024, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            StartingBid = 2000000m,
+                            StartingBid = 45000000m,
                             Status = 1
                         },
                         new
                         {
                             AuctionId = 6,
-                            CurrentHighestBid = 1800000m,
+                            CurrentHighestBid = 23500000m,
                             EndDate = new DateTime(2024, 12, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            HighestBidderId = "ab6d1234-5678-9012-3456-bc12def34567",
+                            HighestBidderId = "g7d1c8e2-94a3-4d6b-ac32-b61e1e7b76d9",
                             IsBidStarted = true,
                             IsReservationPriceMet = true,
-                            MinimumBidIncrement = 10000m,
+                            MinimumBidIncrement = 100000m,
                             PropertyId = 6,
-                            ReservationPrice = 1700000m,
+                            ReservationPrice = 22000000m,
                             StartDate = new DateTime(2024, 11, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            StartingBid = 1500000m,
+                            StartingBid = 20000000m,
                             Status = 1
                         });
                 });
@@ -185,6 +185,8 @@ namespace Auction.DataAccess.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("AuctionId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Bids");
                 });
@@ -256,90 +258,90 @@ namespace Auction.DataAccess.Migrations
                         new
                         {
                             PropertyId = 1,
-                            Description = "A beautiful modern house located in the heart of the city.",
+                            Description = "Elegant contemporary mansion with smart home features and panoramic valley views.",
                             ImageUrl = "",
-                            Location = "Los Angeles, CA",
+                            Location = "Beverly Hills, CA",
+                            NumberOfBathrooms = 5,
+                            NumberOfRooms = 6,
+                            PropertyCategoryId = 1,
+                            SellerId = "b68d3f5a-b414-48d9-8e34-7c6dde3941ef",
+                            Size = 5200.0,
+                            Title = "Sunset Valley Estate",
+                            VideoUrl = "",
+                            YearBuilt = 2022
+                        },
+                        new
+                        {
+                            PropertyId = 2,
+                            Description = "Luxury beachfront resort property with private beach access and full-service amenities.",
+                            ImageUrl = "",
+                            Location = "Maui, HI",
+                            NumberOfBathrooms = 14,
+                            NumberOfRooms = 12,
+                            PropertyCategoryId = 2,
+                            SellerId = "b68d3f5a-b414-48d9-8e34-7c6dde3941ef",
+                            Size = 8500.0,
+                            Title = "Ocean Breeze Resort Complex",
+                            VideoUrl = "",
+                            YearBuilt = 2021
+                        },
+                        new
+                        {
+                            PropertyId = 3,
+                            Description = "Expansive ranch property with equestrian facilities and mountain backdrop.",
+                            ImageUrl = "",
+                            Location = "Aspen, CO",
                             NumberOfBathrooms = 3,
                             NumberOfRooms = 4,
-                            PropertyCategoryId = 1,
-                            SellerId = "fa0a5657-8901-2345-6789-bc12def34567",
-                            Size = 2500.5,
-                            Title = "Modern Family House",
+                            PropertyCategoryId = 3,
+                            SellerId = "c1ce93ad-1e91-4b79-9f43-9f1d51d33511",
+                            Size = 15000.0,
+                            Title = "Mountain View Ranch",
                             VideoUrl = "",
                             YearBuilt = 2015
                         },
                         new
                         {
-                            PropertyId = 2,
-                            Description = "A stunning villa overlooking the ocean with premium amenities.",
-                            ImageUrl = "",
-                            Location = "Miami, FL",
-                            NumberOfBathrooms = 5,
-                            NumberOfRooms = 6,
-                            PropertyCategoryId = 2,
-                            SellerId = "fa0a5657-8901-2345-6789-bc12def34567",
-                            Size = 4500.0,
-                            Title = "Luxury Beachfront Villa",
-                            VideoUrl = "",
-                            YearBuilt = 2020
-                        },
-                        new
-                        {
-                            PropertyId = 3,
-                            Description = "A charming cottage in a peaceful countryside setting.",
-                            ImageUrl = "",
-                            Location = "Asheville, NC",
-                            NumberOfBathrooms = 2,
-                            NumberOfRooms = 3,
-                            PropertyCategoryId = 3,
-                            SellerId = "cd2a7890-5678-1234-4567-bc12def34567",
-                            Size = 1200.0,
-                            Title = "Cozy Cottage",
-                            VideoUrl = "",
-                            YearBuilt = 1990
-                        },
-                        new
-                        {
                             PropertyId = 4,
-                            Description = "Luxurious penthouse with panoramic city views.",
+                            Description = "Ultra-luxury penthouse with 360-degree views and private helipad access.",
                             ImageUrl = "",
-                            Location = "New York, NY",
-                            NumberOfBathrooms = 4,
+                            Location = "Manhattan, NY",
+                            NumberOfBathrooms = 5,
                             NumberOfRooms = 5,
                             PropertyCategoryId = 1,
-                            SellerId = "cd2a7890-5678-1234-4567-bc12def34567",
-                            Size = 3000.0,
-                            Title = "Downtown Penthouse",
+                            SellerId = "c1ce93ad-1e91-4b79-9f43-9f1d51d33511",
+                            Size = 4800.0,
+                            Title = "Skyline Tower Penthouse",
                             VideoUrl = "",
-                            YearBuilt = 2018
+                            YearBuilt = 2023
                         },
                         new
                         {
                             PropertyId = 5,
-                            Description = "Prime location office space in business district.",
+                            Description = "State-of-the-art office complex with sustainable design and tech infrastructure.",
                             ImageUrl = "",
-                            Location = "Chicago, IL",
-                            NumberOfBathrooms = 4,
-                            NumberOfRooms = 8,
+                            Location = "Austin, TX",
+                            NumberOfBathrooms = 8,
+                            NumberOfRooms = 20,
                             PropertyCategoryId = 2,
-                            SellerId = "de3a8901-3456-7890-1234-bc12def34567",
-                            Size = 5000.0,
-                            Title = "Commercial Office Space",
+                            SellerId = "d9a9b8d7-73b2-4f28-9177-e1f9239e6673",
+                            Size = 12000.0,
+                            Title = "Innovation Hub Complex",
                             VideoUrl = "",
-                            YearBuilt = 2019
+                            YearBuilt = 2024
                         },
                         new
                         {
                             PropertyId = 6,
-                            Description = "Beautiful waterfront land ready for development.",
+                            Description = "Prime wine country acreage with approved development plans and existing vineyards.",
                             ImageUrl = "",
-                            Location = "Seattle, WA",
+                            Location = "Napa Valley, CA",
                             NumberOfBathrooms = 0,
                             NumberOfRooms = 0,
                             PropertyCategoryId = 3,
-                            SellerId = "de3a8901-3456-7890-1234-bc12def34567",
-                            Size = 10000.0,
-                            Title = "Waterfront Land Plot",
+                            SellerId = "d9a9b8d7-73b2-4f28-9177-e1f9239e6673",
+                            Size = 25000.0,
+                            Title = "Vineyard Estate Development",
                             VideoUrl = "",
                             YearBuilt = 0
                         });
@@ -415,19 +417,19 @@ namespace Auction.DataAccess.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "348e5667-5048-4292-b249-b4b55531606d",
+                            Id = "c5ddd595-f622-456a-994a-36ebe2e1c383",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "27f77397-3ab6-4cba-8e57-31e0d16e5a98",
+                            Id = "4aa1853c-874f-48fb-b656-73855d9e074f",
                             Name = "Seller",
                             NormalizedName = "SELLER"
                         },
                         new
                         {
-                            Id = "82426088-ca71-439c-b0c2-9c9194aa2cc0",
+                            Id = "e72c91f6-490e-41ec-b770-86ca471e698a",
                             Name = "Buyer",
                             NormalizedName = "BUYER"
                         });
@@ -596,38 +598,38 @@ namespace Auction.DataAccess.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "b4db56e8-1234-4567-8901-bc12def34567",
-                            RoleId = "348e5667-5048-4292-b249-b4b55531606d"
+                            UserId = "a18be9c0-aa65-4af8-bd17-00bd9344e575",
+                            RoleId = "c5ddd595-f622-456a-994a-36ebe2e1c383"
                         },
                         new
                         {
-                            UserId = "fa0a5657-8901-2345-6789-bc12def34567",
-                            RoleId = "27f77397-3ab6-4cba-8e57-31e0d16e5a98"
+                            UserId = "b68d3f5a-b414-48d9-8e34-7c6dde3941ef",
+                            RoleId = "4aa1853c-874f-48fb-b656-73855d9e074f"
                         },
                         new
                         {
-                            UserId = "cd2a7890-5678-1234-4567-bc12def34567",
-                            RoleId = "27f77397-3ab6-4cba-8e57-31e0d16e5a98"
+                            UserId = "c1ce93ad-1e91-4b79-9f43-9f1d51d33511",
+                            RoleId = "4aa1853c-874f-48fb-b656-73855d9e074f"
                         },
                         new
                         {
-                            UserId = "de3a8901-3456-7890-1234-bc12def34567",
-                            RoleId = "27f77397-3ab6-4cba-8e57-31e0d16e5a98"
+                            UserId = "d9a9b8d7-73b2-4f28-9177-e1f9239e6673",
+                            RoleId = "4aa1853c-874f-48fb-b656-73855d9e074f"
                         },
                         new
                         {
-                            UserId = "ed4b9012-2345-6789-1234-bc12def34567",
-                            RoleId = "82426088-ca71-439c-b0c2-9c9194aa2cc0"
+                            UserId = "e4c2f668-5c51-4fd1-9b55-b5dd9b33abb7",
+                            RoleId = "e72c91f6-490e-41ec-b770-86ca471e698a"
                         },
                         new
                         {
-                            UserId = "fc5c0123-4567-8901-2345-bc12def34567",
-                            RoleId = "82426088-ca71-439c-b0c2-9c9194aa2cc0"
+                            UserId = "f682334f-82e1-4b89-8a56-89e4b7efde93",
+                            RoleId = "e72c91f6-490e-41ec-b770-86ca471e698a"
                         },
                         new
                         {
-                            UserId = "ab6d1234-5678-9012-3456-bc12def34567",
-                            RoleId = "82426088-ca71-439c-b0c2-9c9194aa2cc0"
+                            UserId = "g7d1c8e2-94a3-4d6b-ac32-b61e1e7b76d9",
+                            RoleId = "e72c91f6-490e-41ec-b770-86ca471e698a"
                         });
                 });
 
@@ -676,119 +678,119 @@ namespace Auction.DataAccess.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "b4db56e8-1234-4567-8901-bc12def34567",
+                            Id = "a18be9c0-aa65-4af8-bd17-00bd9344e575",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "ab0c4f98-0992-45d1-9ca0-508ba97f6ff5",
+                            ConcurrencyStamp = "33e25cbd-3cd2-4246-b1d8-eab359db5d9a",
                             Email = "admin@example.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@EXAMPLE.COM",
                             NormalizedUserName = "ADMIN@EXAMPLE.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAENWDZNev4PbH/CfJR0FrbUiM3DXHEgmJ0um/5u0xCFim70jxmFG6jglFAl/pVkcwsw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAELU+wsetPqml4o5EdyM4wY7occWYAm93T8CI6J9Pt4TJ3asulyX2T8zKZk5qy2r6vA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "cb298898-76da-41a3-bdee-02da1cd3859b",
+                            SecurityStamp = "b167bdfd-4e6a-4766-a141-60cd780c715e",
                             TwoFactorEnabled = false,
                             UserName = "admin@example.com",
                             Name = "Admin User"
                         },
                         new
                         {
-                            Id = "fa0a5657-8901-2345-6789-bc12def34567",
+                            Id = "b68d3f5a-b414-48d9-8e34-7c6dde3941ef",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "259568c7-58dc-4bc1-b4c5-ba761a1fd2be",
+                            ConcurrencyStamp = "624c5601-9510-4581-a205-d62b67b75150",
                             Email = "seller1@example.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "SELLER1@EXAMPLE.COM",
                             NormalizedUserName = "SELLER1@EXAMPLE.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEBmPpVL+d4oH7hyRZD/guU2BZ1k75TZIXxWgA3sjNOvJ1wBVlmfPpK+ZjUt2nWtrtw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEHot2gcER/3QYjX6N9i2AVgr1bdCkiHdy5PCYXWmg8qezL25H38NyCE80iAk94m/hg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "c8c45829-2f39-4bdd-8364-9b62f79a7073",
+                            SecurityStamp = "598ebed0-05f5-4ea2-a143-11f777aee769",
                             TwoFactorEnabled = false,
                             UserName = "seller1@example.com",
                             Name = "Seller One"
                         },
                         new
                         {
-                            Id = "cd2a7890-5678-1234-4567-bc12def34567",
+                            Id = "c1ce93ad-1e91-4b79-9f43-9f1d51d33511",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "dea9d862-1b12-41f3-98a2-6d430e9751c9",
+                            ConcurrencyStamp = "7427f7db-6b90-4996-9f00-aa56c4ca8e3f",
                             Email = "seller2@example.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "SELLER2@EXAMPLE.COM",
                             NormalizedUserName = "SELLER2@EXAMPLE.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEOv/XGyqUR8IVY83zNzUeZWT+VW622F9WFX8XnZkAfgfobeoIOAFsZSWDqd6Hidgzw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEA9jeDjZRkSjWRBUEe12M//+/YLwIrnax7tAFIvPeh7t9MMrghikcHfT14pCTN7f6g==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "bc6af4d5-8003-46d0-9fc4-6e1968feb42d",
+                            SecurityStamp = "7d609eae-0162-46ec-861b-77a624bfb21f",
                             TwoFactorEnabled = false,
                             UserName = "seller2@example.com",
                             Name = "Seller Two"
                         },
                         new
                         {
-                            Id = "de3a8901-3456-7890-1234-bc12def34567",
+                            Id = "d9a9b8d7-73b2-4f28-9177-e1f9239e6673",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "b37ce505-ed51-4378-b6bb-7084500f762c",
+                            ConcurrencyStamp = "1926086f-0413-49c8-a1e9-672e61d4e78e",
                             Email = "seller3@example.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "SELLER3@EXAMPLE.COM",
                             NormalizedUserName = "SELLER3@EXAMPLE.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEKfgBf1BE4FsKrdNJ0s6UFAfjRNOPljLMkk453mBY7dfE3O/4If81PVPp9TdXAbg9g==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEBr6TrNzqr453Nq5AV8+cEyL9G5F/cYG2HqDoBYgrqiFo/psS1+fY8IJnpKUfxHCdg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "957e0e26-2bd6-404f-9d73-17a4876e00e5",
+                            SecurityStamp = "f270a20f-e0a2-4f81-894b-cfaebccb8f02",
                             TwoFactorEnabled = false,
                             UserName = "seller3@example.com",
                             Name = "Seller Three"
                         },
                         new
                         {
-                            Id = "ed4b9012-2345-6789-1234-bc12def34567",
+                            Id = "e4c2f668-5c51-4fd1-9b55-b5dd9b33abb7",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "229ae3d4-880d-41d2-ad6c-8ce45658bf61",
+                            ConcurrencyStamp = "e6753600-e3a4-4526-b5cb-2f6c670ae37a",
                             Email = "buyer1@example.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "BUYER1@EXAMPLE.COM",
                             NormalizedUserName = "BUYER1@EXAMPLE.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAECf2S5ey/BDRrkn3ZvgGHEYakZA4Ndjfif15JnvwAuWF80PPgXaOEKJF/diUGeJoSQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEIVqDXiGnmfn1c3UStMOP4LiwZVGJ+MOrz9mx/zzyRq+fyMZ4T3HlmqV+Aj5ucx1WQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "fa29f5f7-86e1-4a73-95c8-39453173e7ff",
+                            SecurityStamp = "7660a85c-f509-4402-b74d-7f91b00cd471",
                             TwoFactorEnabled = false,
                             UserName = "buyer1@example.com",
                             Name = "Buyer One"
                         },
                         new
                         {
-                            Id = "fc5c0123-4567-8901-2345-bc12def34567",
+                            Id = "f682334f-82e1-4b89-8a56-89e4b7efde93",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "504d4ec3-6f2e-464d-b0a1-3339956229a9",
+                            ConcurrencyStamp = "22efe663-ca8a-45c6-a115-9d062ed20f33",
                             Email = "buyer2@example.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "BUYER2@EXAMPLE.COM",
                             NormalizedUserName = "BUYER2@EXAMPLE.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEIJOWksR9myMuO5yyy9l5Xe0Scn9GuqBprNFG1xsQOXdoHitwsMv1RFsZis4GxvtIg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAENptiyNOejpJblqglsrjlm1ZhfYYw4hNTAFmKgtky3tiNRBgyRQOAPNoQTQcInVFXw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "7af39da3-0773-4c7d-97c7-83c943cb0c6c",
+                            SecurityStamp = "9d71a321-4745-4bde-884b-38c6c8fdacbc",
                             TwoFactorEnabled = false,
                             UserName = "buyer2@example.com",
                             Name = "Buyer Two"
                         },
                         new
                         {
-                            Id = "ab6d1234-5678-9012-3456-bc12def34567",
+                            Id = "g7d1c8e2-94a3-4d6b-ac32-b61e1e7b76d9",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "afddfb46-b4d0-421c-afd0-18ca63641f97",
+                            ConcurrencyStamp = "30d4a76b-ed06-4f73-be2f-924234afa07b",
                             Email = "buyer3@example.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "BUYER3@EXAMPLE.COM",
                             NormalizedUserName = "BUYER3@EXAMPLE.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEFDV0W9dxs/TZR6OubkVmM7BXnTLauIrA0DSaXtZaz0hEvjRQIm3Gi4z+RNM19KGUg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEB2kL6IhK/Q2iCVyWSlnMCESp+SjhAr+rNX4T2VoWf3HL1eeP4tpHMW67CdxhUuzkw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "2076fe34-6a39-480b-9946-c92b46911929",
+                            SecurityStamp = "af2f928c-6961-4b3a-aaef-5d7249491718",
                             TwoFactorEnabled = false,
                             UserName = "buyer3@example.com",
                             Name = "Buyer Three"
@@ -814,7 +816,15 @@ namespace Auction.DataAccess.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
+                    b.HasOne("Auction.Models.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Auction");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Auction.Models.Property", b =>

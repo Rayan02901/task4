@@ -47,8 +47,9 @@ namespace PropertyAuction.Areas.Buyer.Controllers
 
         public async Task<IActionResult> Details(int id)
         {
+            // Update the include properties to include User information
             var auction = await Task.FromResult(_unitOfWork.AuctionListing
-                .Get(a => a.AuctionId == id, includeProperties: "Property,Bids"));
+                .Get(a => a.AuctionId == id, includeProperties: "Property,Bids,Bids.User"));
 
             if (auction == null)
             {
@@ -66,7 +67,15 @@ namespace PropertyAuction.Areas.Buyer.Controllers
                 ReservationPrice = auction.ReservationPrice,
                 MinimumBidIncrement = auction.MinimumBidIncrement,
                 Status = auction.Status,
-                RecentBids = auction.Bids?.ToList() ?? new List<Bid>()
+                RecentBids = auction.Bids?
+                    .Select(bid => new BidVM
+                    {
+                        BidAmount = bid.BidAmount,
+                        BidTime = bid.BidTime,
+                        BidderName = bid.User?.UserName ?? "Anonymous" // Or use other user properties like FirstName + LastName
+                    })
+                    .OrderByDescending(b => b.BidTime)
+                    .ToList() ?? new List<BidVM>()
             };
 
             return View(viewModel);

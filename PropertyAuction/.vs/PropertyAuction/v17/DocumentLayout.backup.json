@@ -1,76 +1,110 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\New folder\\try\\task4\\PropertyAuction\\",
+  "WorkspaceRootPath": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\try\\task4\\propertyauction\\areas\\seller\\controllers\\auctioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\New folder\\Auctionv2\\task4\\Auction.DataAccess\\Migrations\\20250131015953_databaseInitialization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\auctionv2\\task4\\propertyauction\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F073CBA-2B0C-482C-8EAE-DC6E7273BB82}|..\\Auction.DataAccess\\Auction.DataAccess.csproj|f:\\new folder\\auctionv2\\task4\\auction.dataaccess\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\auctionv2\\task4\\propertyauction\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\auctionv2\\task4\\propertyauction\\areas\\seller\\views\\property\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:areas\\seller\\views\\property\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\auctionv2\\task4\\propertyauction\\areas\\admin\\views\\property\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:areas\\admin\\views\\property\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\auctionv2\\task4\\propertyauction\\areas\\buyer\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:areas\\buyer\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\auctionv2\\task4\\propertyauction\\areas\\buyer\\controllers\\buyerauctioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:areas\\buyer\\controllers\\buyerauctioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\auctionv2\\task4\\propertyauction\\areas\\buyer\\views\\buyerauction\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:areas\\buyer\\views\\buyerauction\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4981CEFB-5D2F-448B-AEBC-F84F991356B1}|..\\Auction.Models\\Auction.Models.csproj|f:\\new folder\\auctionv2\\task4\\auction.models\\viewmodels\\bidvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\New folder\\Sujan\\task4\\PropertyAuction\\Areas\\Buyer\\Controllers\\BuyerAuctionController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4981CEFB-5D2F-448B-AEBC-F84F991356B1}|..\\Auction.Models\\Auction.Models.csproj|f:\\new folder\\auctionv2\\task4\\auction.models\\bid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4981CEFB-5D2F-448B-AEBC-F84F991356B1}|..\\Auction.Models\\Auction.Models.csproj|f:\\new folder\\auctionv2\\task4\\auction.models\\auction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4981CEFB-5D2F-448B-AEBC-F84F991356B1}|..\\Auction.Models\\Auction.Models.csproj|f:\\new folder\\auctionv2\\task4\\auction.models\\viewmodels\\auctiondetailsforbuyervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\auctionv2\\task4\\propertyauction\\areas\\seller\\views\\auction\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:areas\\seller\\views\\auction\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\auctionv2\\task4\\propertyauction\\areas\\seller\\controllers\\auctioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:areas\\seller\\controllers\\auctioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\try\\task4\\propertyauction\\areas\\seller\\views\\property\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\auctionv2\\task4\\propertyauction\\areas\\seller\\views\\property\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:areas\\seller\\views\\property\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\try\\task4\\propertyauction\\areas\\seller\\views\\auction\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:areas\\seller\\views\\auction\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\New folder\\Sujan\\task4\\Auction.Models\\ViewModels\\AuctionCreateVM.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\try\\task4\\propertyauction\\areas\\seller\\controllers\\propertycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\auctionv2\\task4\\propertyauction\\areas\\seller\\controllers\\propertycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:areas\\seller\\controllers\\propertycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\try\\task4\\propertyauction\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\auctionv2\\task4\\propertyauction\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\try\\task4\\propertyauction\\areas\\seller\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\auctionv2\\task4\\propertyauction\\areas\\seller\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:areas\\seller\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\try\\task4\\propertyauction\\areas\\admin\\views\\property\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\auctionv2\\task4\\propertyauction\\areas\\admin\\views\\property\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:areas\\admin\\views\\property\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\try\\task4\\propertyauction\\areas\\admin\\controllers\\auctioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\auctionv2\\task4\\propertyauction\\areas\\admin\\controllers\\auctioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:areas\\admin\\controllers\\auctioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\try\\task4\\propertyauction\\areas\\admin\\controllers\\propertycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\auctionv2\\task4\\propertyauction\\areas\\admin\\controllers\\propertycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:areas\\admin\\controllers\\propertycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\try\\task4\\propertyauction\\areas\\admin\\views\\property\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:areas\\admin\\views\\property\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\try\\task4\\propertyauction\\areas\\admin\\views\\property\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\auctionv2\\task4\\propertyauction\\areas\\admin\\views\\property\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:areas\\admin\\views\\property\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\try\\task4\\propertyauction\\areas\\admin\\views\\property\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\auctionv2\\task4\\propertyauction\\areas\\admin\\views\\property\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:areas\\admin\\views\\property\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\try\\task4\\propertyauction\\areas\\seller\\views\\property\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:areas\\seller\\views\\property\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\try\\task4\\propertyauction\\areas\\seller\\views\\property\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\auctionv2\\task4\\propertyauction\\areas\\seller\\views\\property\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:areas\\seller\\views\\property\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\try\\task4\\propertyauction\\areas\\seller\\views\\property\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\auctionv2\\task4\\propertyauction\\areas\\seller\\views\\property\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:areas\\seller\\views\\property\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|f:\\new folder\\try\\task4\\propertyauction\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{2744A5F0-1786-4A80-928C-FF23111F5CFE}|PropertyAuction.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\New folder\\Sujan\\task4\\Auction.Models\\Bid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\New folder\\Sujan\\task4\\Auction.Models\\ViewModels\\AuctionListVM.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -101,7 +135,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -109,7 +143,195 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20250131015953_databaseInitialization.cs",
+              "DocumentMoniker": "F:\\New folder\\Auctionv2\\task4\\Auction.DataAccess\\Migrations\\20250131015953_databaseInitialization.cs",
+              "RelativeDocumentMoniker": "..\\Auction.DataAccess\\Migrations\\20250131015953_databaseInitialization.cs",
+              "ToolTip": "F:\\New folder\\Auctionv2\\task4\\Auction.DataAccess\\Migrations\\20250131015953_databaseInitialization.cs",
+              "RelativeToolTip": "..\\Auction.DataAccess\\Migrations\\20250131015953_databaseInitialization.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T01:59:54.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "F:\\New folder\\Auctionv2\\task4\\Auction.DataAccess\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "..\\Auction.DataAccess\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "F:\\New folder\\Auctionv2\\task4\\Auction.DataAccess\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "..\\Auction.DataAccess\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T01:52:54.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-27T07:12:11.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Seller\\Views\\Property\\Create.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Seller\\Views\\Property\\Create.cshtml",
+              "ToolTip": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Seller\\Views\\Property\\Create.cshtml",
+              "RelativeToolTip": "Areas\\Seller\\Views\\Property\\Create.cshtml",
+              "ViewState": "AgIAACYAAAAAAAAAAADwv1QAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-27T06:31:43.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Admin\\Views\\Property\\Create.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Property\\Create.cshtml",
+              "ToolTip": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Admin\\Views\\Property\\Create.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Property\\Create.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAADwv1QAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-27T07:38:34.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Buyer\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Buyer\\Views\\Home\\Index.cshtml",
+              "ToolTip": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Buyer\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Buyer\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-27T09:31:14.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BuyerAuctionController.cs",
+              "DocumentMoniker": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Buyer\\Controllers\\BuyerAuctionController.cs",
+              "RelativeDocumentMoniker": "Areas\\Buyer\\Controllers\\BuyerAuctionController.cs",
+              "ToolTip": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Buyer\\Controllers\\BuyerAuctionController.cs",
+              "RelativeToolTip": "Areas\\Buyer\\Controllers\\BuyerAuctionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T01:16:54.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "site.css",
+              "DocumentMoniker": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAABABAAAAAAAAAAAiwEABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-31T01:13:10.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BuyerAuctionController.cs",
+              "DocumentMoniker": "F:\\New folder\\Sujan\\task4\\PropertyAuction\\Areas\\Buyer\\Controllers\\BuyerAuctionController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Sujan\\task4\\PropertyAuction\\Areas\\Buyer\\Controllers\\BuyerAuctionController.cs",
+              "ToolTip": "F:\\New folder\\Sujan\\task4\\PropertyAuction\\Areas\\Buyer\\Controllers\\BuyerAuctionController.cs",
+              "RelativeToolTip": "..\\..\\..\\Sujan\\task4\\PropertyAuction\\Areas\\Buyer\\Controllers\\BuyerAuctionController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAC8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T01:29:22.677Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BidVM.cs",
+              "DocumentMoniker": "F:\\New folder\\Auctionv2\\task4\\Auction.Models\\ViewModels\\BidVM.cs",
+              "RelativeDocumentMoniker": "..\\Auction.Models\\ViewModels\\BidVM.cs",
+              "ToolTip": "F:\\New folder\\Auctionv2\\task4\\Auction.Models\\ViewModels\\BidVM.cs",
+              "RelativeToolTip": "..\\Auction.Models\\ViewModels\\BidVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T01:14:49.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Buyer\\Views\\BuyerAuction\\Details.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Buyer\\Views\\BuyerAuction\\Details.cshtml",
+              "ToolTip": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Buyer\\Views\\BuyerAuction\\Details.cshtml",
+              "RelativeToolTip": "Areas\\Buyer\\Views\\BuyerAuction\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-31T01:15:41.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Bid.cs",
+              "DocumentMoniker": "F:\\New folder\\Auctionv2\\task4\\Auction.Models\\Bid.cs",
+              "RelativeDocumentMoniker": "..\\Auction.Models\\Bid.cs",
+              "ToolTip": "F:\\New folder\\Auctionv2\\task4\\Auction.Models\\Bid.cs",
+              "RelativeToolTip": "..\\Auction.Models\\Bid.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T01:13:42.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Auction.cs",
+              "DocumentMoniker": "F:\\New folder\\Auctionv2\\task4\\Auction.Models\\Auction.cs",
+              "RelativeDocumentMoniker": "..\\Auction.Models\\Auction.cs",
+              "ToolTip": "F:\\New folder\\Auctionv2\\task4\\Auction.Models\\Auction.cs",
+              "RelativeToolTip": "..\\Auction.Models\\Auction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T01:24:56.829Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AuctionDetailsForBuyerVM.cs",
+              "DocumentMoniker": "F:\\New folder\\Auctionv2\\task4\\Auction.Models\\ViewModels\\AuctionDetailsForBuyerVM.cs",
+              "RelativeDocumentMoniker": "..\\Auction.Models\\ViewModels\\AuctionDetailsForBuyerVM.cs",
+              "ToolTip": "F:\\New folder\\Auctionv2\\task4\\Auction.Models\\ViewModels\\AuctionDetailsForBuyerVM.cs",
+              "RelativeToolTip": "..\\Auction.Models\\ViewModels\\AuctionDetailsForBuyerVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T01:14:27.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "AuctionCreateVM.cs",
               "DocumentMoniker": "F:\\New folder\\Sujan\\task4\\Auction.Models\\ViewModels\\AuctionCreateVM.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Sujan\\task4\\Auction.Models\\ViewModels\\AuctionCreateVM.cs",
@@ -117,63 +339,47 @@
               "RelativeToolTip": "..\\..\\..\\Sujan\\task4\\Auction.Models\\ViewModels\\AuctionCreateVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T08:59:35.998Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-27T08:59:35.998Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Bid.cs",
-              "DocumentMoniker": "F:\\New folder\\Sujan\\task4\\Auction.Models\\Bid.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\Sujan\\task4\\Auction.Models\\Bid.cs",
-              "ToolTip": "F:\\New folder\\Sujan\\task4\\Auction.Models\\Bid.cs",
-              "RelativeToolTip": "..\\..\\..\\Sujan\\task4\\Auction.Models\\Bid.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T08:23:55.774Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 14,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "F:\\New folder\\try\\task4\\PropertyAuction\\Areas\\Seller\\Views\\Auction\\Create.cshtml",
+              "DocumentMoniker": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Seller\\Views\\Auction\\Create.cshtml",
               "RelativeDocumentMoniker": "Areas\\Seller\\Views\\Auction\\Create.cshtml",
-              "ToolTip": "F:\\New folder\\try\\task4\\PropertyAuction\\Areas\\Seller\\Views\\Auction\\Create.cshtml",
+              "ToolTip": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Seller\\Views\\Auction\\Create.cshtml",
               "RelativeToolTip": "Areas\\Seller\\Views\\Auction\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-27T08:21:47.626Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-27T08:21:47.626Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 15,
               "Title": "AuctionController.cs",
-              "DocumentMoniker": "F:\\New folder\\try\\task4\\PropertyAuction\\Areas\\Seller\\Controllers\\AuctionController.cs",
+              "DocumentMoniker": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Seller\\Controllers\\AuctionController.cs",
               "RelativeDocumentMoniker": "Areas\\Seller\\Controllers\\AuctionController.cs",
-              "ToolTip": "F:\\New folder\\try\\task4\\PropertyAuction\\Areas\\Seller\\Controllers\\AuctionController.cs",
+              "ToolTip": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Seller\\Controllers\\AuctionController.cs",
               "RelativeToolTip": "Areas\\Seller\\Controllers\\AuctionController.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAWwJEAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAqwDUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T08:15:44.919Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-27T08:15:44.919Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 16,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "F:\\New folder\\try\\task4\\PropertyAuction\\Areas\\Seller\\Views\\Property\\Index.cshtml",
+              "DocumentMoniker": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Seller\\Views\\Property\\Index.cshtml",
               "RelativeDocumentMoniker": "Areas\\Seller\\Views\\Property\\Index.cshtml",
-              "ToolTip": "F:\\New folder\\try\\task4\\PropertyAuction\\Areas\\Seller\\Views\\Property\\Index.cshtml",
+              "ToolTip": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Seller\\Views\\Property\\Index.cshtml",
               "RelativeToolTip": "Areas\\Seller\\Views\\Property\\Index.cshtml",
               "ViewState": "AgIAACwAAAAAAAAAAADwv1oAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-27T06:30:20.862Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-27T06:30:20.862Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 28,
               "Title": "AuctionListVM.cs",
               "DocumentMoniker": "F:\\New folder\\Sujan\\task4\\Auction.Models\\ViewModels\\AuctionListVM.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Sujan\\task4\\Auction.Models\\ViewModels\\AuctionListVM.cs",
@@ -185,7 +391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 29,
               "Title": "BidVM.cs",
               "DocumentMoniker": "F:\\New folder\\Sujan\\task4\\Auction.Models\\ViewModels\\BidVM.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Sujan\\task4\\Auction.Models\\ViewModels\\BidVM.cs",
@@ -197,11 +403,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 18,
               "Title": "PropertyController.cs",
-              "DocumentMoniker": "F:\\New folder\\try\\task4\\PropertyAuction\\Areas\\Seller\\Controllers\\PropertyController.cs",
+              "DocumentMoniker": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Seller\\Controllers\\PropertyController.cs",
               "RelativeDocumentMoniker": "Areas\\Seller\\Controllers\\PropertyController.cs",
-              "ToolTip": "F:\\New folder\\try\\task4\\PropertyAuction\\Areas\\Seller\\Controllers\\PropertyController.cs",
+              "ToolTip": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Seller\\Controllers\\PropertyController.cs",
               "RelativeToolTip": "Areas\\Seller\\Controllers\\PropertyController.cs",
               "ViewState": "AgIAADkAAAAAAAAAAAAAwEkAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -209,7 +415,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 30,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "F:\\New folder\\Sujan\\task4\\Auction.DataAccess\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Sujan\\task4\\Auction.DataAccess\\Data\\ApplicationDbContext.cs",
@@ -221,7 +427,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 31,
               "Title": "Repository.cs",
               "DocumentMoniker": "F:\\New folder\\Sujan\\task4\\Auction.DataAccess\\Repository\\Repository.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Sujan\\task4\\Auction.DataAccess\\Repository\\Repository.cs",
@@ -233,11 +439,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 19,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "F:\\New folder\\try\\task4\\PropertyAuction\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "F:\\New folder\\try\\task4\\PropertyAuction\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -245,24 +451,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 22,
               "Title": "AuctionController.cs",
-              "DocumentMoniker": "F:\\New folder\\try\\task4\\PropertyAuction\\Areas\\Admin\\Controllers\\AuctionController.cs",
+              "DocumentMoniker": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Admin\\Controllers\\AuctionController.cs",
               "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\AuctionController.cs",
-              "ToolTip": "F:\\New folder\\try\\task4\\PropertyAuction\\Areas\\Admin\\Controllers\\AuctionController.cs",
+              "ToolTip": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Admin\\Controllers\\AuctionController.cs",
               "RelativeToolTip": "Areas\\Admin\\Controllers\\AuctionController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T07:41:45.291Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-27T07:41:45.291Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 24,
               "Title": "Delete.cshtml",
-              "DocumentMoniker": "F:\\New folder\\try\\task4\\PropertyAuction\\Areas\\Admin\\Views\\Property\\Delete.cshtml",
+              "DocumentMoniker": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Admin\\Views\\Property\\Delete.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Property\\Delete.cshtml",
-              "ToolTip": "F:\\New folder\\try\\task4\\PropertyAuction\\Areas\\Admin\\Views\\Property\\Delete.cshtml",
+              "ToolTip": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Admin\\Views\\Property\\Delete.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Property\\Delete.cshtml",
               "ViewState": "AgIAAD8AAAAAAAAAAAAAwEsAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -270,11 +475,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 21,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "F:\\New folder\\try\\task4\\PropertyAuction\\Areas\\Admin\\Views\\Property\\Index.cshtml",
+              "DocumentMoniker": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Admin\\Views\\Property\\Index.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Property\\Index.cshtml",
-              "ToolTip": "F:\\New folder\\try\\task4\\PropertyAuction\\Areas\\Admin\\Views\\Property\\Index.cshtml",
+              "ToolTip": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Admin\\Views\\Property\\Index.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Property\\Index.cshtml",
               "ViewState": "AgIAAD8AAAAAAAAAAAAAwFcAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -282,11 +487,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 20,
               "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "F:\\New folder\\try\\task4\\PropertyAuction\\Areas\\Seller\\Views\\_ViewImports.cshtml",
+              "DocumentMoniker": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Seller\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Areas\\Seller\\Views\\_ViewImports.cshtml",
-              "ToolTip": "F:\\New folder\\try\\task4\\PropertyAuction\\Areas\\Seller\\Views\\_ViewImports.cshtml",
+              "ToolTip": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Seller\\Views\\_ViewImports.cshtml",
               "RelativeToolTip": "Areas\\Seller\\Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -294,11 +499,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 23,
               "Title": "PropertyController.cs",
-              "DocumentMoniker": "F:\\New folder\\try\\task4\\PropertyAuction\\Areas\\Admin\\Controllers\\PropertyController.cs",
+              "DocumentMoniker": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Admin\\Controllers\\PropertyController.cs",
               "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\PropertyController.cs",
-              "ToolTip": "F:\\New folder\\try\\task4\\PropertyAuction\\Areas\\Admin\\Controllers\\PropertyController.cs",
+              "ToolTip": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Admin\\Controllers\\PropertyController.cs",
               "RelativeToolTip": "Areas\\Admin\\Controllers\\PropertyController.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAQwBkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -306,11 +511,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 27,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "F:\\New folder\\try\\task4\\PropertyAuction\\Areas\\Seller\\Views\\Property\\Edit.cshtml",
+              "DocumentMoniker": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Seller\\Views\\Property\\Edit.cshtml",
               "RelativeDocumentMoniker": "Areas\\Seller\\Views\\Property\\Edit.cshtml",
-              "ToolTip": "F:\\New folder\\try\\task4\\PropertyAuction\\Areas\\Seller\\Views\\Property\\Edit.cshtml",
+              "ToolTip": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Seller\\Views\\Property\\Edit.cshtml",
               "RelativeToolTip": "Areas\\Seller\\Views\\Property\\Edit.cshtml",
               "ViewState": "AgIAADkAAAAAAAAAAAAmwFQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -318,11 +523,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 26,
               "Title": "Delete.cshtml",
-              "DocumentMoniker": "F:\\New folder\\try\\task4\\PropertyAuction\\Areas\\Seller\\Views\\Property\\Delete.cshtml",
+              "DocumentMoniker": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Seller\\Views\\Property\\Delete.cshtml",
               "RelativeDocumentMoniker": "Areas\\Seller\\Views\\Property\\Delete.cshtml",
-              "ToolTip": "F:\\New folder\\try\\task4\\PropertyAuction\\Areas\\Seller\\Views\\Property\\Delete.cshtml",
+              "ToolTip": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Seller\\Views\\Property\\Delete.cshtml",
               "RelativeToolTip": "Areas\\Seller\\Views\\Property\\Delete.cshtml",
               "ViewState": "AgIAADwAAAAAAAAAAAAmwFcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -330,23 +535,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "F:\\New folder\\try\\task4\\PropertyAuction\\Areas\\Admin\\Views\\Property\\Create.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Property\\Create.cshtml",
-              "ToolTip": "F:\\New folder\\try\\task4\\PropertyAuction\\Areas\\Admin\\Views\\Property\\Create.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Property\\Create.cshtml",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEYAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-27T07:38:34.231Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 25,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "F:\\New folder\\try\\task4\\PropertyAuction\\Areas\\Admin\\Views\\Property\\Edit.cshtml",
+              "DocumentMoniker": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Admin\\Views\\Property\\Edit.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Property\\Edit.cshtml",
-              "ToolTip": "F:\\New folder\\try\\task4\\PropertyAuction\\Areas\\Admin\\Views\\Property\\Edit.cshtml",
+              "ToolTip": "F:\\New folder\\Auctionv2\\task4\\PropertyAuction\\Areas\\Admin\\Views\\Property\\Edit.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Property\\Edit.cshtml",
               "ViewState": "AgIAADwAAAAAAAAAAAAAAEgAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -354,31 +547,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "F:\\New folder\\try\\task4\\PropertyAuction\\Areas\\Seller\\Views\\Property\\Create.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Seller\\Views\\Property\\Create.cshtml",
-              "ToolTip": "F:\\New folder\\try\\task4\\PropertyAuction\\Areas\\Seller\\Views\\Property\\Create.cshtml",
-              "RelativeToolTip": "Areas\\Seller\\Views\\Property\\Create.cshtml",
-              "ViewState": "AgIAADkAAAAAAAAAAAAmwFQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-27T06:31:43.48Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "F:\\New folder\\try\\task4\\PropertyAuction\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "F:\\New folder\\try\\task4\\PropertyAuction\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-27T07:12:11.338Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 32,
               "Title": "20250127071341_DBInitialization.cs",
               "DocumentMoniker": "F:\\New folder\\Sujan\\task4\\Auction.DataAccess\\Migrations\\20250127071341_DBInitialization.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Sujan\\task4\\Auction.DataAccess\\Migrations\\20250127071341_DBInitialization.cs",
@@ -390,7 +559,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 33,
               "Title": "Property.cs",
               "DocumentMoniker": "F:\\New folder\\Sujan\\task4\\Auction.Models\\Property.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Sujan\\task4\\Auction.Models\\Property.cs",
@@ -402,7 +571,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 34,
               "Title": "Auction.cs",
               "DocumentMoniker": "F:\\New folder\\Sujan\\task4\\Auction.Models\\Auction.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Sujan\\task4\\Auction.Models\\Auction.cs",

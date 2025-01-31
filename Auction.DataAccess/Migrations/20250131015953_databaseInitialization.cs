@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Auction.DataAccess.Migrations
 {
     /// <inheritdoc />
-    public partial class DBInitialization : Migration
+    public partial class databaseInitialization : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -263,6 +263,12 @@ namespace Auction.DataAccess.Migrations
                 {
                     table.PrimaryKey("PK_Bids", x => x.Id);
                     table.ForeignKey(
+                        name: "FK_Bids_AspNetUsers_UserId",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
                         name: "FK_Bids_AuctionListings_AuctionId",
                         column: x => x.AuctionId,
                         principalTable: "AuctionListings",
@@ -275,9 +281,9 @@ namespace Auction.DataAccess.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "27f77397-3ab6-4cba-8e57-31e0d16e5a98", null, "Seller", "SELLER" },
-                    { "348e5667-5048-4292-b249-b4b55531606d", null, "Admin", "ADMIN" },
-                    { "82426088-ca71-439c-b0c2-9c9194aa2cc0", null, "Buyer", "BUYER" }
+                    { "4aa1853c-874f-48fb-b656-73855d9e074f", null, "Seller", "SELLER" },
+                    { "c5ddd595-f622-456a-994a-36ebe2e1c383", null, "Admin", "ADMIN" },
+                    { "e72c91f6-490e-41ec-b770-86ca471e698a", null, "Buyer", "BUYER" }
                 });
 
             migrationBuilder.InsertData(
@@ -285,13 +291,13 @@ namespace Auction.DataAccess.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "City", "ConcurrencyStamp", "Discriminator", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "Name", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "PostalCode", "SecurityStamp", "State", "StreetAddress", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "ab6d1234-5678-9012-3456-bc12def34567", 0, null, "afddfb46-b4d0-421c-afd0-18ca63641f97", "ApplicationUser", "buyer3@example.com", true, false, null, "Buyer Three", "BUYER3@EXAMPLE.COM", "BUYER3@EXAMPLE.COM", "AQAAAAIAAYagAAAAEFDV0W9dxs/TZR6OubkVmM7BXnTLauIrA0DSaXtZaz0hEvjRQIm3Gi4z+RNM19KGUg==", null, false, null, "2076fe34-6a39-480b-9946-c92b46911929", null, null, false, "buyer3@example.com" },
-                    { "b4db56e8-1234-4567-8901-bc12def34567", 0, null, "ab0c4f98-0992-45d1-9ca0-508ba97f6ff5", "ApplicationUser", "admin@example.com", true, false, null, "Admin User", "ADMIN@EXAMPLE.COM", "ADMIN@EXAMPLE.COM", "AQAAAAIAAYagAAAAENWDZNev4PbH/CfJR0FrbUiM3DXHEgmJ0um/5u0xCFim70jxmFG6jglFAl/pVkcwsw==", null, false, null, "cb298898-76da-41a3-bdee-02da1cd3859b", null, null, false, "admin@example.com" },
-                    { "cd2a7890-5678-1234-4567-bc12def34567", 0, null, "dea9d862-1b12-41f3-98a2-6d430e9751c9", "ApplicationUser", "seller2@example.com", true, false, null, "Seller Two", "SELLER2@EXAMPLE.COM", "SELLER2@EXAMPLE.COM", "AQAAAAIAAYagAAAAEOv/XGyqUR8IVY83zNzUeZWT+VW622F9WFX8XnZkAfgfobeoIOAFsZSWDqd6Hidgzw==", null, false, null, "bc6af4d5-8003-46d0-9fc4-6e1968feb42d", null, null, false, "seller2@example.com" },
-                    { "de3a8901-3456-7890-1234-bc12def34567", 0, null, "b37ce505-ed51-4378-b6bb-7084500f762c", "ApplicationUser", "seller3@example.com", true, false, null, "Seller Three", "SELLER3@EXAMPLE.COM", "SELLER3@EXAMPLE.COM", "AQAAAAIAAYagAAAAEKfgBf1BE4FsKrdNJ0s6UFAfjRNOPljLMkk453mBY7dfE3O/4If81PVPp9TdXAbg9g==", null, false, null, "957e0e26-2bd6-404f-9d73-17a4876e00e5", null, null, false, "seller3@example.com" },
-                    { "ed4b9012-2345-6789-1234-bc12def34567", 0, null, "229ae3d4-880d-41d2-ad6c-8ce45658bf61", "ApplicationUser", "buyer1@example.com", true, false, null, "Buyer One", "BUYER1@EXAMPLE.COM", "BUYER1@EXAMPLE.COM", "AQAAAAIAAYagAAAAECf2S5ey/BDRrkn3ZvgGHEYakZA4Ndjfif15JnvwAuWF80PPgXaOEKJF/diUGeJoSQ==", null, false, null, "fa29f5f7-86e1-4a73-95c8-39453173e7ff", null, null, false, "buyer1@example.com" },
-                    { "fa0a5657-8901-2345-6789-bc12def34567", 0, null, "259568c7-58dc-4bc1-b4c5-ba761a1fd2be", "ApplicationUser", "seller1@example.com", true, false, null, "Seller One", "SELLER1@EXAMPLE.COM", "SELLER1@EXAMPLE.COM", "AQAAAAIAAYagAAAAEBmPpVL+d4oH7hyRZD/guU2BZ1k75TZIXxWgA3sjNOvJ1wBVlmfPpK+ZjUt2nWtrtw==", null, false, null, "c8c45829-2f39-4bdd-8364-9b62f79a7073", null, null, false, "seller1@example.com" },
-                    { "fc5c0123-4567-8901-2345-bc12def34567", 0, null, "504d4ec3-6f2e-464d-b0a1-3339956229a9", "ApplicationUser", "buyer2@example.com", true, false, null, "Buyer Two", "BUYER2@EXAMPLE.COM", "BUYER2@EXAMPLE.COM", "AQAAAAIAAYagAAAAEIJOWksR9myMuO5yyy9l5Xe0Scn9GuqBprNFG1xsQOXdoHitwsMv1RFsZis4GxvtIg==", null, false, null, "7af39da3-0773-4c7d-97c7-83c943cb0c6c", null, null, false, "buyer2@example.com" }
+                    { "a18be9c0-aa65-4af8-bd17-00bd9344e575", 0, null, "33e25cbd-3cd2-4246-b1d8-eab359db5d9a", "ApplicationUser", "admin@example.com", true, false, null, "Admin User", "ADMIN@EXAMPLE.COM", "ADMIN@EXAMPLE.COM", "AQAAAAIAAYagAAAAELU+wsetPqml4o5EdyM4wY7occWYAm93T8CI6J9Pt4TJ3asulyX2T8zKZk5qy2r6vA==", null, false, null, "b167bdfd-4e6a-4766-a141-60cd780c715e", null, null, false, "admin@example.com" },
+                    { "b68d3f5a-b414-48d9-8e34-7c6dde3941ef", 0, null, "624c5601-9510-4581-a205-d62b67b75150", "ApplicationUser", "seller1@example.com", true, false, null, "Seller One", "SELLER1@EXAMPLE.COM", "SELLER1@EXAMPLE.COM", "AQAAAAIAAYagAAAAEHot2gcER/3QYjX6N9i2AVgr1bdCkiHdy5PCYXWmg8qezL25H38NyCE80iAk94m/hg==", null, false, null, "598ebed0-05f5-4ea2-a143-11f777aee769", null, null, false, "seller1@example.com" },
+                    { "c1ce93ad-1e91-4b79-9f43-9f1d51d33511", 0, null, "7427f7db-6b90-4996-9f00-aa56c4ca8e3f", "ApplicationUser", "seller2@example.com", true, false, null, "Seller Two", "SELLER2@EXAMPLE.COM", "SELLER2@EXAMPLE.COM", "AQAAAAIAAYagAAAAEA9jeDjZRkSjWRBUEe12M//+/YLwIrnax7tAFIvPeh7t9MMrghikcHfT14pCTN7f6g==", null, false, null, "7d609eae-0162-46ec-861b-77a624bfb21f", null, null, false, "seller2@example.com" },
+                    { "d9a9b8d7-73b2-4f28-9177-e1f9239e6673", 0, null, "1926086f-0413-49c8-a1e9-672e61d4e78e", "ApplicationUser", "seller3@example.com", true, false, null, "Seller Three", "SELLER3@EXAMPLE.COM", "SELLER3@EXAMPLE.COM", "AQAAAAIAAYagAAAAEBr6TrNzqr453Nq5AV8+cEyL9G5F/cYG2HqDoBYgrqiFo/psS1+fY8IJnpKUfxHCdg==", null, false, null, "f270a20f-e0a2-4f81-894b-cfaebccb8f02", null, null, false, "seller3@example.com" },
+                    { "e4c2f668-5c51-4fd1-9b55-b5dd9b33abb7", 0, null, "e6753600-e3a4-4526-b5cb-2f6c670ae37a", "ApplicationUser", "buyer1@example.com", true, false, null, "Buyer One", "BUYER1@EXAMPLE.COM", "BUYER1@EXAMPLE.COM", "AQAAAAIAAYagAAAAEIVqDXiGnmfn1c3UStMOP4LiwZVGJ+MOrz9mx/zzyRq+fyMZ4T3HlmqV+Aj5ucx1WQ==", null, false, null, "7660a85c-f509-4402-b74d-7f91b00cd471", null, null, false, "buyer1@example.com" },
+                    { "f682334f-82e1-4b89-8a56-89e4b7efde93", 0, null, "22efe663-ca8a-45c6-a115-9d062ed20f33", "ApplicationUser", "buyer2@example.com", true, false, null, "Buyer Two", "BUYER2@EXAMPLE.COM", "BUYER2@EXAMPLE.COM", "AQAAAAIAAYagAAAAENptiyNOejpJblqglsrjlm1ZhfYYw4hNTAFmKgtky3tiNRBgyRQOAPNoQTQcInVFXw==", null, false, null, "9d71a321-4745-4bde-884b-38c6c8fdacbc", null, null, false, "buyer2@example.com" },
+                    { "g7d1c8e2-94a3-4d6b-ac32-b61e1e7b76d9", 0, null, "30d4a76b-ed06-4f73-be2f-924234afa07b", "ApplicationUser", "buyer3@example.com", true, false, null, "Buyer Three", "BUYER3@EXAMPLE.COM", "BUYER3@EXAMPLE.COM", "AQAAAAIAAYagAAAAEB2kL6IhK/Q2iCVyWSlnMCESp+SjhAr+rNX4T2VoWf3HL1eeP4tpHMW67CdxhUuzkw==", null, false, null, "af2f928c-6961-4b3a-aaef-5d7249491718", null, null, false, "buyer3@example.com" }
                 });
 
             migrationBuilder.InsertData(
@@ -309,13 +315,13 @@ namespace Auction.DataAccess.Migrations
                 columns: new[] { "RoleId", "UserId" },
                 values: new object[,]
                 {
-                    { "82426088-ca71-439c-b0c2-9c9194aa2cc0", "ab6d1234-5678-9012-3456-bc12def34567" },
-                    { "348e5667-5048-4292-b249-b4b55531606d", "b4db56e8-1234-4567-8901-bc12def34567" },
-                    { "27f77397-3ab6-4cba-8e57-31e0d16e5a98", "cd2a7890-5678-1234-4567-bc12def34567" },
-                    { "27f77397-3ab6-4cba-8e57-31e0d16e5a98", "de3a8901-3456-7890-1234-bc12def34567" },
-                    { "82426088-ca71-439c-b0c2-9c9194aa2cc0", "ed4b9012-2345-6789-1234-bc12def34567" },
-                    { "27f77397-3ab6-4cba-8e57-31e0d16e5a98", "fa0a5657-8901-2345-6789-bc12def34567" },
-                    { "82426088-ca71-439c-b0c2-9c9194aa2cc0", "fc5c0123-4567-8901-2345-bc12def34567" }
+                    { "c5ddd595-f622-456a-994a-36ebe2e1c383", "a18be9c0-aa65-4af8-bd17-00bd9344e575" },
+                    { "4aa1853c-874f-48fb-b656-73855d9e074f", "b68d3f5a-b414-48d9-8e34-7c6dde3941ef" },
+                    { "4aa1853c-874f-48fb-b656-73855d9e074f", "c1ce93ad-1e91-4b79-9f43-9f1d51d33511" },
+                    { "4aa1853c-874f-48fb-b656-73855d9e074f", "d9a9b8d7-73b2-4f28-9177-e1f9239e6673" },
+                    { "e72c91f6-490e-41ec-b770-86ca471e698a", "e4c2f668-5c51-4fd1-9b55-b5dd9b33abb7" },
+                    { "e72c91f6-490e-41ec-b770-86ca471e698a", "f682334f-82e1-4b89-8a56-89e4b7efde93" },
+                    { "e72c91f6-490e-41ec-b770-86ca471e698a", "g7d1c8e2-94a3-4d6b-ac32-b61e1e7b76d9" }
                 });
 
             migrationBuilder.InsertData(
@@ -323,12 +329,12 @@ namespace Auction.DataAccess.Migrations
                 columns: new[] { "PropertyId", "Description", "ImageUrl", "Location", "NumberOfBathrooms", "NumberOfRooms", "PropertyCategoryId", "PropertyCategoryId1", "SellerId", "Size", "Title", "VideoUrl", "YearBuilt" },
                 values: new object[,]
                 {
-                    { 1, "A beautiful modern house located in the heart of the city.", "", "Los Angeles, CA", 3, 4, 1, null, "fa0a5657-8901-2345-6789-bc12def34567", 2500.5, "Modern Family House", "", 2015 },
-                    { 2, "A stunning villa overlooking the ocean with premium amenities.", "", "Miami, FL", 5, 6, 2, null, "fa0a5657-8901-2345-6789-bc12def34567", 4500.0, "Luxury Beachfront Villa", "", 2020 },
-                    { 3, "A charming cottage in a peaceful countryside setting.", "", "Asheville, NC", 2, 3, 3, null, "cd2a7890-5678-1234-4567-bc12def34567", 1200.0, "Cozy Cottage", "", 1990 },
-                    { 4, "Luxurious penthouse with panoramic city views.", "", "New York, NY", 4, 5, 1, null, "cd2a7890-5678-1234-4567-bc12def34567", 3000.0, "Downtown Penthouse", "", 2018 },
-                    { 5, "Prime location office space in business district.", "", "Chicago, IL", 4, 8, 2, null, "de3a8901-3456-7890-1234-bc12def34567", 5000.0, "Commercial Office Space", "", 2019 },
-                    { 6, "Beautiful waterfront land ready for development.", "", "Seattle, WA", 0, 0, 3, null, "de3a8901-3456-7890-1234-bc12def34567", 10000.0, "Waterfront Land Plot", "", 0 }
+                    { 1, "Elegant contemporary mansion with smart home features and panoramic valley views.", "", "Beverly Hills, CA", 5, 6, 1, null, "b68d3f5a-b414-48d9-8e34-7c6dde3941ef", 5200.0, "Sunset Valley Estate", "", 2022 },
+                    { 2, "Luxury beachfront resort property with private beach access and full-service amenities.", "", "Maui, HI", 14, 12, 2, null, "b68d3f5a-b414-48d9-8e34-7c6dde3941ef", 8500.0, "Ocean Breeze Resort Complex", "", 2021 },
+                    { 3, "Expansive ranch property with equestrian facilities and mountain backdrop.", "", "Aspen, CO", 3, 4, 3, null, "c1ce93ad-1e91-4b79-9f43-9f1d51d33511", 15000.0, "Mountain View Ranch", "", 2015 },
+                    { 4, "Ultra-luxury penthouse with 360-degree views and private helipad access.", "", "Manhattan, NY", 5, 5, 1, null, "c1ce93ad-1e91-4b79-9f43-9f1d51d33511", 4800.0, "Skyline Tower Penthouse", "", 2023 },
+                    { 5, "State-of-the-art office complex with sustainable design and tech infrastructure.", "", "Austin, TX", 8, 20, 2, null, "d9a9b8d7-73b2-4f28-9177-e1f9239e6673", 12000.0, "Innovation Hub Complex", "", 2024 },
+                    { 6, "Prime wine country acreage with approved development plans and existing vineyards.", "", "Napa Valley, CA", 0, 0, 3, null, "d9a9b8d7-73b2-4f28-9177-e1f9239e6673", 25000.0, "Vineyard Estate Development", "", 0 }
                 });
 
             migrationBuilder.InsertData(
@@ -336,12 +342,12 @@ namespace Auction.DataAccess.Migrations
                 columns: new[] { "AuctionId", "CurrentHighestBid", "EndDate", "HighestBidderId", "IsBidStarted", "IsReservationPriceMet", "MinimumBidIncrement", "PropertyId", "ReservationPrice", "StartDate", "StartingBid", "Status" },
                 values: new object[,]
                 {
-                    { 1, 500000m, new DateTime(2025, 2, 3, 0, 0, 0, 0, DateTimeKind.Unspecified), null, false, false, 5000m, 1, 600000m, new DateTime(2025, 1, 28, 0, 0, 0, 0, DateTimeKind.Unspecified), 500000m, 0 },
-                    { 2, 1000000m, new DateTime(2025, 2, 6, 0, 0, 0, 0, DateTimeKind.Unspecified), null, false, false, 10000m, 2, 1200000m, new DateTime(2025, 1, 29, 0, 0, 0, 0, DateTimeKind.Unspecified), 1000000m, 0 },
-                    { 3, 300000m, new DateTime(2025, 2, 11, 0, 0, 0, 0, DateTimeKind.Unspecified), null, false, false, 3000m, 3, 350000m, new DateTime(2025, 2, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 300000m, 0 },
-                    { 4, 950000m, new DateTime(2025, 1, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), "ed4b9012-2345-6789-1234-bc12def34567", true, true, 5000m, 4, 900000m, new DateTime(2024, 12, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), 800000m, 1 },
-                    { 5, 2500000m, new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "fc5c0123-4567-8901-2345-bc12def34567", true, true, 20000m, 5, 2200000m, new DateTime(2024, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 2000000m, 1 },
-                    { 6, 1800000m, new DateTime(2024, 12, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), "ab6d1234-5678-9012-3456-bc12def34567", true, true, 10000m, 6, 1700000m, new DateTime(2024, 11, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), 1500000m, 1 }
+                    { 1, 8500000m, new DateTime(2025, 2, 3, 0, 0, 0, 0, DateTimeKind.Unspecified), null, false, false, 50000m, 1, 10000000m, new DateTime(2025, 1, 28, 0, 0, 0, 0, DateTimeKind.Unspecified), 8500000m, 0 },
+                    { 2, 15000000m, new DateTime(2025, 2, 6, 0, 0, 0, 0, DateTimeKind.Unspecified), null, false, false, 100000m, 2, 18000000m, new DateTime(2025, 1, 29, 0, 0, 0, 0, DateTimeKind.Unspecified), 15000000m, 0 },
+                    { 3, 12000000m, new DateTime(2025, 2, 11, 0, 0, 0, 0, DateTimeKind.Unspecified), null, false, false, 75000m, 3, 14000000m, new DateTime(2025, 2, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 12000000m, 0 },
+                    { 4, 28500000m, new DateTime(2025, 1, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), "e4c2f668-5c51-4fd1-9b55-b5dd9b33abb7", true, true, 150000m, 4, 27000000m, new DateTime(2024, 12, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), 25000000m, 1 },
+                    { 5, 52000000m, new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "f682334f-82e1-4b89-8a56-89e4b7efde93", true, true, 250000m, 5, 48000000m, new DateTime(2024, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 45000000m, 1 },
+                    { 6, 23500000m, new DateTime(2024, 12, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), "g7d1c8e2-94a3-4d6b-ac32-b61e1e7b76d9", true, true, 100000m, 6, 22000000m, new DateTime(2024, 11, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), 20000000m, 1 }
                 });
 
             migrationBuilder.CreateIndex(
@@ -392,6 +398,11 @@ namespace Auction.DataAccess.Migrations
                 name: "IX_Bids_AuctionId",
                 table: "Bids",
                 column: "AuctionId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Bids_UserId",
+                table: "Bids",
+                column: "UserId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Properties_PropertyCategoryId",

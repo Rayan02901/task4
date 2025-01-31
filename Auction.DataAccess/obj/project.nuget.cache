@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Vs/qOy13rtw=",
+  "dgSpecHash": "eiQsy/jbF5U=",
   "success": true,
-  "projectFilePath": "F:\\New folder\\try\\task4\\Auction.DataAccess\\Auction.DataAccess.csproj",
+  "projectFilePath": "F:\\New folder\\Auctionv2\\task4\\Auction.DataAccess\\Auction.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rayan\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\rayan\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

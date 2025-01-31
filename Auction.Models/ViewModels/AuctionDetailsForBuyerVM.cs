@@ -1,4 +1,5 @@
-﻿using System;
+﻿//
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
@@ -18,7 +19,8 @@ namespace Auction.Models.ViewModels
         public decimal ReservationPrice { get; set; }
         public decimal MinimumBidIncrement { get; set; }
         public AuctionStatus Status { get; set; }
-        public List<Bid> RecentBids { get; set; }
+        public List<BidVM> RecentBids { get; set; }
         public TimeSpan RemainingTime => EndDate - DateTime.Now;
     }
 }
+//

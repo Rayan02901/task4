@@ -15,6 +15,8 @@ namespace Auction.Models
         public DateTime BidTime { get; set; }
 
         public virtual AuctionListing Auction { get; set; }
+        public virtual ApplicationUser User { get; set; }
+
     }
 
 }

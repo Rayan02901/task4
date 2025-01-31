@@ -11,5 +11,7 @@ namespace Auction.Models.ViewModels
         public decimal Amount { get; set; }
         public DateTime BidTime { get; set; }
         public string BidderName { get; set; }
+
+        public decimal BidAmount { get; set; }
     }
 }
